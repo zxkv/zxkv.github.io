@@ -12,26 +12,30 @@ export default defineConfig({
 		dark: "/rspress-dark-logo.png"
 	},
 	themeConfig: {
+		// nav: [],
 		socialLinks: [
 			{
 				icon: "juejin",
 				mode: "link",
 				content: "https://juejin.cn/user/184373682901309/posts"
 			},
-			// {
-			// 	icon: {
-			// 		svg: gitee
-			// 	},
-			// 	mode: "link",
-			// 	content: "https://github.com/web-infra-dev/rspress"
-			// },
 			{
 				icon: {
 					svg: yuque
 				},
-				mode: "text",
-				content: "GITEE"
+				mode: "link",
+				content: "https://www.yuque.com/zhangxiaokang"
 			}
-		]
+			// {
+			// 	text: "API",
+			// 	link: "https://rspress.dev/api/index.html"
+			// }
+		],
+		outlineTitle: "目录",
+		prevPageText: "上一篇",
+		nextPageText: "下一篇",
+		footer: {
+			message: "zxkvv@qq.com"
+		}
 	}
 });

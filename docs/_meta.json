@@ -1,16 +1,17 @@
 [
 	{
-		"text": "博客",
+		"text": "博客日志",
 		"link": "/blog/",
 		"activeMatch": "/blog/"
 	},
 	{
-		"text": "笔记",
+		"text": "前端笔记",
 		"link": "/node/",
 		"activeMatch": "/node/"
 	},
 	{
-		"text": "API",
-		"link": "https://rspress.dev/api/index.html"
+		"text": "漂泊时光",
+		"link": "/time/",
+		"activeMatch": "/time/"
 	}
 ]

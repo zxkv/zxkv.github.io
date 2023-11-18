@@ -1,1 +1,31 @@
-["index"]
+[
+	"index",
+	{
+		"type": "file",
+		"name": "a",
+		"label": "a",
+		"collapsible": true,
+		"collapsed": false
+	},
+	{
+		"type": "file",
+		"name": "index",
+		"label": "HTML",
+		"collapsible": true,
+		"collapsed": false
+	},
+	{
+		"type": "file",
+		"name": "code",
+		"label": "CSS",
+		"collapsible": true,
+		"collapsed": false
+	},
+	{
+		"type": "file",
+		"name": "vue",
+		"label": "JavaScript",
+		"collapsible": true,
+		"collapsed": false
+	}
+]
