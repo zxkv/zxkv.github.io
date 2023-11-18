@@ -8,9 +8,9 @@ export default defineConfig({
 	icon: "/rspress-icon.png",
 	logo: {
 		light: "/rspress-light-logo.png",
-		dark: "/rspress-dark-logo.png",
+		dark: "/rspress-dark-logo.png"
 	},
 	themeConfig: {
-		socialLinks: [{ icon: "github", mode: "link", content: "https://github.com/web-infra-dev/rspress" }],
-	},
+		socialLinks: [{ icon: "github", mode: "link", content: "https://github.com/web-infra-dev/rspress" }]
+	}
 });
