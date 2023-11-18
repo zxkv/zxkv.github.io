@@ -11,8 +11,10 @@ export default defineConfig({
 		light: "/rspress-light-logo.png",
 		dark: "/rspress-dark-logo.png"
 	},
+	route: {
+		cleanUrls: true
+	},
 	themeConfig: {
-		// nav: [],
 		socialLinks: [
 			{
 				icon: "juejin",
@@ -31,6 +33,18 @@ export default defineConfig({
 			// 	link: "https://rspress.dev/api/index.html"
 			// }
 		],
+		sidebar: {
+			"/blog/": [
+				{
+					text: "介绍",
+					items: ["/blog/", "/blog/code"]
+				},
+				{
+					text: "分类",
+					items: ["/blog/vue", "/blog/a"]
+				}
+			]
+		},
 		outlineTitle: "目录",
 		prevPageText: "上一篇",
 		nextPageText: "下一篇"
