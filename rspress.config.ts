@@ -33,9 +33,9 @@ export default defineConfig({
 		],
 		outlineTitle: "目录",
 		prevPageText: "上一篇",
-		nextPageText: "下一篇",
-		footer: {
-			message: "zxkvv@qq.com"
-		}
+		nextPageText: "下一篇"
+		// footer: {
+		// 	message: "zxkvv@qq.com"
+		// }
 	}
 });

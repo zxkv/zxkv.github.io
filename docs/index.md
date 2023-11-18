@@ -15,6 +15,7 @@ hero:
     image:
         src: /rspress-icon.png
         alt: 下落香樟树
+features:
     - title: TL
       details: Top Left.
       icon: 🏃🏻‍♀️
