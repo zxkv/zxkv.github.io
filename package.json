@@ -1,17 +1,17 @@
 {
-  "name": "rspress-doc",
-  "version": "1.0.0",
-  "private": true,
-  "author": "zxkvv@qq.com",
-  "scripts": {
-    "dev": "rspress dev",
-    "build": "rspress build",
-    "preview": "rspress preview"
-  },
-  "dependencies": {
-    "rspress": "^1.6.2"
-  },
-  "devDependencies": {
-    "@types/node": "^16"
-  }
+	"name": "rspress-doc",
+	"version": "1.0.0",
+	"private": true,
+	"author": "zxkvv@qq.com",
+	"scripts": {
+		"dev": "rspress dev",
+		"build": "rspress build",
+		"preview": "rspress preview"
+	},
+	"dependencies": {
+		"rspress": "^1.6.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.9.1"
+	}
 }

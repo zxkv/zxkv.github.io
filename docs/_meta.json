@@ -1,13 +1,13 @@
 [
 	{
-		"text": "Guide",
-		"link": "/guide/",
-		"activeMatch": "/guide/"
+		"text": "博客",
+		"link": "/blog/",
+		"activeMatch": "/blog/"
 	},
 	{
-		"text": "Hello World",
-		"link": "/hello/",
-		"activeMatch": "/hello/"
+		"text": "笔记",
+		"link": "/node/",
+		"activeMatch": "/node/"
 	},
 	{
 		"text": "API",
