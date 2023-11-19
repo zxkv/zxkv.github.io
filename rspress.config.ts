@@ -1,6 +1,7 @@
 import * as path from "path";
 import { defineConfig } from "rspress/config";
 import { yuque } from "./src/utils/icon";
+import sidebar from "./src/utils/sidebar";
 
 export default defineConfig({
 	root: path.join(__dirname, "docs"),
@@ -12,7 +13,7 @@ export default defineConfig({
 		dark: "/rspress-dark-logo.png"
 	},
 	route: {
-		cleanUrls: true
+		cleanUrls: false
 	},
 	themeConfig: {
 		socialLinks: [
@@ -28,23 +29,8 @@ export default defineConfig({
 				mode: "link",
 				content: "https://www.yuque.com/zhangxiaokang"
 			}
-			// {
-			// 	text: "API",
-			// 	link: "https://rspress.dev/api/index.html"
-			// }
 		],
-		sidebar: {
-			"/blog/": [
-				{
-					text: "介绍",
-					items: ["/blog/", "/blog/code"]
-				},
-				{
-					text: "分类",
-					items: ["/blog/vue", "/blog/a"]
-				}
-			]
-		},
+		sidebar: sidebar,
 		outlineTitle: "目录",
 		prevPageText: "上一篇",
 		nextPageText: "下一篇"

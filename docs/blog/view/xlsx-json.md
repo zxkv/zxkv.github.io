@@ -1,0 +1,179 @@
+# xlsx 文件解析
+
+### 「🚀」场景需求
+
+工作中，最初解析 **Excel** 文件数据是通过后端开发来对上传的文件内容进行解析的；此时的前端只需能保证把 **Excel** 文件成功传递到后端即可；然后后端通过编程语言将收到的 **File** 文件流解析成想要的 **JSON** 数据格式返回给前端进行数据展示。前期想法很好，最初的方案也是按照后端解析的思路进行设计实现的。最后为了减轻服务端的压力，最终将 **Excel** 文件解析的工作提前放置在前端解析，最初的一步上传就搞定的逻辑，到如今基于“**前端**”实现 **Excel 转 JSON**，犹如晴天霹雳似的打的我一头雾水，还需要重新梳理逻辑，确定前端实现转换的方案。
+「 无 奈 」**╮(╯▽╰)╭** 确定方案后，就尝试寻找现有的方案来满足当前的业务需求；穿梭于各大开发播客论坛网站之间，愣是没找到符合自己需求的方案；最后在翻阅 Github 和 npm 时候无意间找到一个能解析 Excel 文件的开源包，犹如一道金光照射在我的眼前，脑门瞬间灵光一闪，就它了，历经千山万水，终于达到了技术 leader 的要求，终于可以松一口气了。「 開 心 」**(_^▽^_)**
+
+### 「🚢」功能实现
+
+:::info 前端解析 **Excel** 文件是基于 `read-excel-file` 包实现文件解析的，接下来是具体的实现步骤和注意事项「注：该包仅支持 xlsx 格式的文件解析，xls 格式的文件无法解析」
+:::
+
+-   安装所需依赖包「安装方式三选一」
+
+```shell title="安装依赖包"
+npm install read-excel-file --save
+
+yarn add read-excel-file
+
+pnpm add read-excel-file
+```
+
+-   读取 XLSX 文件
+
+```javascript title="读取数据"
+// 引入解析xlsx文件数据的包
+import ReadXlsxFile from "read-excel-file";
+// 引入转换解析数据的包
+import ConvertToJson from "read-excel-file/schema";
+
+/**
+ * @description Xlsx文件转JSON数据
+ * @param {Object} file xlsx文件对象
+ * @param {Object} keyProps 表头和属性值对应关系
+ * @param {Object} emptyItem 数据项默认值对象
+ * @param {Number} titleRows 表头说明所占用行数
+ * @return {Object} 解析异常时返回值为null，正常情况下返回Array数组
+ **/
+export const XlsxToData = async (file, keyProps, emptyItem, titleRows = 0) => {
+	try {
+		// 通过安装的插件包进行解析文件
+		let fileXlsx = await ReadXlsxFile(file);
+
+		// 判断解析出来的数据是否是 Array
+		if (!(Array.isArray(fileXlsx) && fileXlsx.length)) return [];
+
+		// 处理数据项的默认值
+		let emptyStmp = { ...emptyItem };
+
+		// 截取数据体
+		let xlsxData = fileXlsx.splice(titleRows);
+
+		// xlsx转换JSON数据
+		const { rows } = ConvertToJson(xlsxData, keyProps);
+
+		// 转换后的数据
+		let list = rows?.map((row, index) => Object.assign({ index }, emptyStmp, row));
+
+		// 返回解析处理后的数据
+		return list;
+	} catch (error) {
+		// 文件解析失败，返回 null
+		return null;
+	}
+};
+```
+
+-   要读取的 XLSX 文件源数据
+    | **账号** | **密码** | **姓名** |
+    | --- | --- | --- |
+    | A0001 | 10001 | STU_10001 |
+    | A0002 | 10002 | STU_10002 |
+    | A0003 | 10003 | STU_10003 |
+    | A0004 | 10004 | STU_10004 |
+    | A0005 | 10005 | STU_10005 |
+
+-   解析 xlsx 文件数据
+
+```json title="解析数据"
+[
+	["账号", "密码", "姓名"],
+	["A0001", 10001, "STU_10001"],
+	["A0002", 10002, "STU_10002"],
+	["A0003", 10003, "STU_10003"],
+	["A0004", 10004, "STU_10004"],
+	["A0005", 10005, "STU_10005"]
+]
+```
+
+-   转换数据「将解析生成的二维数组转换成后端所需的 JSON 数组对象，此处需要借助“**schema**”包进行解析处理」
+-   数据转换只转数据体，所以 XLSX 文件的标头无需处理，故在进行转换数据之前需将标头该一组数据移除掉
+
+```json title="转换数据"
+[
+	["A0001", 10001, "STU_10001"],
+	["A0002", 10002, "STU_10002"],
+	["A0003", 10003, "STU_10003"],
+	["A0004", 10004, "STU_10004"],
+	["A0005", 10005, "STU_10005"]
+]
+```
+
+-   转换数据所需参数配置
+
+```javascript title="转换参数"
+// 匹配转换的数据字段
+let keyProp = {
+	账号: {
+		prop: "username",
+		type: String
+	},
+	密码: {
+		prop: "password",
+		type: String
+	},
+	姓名: {
+		prop: "studentname",
+		type: String
+	}
+};
+
+// 空值数据
+let emptyItem = {
+	username: "",
+	password: "",
+	studentname: ""
+};
+```
+
+-   转换后的 JSON 数据
+
+```json title="转换后的数据"
+[
+	{
+		"index": 0,
+		"username": "A0001",
+		"password": 10001,
+		"studentname": "STU_10001"
+	},
+	{
+		"index": 1,
+		"username": "A0002",
+		"password": 10002,
+		"studentname": "STU_10002"
+	},
+	{
+		"index": 2,
+		"username": "A0003",
+		"password": 10003,
+		"studentname": "STU_10003"
+	},
+	{
+		"index": 3,
+		"username": "A0004",
+		"password": 10004,
+		"studentname": "STU_10004"
+	},
+	{
+		"index": 4,
+		"username": "A0005",
+		"password": 10005,
+		"studentname": "STU_10005"
+	}
+]
+```
+
+### 「🚄」效果展示
+
+:::info XLSX 文件上传前的文件展示效果区域
+![文件上传前的文件展示效果区域](./img/xlsx-1.png)
+:::
+
+:::info XLSX 文件解匹配后的数据展示效果
+![文件解匹配后的数据展示效果](./img/xlsx-2.png)
+:::
+
+### 「🚗」分析总结
+
+需求场景构想的宏伟蓝图，需要一步一步的去学习和探索，以至于达成最终想要的效果。每一次的功能开发都是一次挑战，在面对挑战时，要静下心来，好好分析本次功能所需的技术点，然后一点一点剖析，最终会发现，卡脖子的往往是那关键的一小步，解决了那关键的一小步，接下来基本就可以一帆风顺，后续功能所有的场景和所需的技术点都会梳理的明明白白，在不断的思考和探索中稳步前行。(ง•\_•)ง
