@@ -22,7 +22,7 @@ pnpm add read-excel-file
 
 -   读取 XLSX 文件
 
-```javascript title="读取数据"
+```js title="读取数据"
 // 引入解析xlsx文件数据的包
 import ReadXlsxFile from "read-excel-file";
 // 引入转换解析数据的包
@@ -102,7 +102,7 @@ export const XlsxToData = async (file, keyProps, emptyItem, titleRows = 0) => {
 
 -   转换数据所需参数配置
 
-```javascript title="转换参数"
+```js title="转换参数"
 // 匹配转换的数据字段
 let keyProp = {
 	账号: {

@@ -12,8 +12,13 @@ export default defineConfig({
 		light: "/rspress-light-logo.png",
 		dark: "/rspress-dark-logo.png"
 	},
+	outDir: "doc_build",
 	route: {
-		cleanUrls: false
+		cleanUrls: true
+	},
+	markdown: {
+		showLineNumbers: false /* md 显示行号 */,
+		defaultWrapCode: true /* md 代码换行 */
 	},
 	themeConfig: {
 		socialLinks: [
@@ -31,11 +36,11 @@ export default defineConfig({
 			}
 		],
 		sidebar: sidebar,
+		footer: {
+			message: "下落香樟树"
+		},
 		outlineTitle: "目录",
 		prevPageText: "上一篇",
 		nextPageText: "下一篇"
-		// footer: {
-		// 	message: "zxkvv@qq.com"
-		// }
 	}
 });

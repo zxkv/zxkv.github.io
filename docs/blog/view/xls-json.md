@@ -33,7 +33,7 @@ pnpm install https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz
 
 -   读取 XLS 文件
 
-```javascript title="读取文件"
+```js title="读取文件"
 // 引入解析excel文件解析包
 import { read, utils } from "xlsx";
 // 引入转换解析数据的包
@@ -130,7 +130,7 @@ export const XlsToData = (file, keyProps, emptyItem, titleRows = 0) => {
 
 -   转换数据所需参数配置
 
-```javascript title="转换参数"
+```js title="转换参数"
 // 匹配转换的数据字段
 let keyProp = {
 	账号: {

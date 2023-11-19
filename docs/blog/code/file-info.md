@@ -61,7 +61,7 @@ const getImageRadio = file => {
 
 有些情况下就是那其他格式类型的文件通过转换或者强制修改文件后缀名的方式来达到转换文件类型的目的，此方法在测试环节可能会出现，但是在平时使用过程过出现的概率不是很大，但是防止粗心的人或者其他用意的人采用此种方式，因此需要对失败事件“audioEl.onerror”进行监听，来优化判断逻辑，减少问题出现。
 
-```javascript title="获取音频文件时长"
+```js title="获取音频文件时长"
 /**
  * @description 获取音频文件时长
  * @param {Object} file 音频文件对象
@@ -93,7 +93,7 @@ const getAudioDuration = file => {
 
 若是采用获取文件流的方式来获取想要的文件类型信息，建议采用“异步”的方式来加载文件。
 
-```javascript title="判断文件类型"
+```js title="判断文件类型"
 /**
  * @description 判断文件类型
  * @param {Object} file 文件对象
