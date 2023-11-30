@@ -10,7 +10,7 @@ hero:
           text: 开启
           link: /blog/
         - theme: alt
-          text: 我的笔记
+          text: 开发笔记
           link: https://rspress.dev/zh/index.html
     image:
         src: /rspress-icon.png

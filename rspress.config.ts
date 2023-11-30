@@ -8,10 +8,11 @@ export default defineConfig({
 	title: "下落香樟树",
 	description: "ZXK Desc",
 	icon: "/rspress-icon.png",
-	logo: {
-		light: "/rspress-light-logo.png",
-		dark: "/rspress-dark-logo.png"
-	},
+	logo: "/rspress-icon.png",
+	// logo: {
+	// 	dark: "/rspress-icon",
+	// 	light: "/rspress-icon"
+	// },
 	outDir: "doc_build",
 	route: {
 		cleanUrls: true
@@ -21,6 +22,23 @@ export default defineConfig({
 		defaultWrapCode: true /* md 代码换行 */
 	},
 	themeConfig: {
+		nav: [
+			{
+				text: "博客日志",
+				link: "/blog/",
+				activeMatch: "/blog/"
+			},
+			{
+				text: "前端笔记",
+				link: "/node/",
+				activeMatch: "/node/"
+			},
+			{
+				text: "漂泊时光",
+				link: "/time/",
+				activeMatch: "/time/"
+			}
+		],
 		socialLinks: [
 			{
 				icon: "juejin",
