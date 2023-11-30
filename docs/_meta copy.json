@@ -1,0 +1,17 @@
+[
+	{
+		"text": "博客日志",
+		"link": "/blog/",
+		"activeMatch": "/blog/"
+	},
+	{
+		"text": "前端笔记",
+		"link": "/node/",
+		"activeMatch": "/node/"
+	},
+	{
+		"text": "漂泊时光",
+		"link": "/time/",
+		"activeMatch": "/time/"
+	}
+]
