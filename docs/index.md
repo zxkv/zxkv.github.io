@@ -16,13 +16,13 @@ hero:
         src: /rspress-icon.png
         alt: 下落香樟树
 features:
-    - title: TL
+    - title: TL - 上左
       details: Top Left.
       icon: 🏃🏻‍♀️
-    - title: TC
+    - title: TC - 上中
       details: Top Center.
       icon: 📦
-    - title: TR
+    - title: TR - 上右
       details: Top Right.
       icon: 🎨
     - title: BL
