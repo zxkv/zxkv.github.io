@@ -4,7 +4,7 @@ const BLOG = [
 		link: "/blog/"
 	},
 	{
-		text: "组件",
+		text: "组件1",
 		items: ["/blog/view/area", "/blog/view/xls-json", "/blog/view/xlsx-json"]
 	},
 	{
