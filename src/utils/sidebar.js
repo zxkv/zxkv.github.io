@@ -1,3 +1,9 @@
+const toItems = (path = "", count = 0) => {
+	let items = [];
+	for (let i = 1; i <= count; i++) items.push(`${path}/${i}`);
+	return items;
+};
+
 const BLOG_0 = {
 	text: "博客简介",
 	link: "/blog/"
@@ -5,22 +11,22 @@ const BLOG_0 = {
 
 const BLOG_1 = {
 	text: "插件依赖",
-	items: ["/blog/plugin/1", "/blog/plugin/2", "/blog/plugin/3"]
+	items: toItems("/blog/plugin", 3)
 };
 
 const BLOG_2 = {
-	text: "代码案例",
-	items: ["/blog/code/1"]
+	text: "开发案例",
+	items: toItems("/blog/code", 30)
 };
 
 const BLOG_3 = {
 	text: "前端工具",
-	items: ["/blog/tools/1"]
+	items: toItems("/blog/tools", 6)
 };
 
 const BLOG_4 = {
 	text: "前端框架",
-	items: ["/blog/view/1"]
+	items: toItems("/blog/view", 1)
 };
 
 export default {
