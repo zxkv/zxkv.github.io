@@ -26,7 +26,7 @@ const BLOG_3 = {
 
 const BLOG_4 = {
 	text: "前端框架",
-	items: toItems("/blog/view", 1)
+	items: toItems("/blog/view", 2)
 };
 
 export default {
