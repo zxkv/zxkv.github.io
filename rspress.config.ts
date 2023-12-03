@@ -3,23 +3,24 @@ import { defineConfig } from "rspress/config";
 import { yuque } from "./src/utils/icon";
 import sidebar from "./src/utils/sidebar";
 
+// doc：https://rspress.dev/zh/index.html
 export default defineConfig({
 	root: path.join(__dirname, "docs"),
 	title: "下落香樟树",
-	description: "ZXK Desc",
+	description: "前端开发笔记",
 	icon: "/rspress-icon.png",
 	logo: "/rspress-icon.png",
 	base: "/web",
 	// logo: {
-	// 	dark: "/rspress-icon",
-	// 	light: "/rspress-icon"
+	// 	dark: "/rspress-dark-logo.png",
+	// 	light: "/rspress-light-logo.png"
 	// },
 	outDir: "doc_build",
 	route: {
 		cleanUrls: true
 	},
 	markdown: {
-		showLineNumbers: false /* md 显示行号 */,
+		showLineNumbers: true /* md 显示行号 */,
 		defaultWrapCode: true /* md 代码换行 */
 	},
 	themeConfig: {
@@ -41,6 +42,11 @@ export default defineConfig({
 			}
 		],
 		socialLinks: [
+			{
+				icon: "github",
+				mode: "link",
+				content: "https://github.com/zxkv"
+			},
 			{
 				icon: "juejin",
 				mode: "link",

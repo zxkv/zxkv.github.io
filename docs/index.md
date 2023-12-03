@@ -10,28 +10,28 @@ hero:
           text: 开启
           link: /blog/
         - theme: alt
-          text: 开发笔记
-          link: https://rspress.dev/zh/index.html
+          text: 我的笔记
+          link: /node/
     image:
         src: /rspress-icon.png
         alt: 下落香樟树
 features:
-    - title: TL - 上左
-      details: Top Left.
-      icon: 🏃🏻‍♀️
-    - title: TC - 上中
-      details: Top Center.
-      icon: 📦
-    - title: TR - 上右
-      details: Top Right.
-      icon: 🎨
-    - title: BL
-      details: Bottom Left.
-      icon: 🌍
-    - title: BC
-      details: Bottom Center.
-      icon: 🌈
-    - title: BR
-      details: Bottom Right.
+    - title: 工作汇总
+      details: 回顾开发过程中的技术点，分析总结后，汇总成文档笔记。
+      icon: 💻
+    - title: 学习记录
+      details: 记录闲暇之余学习和了解到的新技术。
+      icon: 🧱
+    - title: 文本检索
+      details: 导航栏中的文本搜索框可进行全文搜索，快捷跳转匹配文档
+      icon: 🔍
+    - title: 时光记忆
+      details: 人生处处有惊喜，拍下这一短暂瞬间，记录美好时光。
+      icon: 📷
+    - title: 人生旅途
+      details: 保持自己的初心，探索未知的旅途。
+      icon: 🚲
+    - title: 持之以恒
+      details: 勿忘初心，方得始终。
       icon: 🔥
 ---
