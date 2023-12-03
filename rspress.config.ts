@@ -1,9 +1,8 @@
 import * as path from "path";
 import { defineConfig } from "rspress/config";
-import { yuque } from "./src/utils/icon";
 import sidebar from "./src/utils/sidebar";
+import { nav, socialLinks } from "./src/utils/base";
 
-// doc：https://rspress.dev/zh/index.html
 export default defineConfig({
 	root: path.join(__dirname, "docs"),
 	title: "下落香樟树",
@@ -20,50 +19,18 @@ export default defineConfig({
 		cleanUrls: true
 	},
 	markdown: {
-		showLineNumbers: true /* md 显示行号 */,
-		defaultWrapCode: true /* md 代码换行 */
+		showLineNumbers: true,
+		defaultWrapCode: true
 	},
 	themeConfig: {
-		nav: [
-			{
-				text: "博客日志",
-				link: "/blog/",
-				activeMatch: "/blog/"
-			},
-			{
-				text: "前端笔记",
-				link: "/node/",
-				activeMatch: "/node/"
-			},
-			{
-				text: "漂泊时光",
-				link: "/time/",
-				activeMatch: "/time/"
-			}
-		],
-		socialLinks: [
-			{
-				icon: "github",
-				mode: "link",
-				content: "https://github.com/zxkv"
-			},
-			{
-				icon: "juejin",
-				mode: "link",
-				content: "https://juejin.cn/user/184373682901309/posts"
-			},
-			{
-				icon: {
-					svg: yuque
-				},
-				mode: "link",
-				content: "https://www.yuque.com/zhangxiaokang"
-			}
-		],
-		sidebar: sidebar,
+		nav,
+		socialLinks,
+		sidebar,
 		footer: {
-			message: "下落香樟树"
+			message: "历尽千帆皆不是，守得云开见月明。"
 		},
+		lastUpdatedText: "上次更新时间",
+		lastUpdated: true /* 上次更新时间 */,
 		outlineTitle: "目录",
 		prevPageText: "上一篇",
 		nextPageText: "下一篇"

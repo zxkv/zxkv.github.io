@@ -11,24 +11,36 @@ const BLOG_0 = {
 
 const BLOG_1 = {
 	text: "插件依赖",
+	collapsed: false,
 	items: toItems("/blog/plugin", 3)
 };
 
 const BLOG_2 = {
 	text: "开发案例",
+	collapsed: true,
 	items: toItems("/blog/code", 30)
 };
 
 const BLOG_3 = {
 	text: "前端工具",
+	collapsed: true,
 	items: toItems("/blog/tools", 6)
 };
 
 const BLOG_4 = {
 	text: "前端框架",
+	collapsed: true,
 	items: toItems("/blog/view", 2)
 };
 
+const PAGE_0 = {
+	text: "前端文档",
+	link: "/page/",
+	collapsed: true,
+	items: toItems("/page", 2)
+};
+
 export default {
-	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3, BLOG_4]
+	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3],
+	"/page/": [PAGE_0]
 };
