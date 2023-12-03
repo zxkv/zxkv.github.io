@@ -9,6 +9,7 @@ export default defineConfig({
 	description: "ZXK Desc",
 	icon: "/rspress-icon.png",
 	logo: "/rspress-icon.png",
+	base: "/web",
 	// logo: {
 	// 	dark: "/rspress-icon",
 	// 	light: "/rspress-icon"
