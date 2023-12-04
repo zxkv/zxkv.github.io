@@ -30,14 +30,19 @@
 > -   React
 > -   React-Router
 > -   React Redux
-> -   Mobx
+> -   MobX
 > -   Create React App
 
-### 📊 可视化图表库
-
-> -   x
-
 ### 🔨 包管理工具
+
+> -   npm
+> -   npx
+> -   cnpm
+> -   yarn
+> -   pnpm
+> -   bun
+
+### 📊 可视化图表库
 
 > -   x
 

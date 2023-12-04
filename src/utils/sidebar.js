@@ -37,7 +37,7 @@ const PAGE_0 = {
 	text: "前端文档",
 	link: "/page/",
 	collapsed: true,
-	items: toItems("/page", 2)
+	items: toItems("/page", 3)
 };
 
 export default {

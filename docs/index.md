@@ -7,7 +7,7 @@ hero:
     tagline: 记录前端开发过程中遇到的问题及解决方案
     actions:
         - theme: brand
-          text: 开启博客
+          text: 博客笔记
           link: /blog/
         - theme: alt
           text: 技术文档

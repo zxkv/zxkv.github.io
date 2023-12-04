@@ -1,6 +1,6 @@
 {
 	"name": "web-doc",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"private": true,
 	"author": "zxkvv@qq.com",
 	"scripts": {
@@ -9,9 +9,9 @@
 		"preview": "rspress preview"
 	},
 	"dependencies": {
-		"rspress": "^1.7.5"
+		"rspress": "^1.8.0"
 	},
 	"devDependencies": {
-		"@types/node": "^20.10.2"
+		"@types/node": "^20.10.3"
 	}
 }
