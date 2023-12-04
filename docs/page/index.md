@@ -48,7 +48,12 @@
 
 ### 📹 视频播放器
 
-> -   x
+> -   XGPlayer
+> -   AliPlayer
+> -   TCPlayer
+> -   DPlayer
+> -   Plyr
+> -   ...
 
 ### 🔒 数据加密
 
