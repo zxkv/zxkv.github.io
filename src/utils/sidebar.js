@@ -4,6 +4,7 @@ const toItems = (path = "", count = 0) => {
 	return items;
 };
 
+// 博客
 const BLOG_0 = {
 	text: "博客简介",
 	link: "/blog/"
@@ -33,6 +34,31 @@ const BLOG_4 = {
 	items: toItems("/blog/view", 2)
 };
 
+// 笔记
+const NODE_0 = {
+	text: "笔记简介",
+	link: "/node/"
+};
+
+const NODE_1 = {
+	text: "CSS 相关",
+	collapsed: false,
+	items: toItems("/node/css", 9)
+};
+
+const NODE_2 = {
+	text: "JS 相关",
+	collapsed: true,
+	items: toItems("/node/", 1)
+};
+
+const NODE_3 = {
+	text: "代码示例",
+	collapsed: true,
+	items: toItems("/node/demo", 1)
+};
+
+// 文档
 const PAGE_0 = {
 	text: "前端文档",
 	link: "/page/",
@@ -42,5 +68,6 @@ const PAGE_0 = {
 
 export default {
 	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3],
+	"/node/": [NODE_0, NODE_1, NODE_2, NODE_3],
 	"/page/": [PAGE_0]
 };
