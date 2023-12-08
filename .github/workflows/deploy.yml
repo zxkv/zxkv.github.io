@@ -4,6 +4,9 @@ on:
     push:
         branches: [master]
 
+env: 
+  TZ: Asia/Shanghai # 设置当前环境时区
+
     workflow_dispatch:
 
 permissions:

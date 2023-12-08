@@ -29,6 +29,7 @@ export default defineConfig({
 		footer: {
 			message: "历尽千帆皆不是，守得云开见月明。"
 		},
+		enableContentAnimation: true,
 		lastUpdatedText: "上次更新时间",
 		lastUpdated: true /* 上次更新时间 */,
 		outlineTitle: "目录",
