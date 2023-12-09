@@ -55,7 +55,7 @@ const NODE_2 = {
 const NODE_3 = {
 	text: "代码示例",
 	collapsed: true,
-	items: toItems("/node/demo", 1)
+	items: toItems("/node/code", 11)
 };
 
 // 文档
@@ -67,7 +67,7 @@ const PAGE_0 = {
 };
 
 export default {
-	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3],
+	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3, BLOG_4],
 	"/node/": [NODE_0, NODE_1, NODE_2, NODE_3],
 	"/page/": [PAGE_0]
 };

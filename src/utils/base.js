@@ -12,14 +12,14 @@ const nav = [
 		activeMatch: "/node/"
 	},
 	{
-		text: "漂泊时光",
-		link: "/time/",
-		activeMatch: "/time/"
-	},
-	{
 		text: "开发文档",
 		link: "/page/",
 		activeMatch: "/page/"
+	},
+	{
+		text: "漂泊时光",
+		link: "/time/",
+		activeMatch: "/time/"
 	}
 ];
 
