@@ -6,14 +6,13 @@ import { builderConfig, nav, socialLinks } from "./src/utils/base";
 export default defineConfig({
 	root: path.join(__dirname, "docs"),
 	title: "下落香樟树",
-	description: "WEB 前端开发博客笔记",
+	description: "web、vue、js、JavaScript、下落香樟树",
 	icon: "/favicon.ico",
-	logo: "/rspress-icon.png",
+	logo: {
+		dark: "/dark-logo.png",
+		light: "/light-logo.png"
+	},
 	base: "/web",
-	// logo: {
-	// 	dark: "/rspress-dark-logo.png",
-	// 	light: "/rspress-light-logo.png"
-	// },
 	outDir: "doc_build",
 	route: {
 		cleanUrls: true
