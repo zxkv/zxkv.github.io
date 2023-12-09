@@ -1,4 +1,4 @@
-import { yuque } from "./icon";
+import { umami } from "./icon";
 
 const nav = [
 	{
@@ -25,6 +25,13 @@ const nav = [
 
 const socialLinks = [
 	{
+		icon: {
+			svg: umami
+		},
+		mode: "link",
+		content: "https://umami.is/"
+	},
+	{
 		icon: "github",
 		mode: "link",
 		content: "https://github.com/zxkv"
@@ -33,13 +40,6 @@ const socialLinks = [
 		icon: "juejin",
 		mode: "link",
 		content: "https://juejin.cn/user/184373682901309/posts"
-	},
-	{
-		icon: {
-			svg: yuque
-		},
-		mode: "link",
-		content: "https://www.yuque.com/zhangxiaokang"
 	}
 	// {
 	// 	icon: "wechat",
@@ -53,4 +53,19 @@ const socialLinks = [
 	// }
 ];
 
-export { nav, socialLinks };
+const builderConfig = {
+	html: {
+		tags: [
+			{
+				tag: "script",
+				attrs: {
+					async: true,
+					src: "https://us.umami.is/script.js",
+					"data-website-id": "209b81a6-1ae9-45ef-a598-32d09d0944bf"
+				}
+			}
+		]
+	}
+};
+
+export { builderConfig, nav, socialLinks };

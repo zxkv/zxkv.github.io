@@ -1,13 +1,13 @@
 import * as path from "path";
 import { defineConfig } from "rspress/config";
 import sidebar from "./src/utils/sidebar";
-import { nav, socialLinks } from "./src/utils/base";
+import { builderConfig, nav, socialLinks } from "./src/utils/base";
 
 export default defineConfig({
 	root: path.join(__dirname, "docs"),
 	title: "下落香樟树",
-	description: "前端开发笔记",
-	icon: "/rspress-icon.png",
+	description: "WEB 前端开发博客笔记",
+	icon: "/favicon.ico",
 	logo: "/rspress-icon.png",
 	base: "/web",
 	// logo: {
@@ -22,6 +22,7 @@ export default defineConfig({
 		showLineNumbers: true,
 		defaultWrapCode: true
 	},
+	builderConfig,
 	themeConfig: {
 		nav,
 		socialLinks,
