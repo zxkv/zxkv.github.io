@@ -18,20 +18,20 @@
 
 ### 🚄 Vue 文档
 
-> -   Vue
-> -   Vuex
-> -   Vue-Router
-> -   Pinia
-> -   Vue-CLI
-> -   Vite
+> -   Vue「✔」
+> -   Vuex「✔」
+> -   Vue-Router「✔」
+> -   Pinia「✔」
+> -   Vue-CLI「✔」
+> -   Vite「✔」
 
 ### 🚢 React 文档
 
-> -   React
-> -   React-Router
-> -   React Redux
+> -   React「✔」
+> -   React-Router「✔」
+> -   React Redux「✔」
 > -   MobX
-> -   Create React App
+> -   Create React App「✔」
 
 ### 🔨 包管理工具
 
@@ -44,21 +44,60 @@
 
 ### 📊 可视化图表库
 
-> -   x
+> -   ECharts「✔」
+> -   AntV「✔」
+> -   VisActor VChart「✔」
+> -   C3.js
+> -   D3.js
+> -   NVD3
+> -   ChartJS
+> -   Highcharts
+> -   Plotly
+> -   FusionCharts
+> -   amCharts
+> -   Chartist.js
+> -   Recharts
+> -   ZingChart
+> -   CanvasJS
+> -   TOAST UI Chart
+> -   AnyChart
 
 ### 📹 视频播放器
 
-> -   XGPlayer
-> -   AliPlayer
-> -   TCPlayer
-> -   DPlayer
+> -   XGPlayer「✔」
+> -   AliPlayer「✔」
+> -   TCPlayer「✔」
+> -   DPlayer「✔」
 > -   Plyr
-> -   ...
 
 ### 🔒 数据加密
 
-> -   x
+-   加密工具
 
-:::tip
-文档整理中...
-:::
+    -   MD5「✔」
+    -   BASE64「✔」
+    -   CryptoJS「✔」
+
+-   加密方式
+
+    -   哈希算法
+
+        -   MD5
+        -   SHA1
+        -   SHA3
+        -   SHA256
+        -   SHA224
+        -   HMAC
+
+    -   对称加密
+
+        -   AES
+        -   DES
+
+    -   流式加密
+
+        -   RC4
+
+    -   其它
+
+        -   BASE64
