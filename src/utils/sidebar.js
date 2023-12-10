@@ -31,7 +31,7 @@ const BLOG_3 = {
 const BLOG_4 = {
 	text: "前端框架",
 	collapsed: true,
-	items: toItems("/blog/view", 2)
+	items: toItems("/blog/view", 1)
 };
 
 // 笔记
