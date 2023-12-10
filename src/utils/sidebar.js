@@ -58,6 +58,18 @@ const NODE_3 = {
 	items: toItems("/node/code", 11)
 };
 
+const NODE_4 = {
+	text: "项目配置",
+	collapsed: true,
+	items: toItems("/node/dev", 3)
+};
+
+const NODE_5 = {
+	text: "工具配置",
+	collapsed: true,
+	items: toItems("/node/tools", 1)
+};
+
 // 文档
 const PAGE_0 = {
 	text: "前端文档",
@@ -68,6 +80,6 @@ const PAGE_0 = {
 
 export default {
 	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3, BLOG_4],
-	"/node/": [NODE_0, NODE_1, NODE_2, NODE_3],
+	"/node/": [NODE_0, NODE_1, NODE_2, NODE_3, NODE_4, NODE_5],
 	"/page/": [PAGE_0]
 };
