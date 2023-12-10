@@ -3,7 +3,7 @@ export default function NotFound() {
 		<>
 			<center>
 				<br />
-				<img src="/404.png" title="Page Not Found" alt="404" draggable="false" />
+				<img src="./404.png" title="Page Not Found" alt="404" draggable="false" />
 				<p>抱歉，您访问的页面不存在</p>
 				<br />
 				<a href="/web">
