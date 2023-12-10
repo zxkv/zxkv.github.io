@@ -15,11 +15,12 @@ export default defineConfig({
 	base: "/web",
 	outDir: "doc_build",
 	route: {
-		cleanUrls: true
+		cleanUrls: true,
+		include: ["404"]
 	},
 	markdown: {
 		showLineNumbers: true,
-		defaultWrapCode: true
+		defaultWrapCode: false
 	},
 	builderConfig,
 	themeConfig: {
