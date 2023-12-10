@@ -15,7 +15,9 @@ export default defineConfig({
 	base: "/web",
 	outDir: "doc_build",
 	route: {
-		cleanUrls: true
+		cleanUrls: true,
+		exclude: ["error"],
+		include: []
 	},
 	markdown: {
 		showLineNumbers: true,
