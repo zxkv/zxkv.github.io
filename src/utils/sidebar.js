@@ -49,7 +49,7 @@ const NODE_1 = {
 const NODE_2 = {
 	text: "JS 相关",
 	collapsed: true,
-	items: toItems("/node/js", 13)
+	items: toItems("/node/js", 14)
 };
 
 const NODE_3 = {
