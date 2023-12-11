@@ -29,7 +29,7 @@ const BLOG_3 = {
 };
 
 const BLOG_4 = {
-	text: "前端框架",
+	text: "框架工具",
 	collapsed: true,
 	items: toItems("/blog/view", 1)
 };
