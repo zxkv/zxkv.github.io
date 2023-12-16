@@ -11,7 +11,7 @@ const BLOG_0 = {
 };
 
 const BLOG_1 = {
-	text: "插件依赖",
+	text: "开发插件",
 	collapsed: false,
 	items: toItems("/blog/plugin", 3)
 };
