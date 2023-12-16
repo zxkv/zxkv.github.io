@@ -68,7 +68,6 @@ const builderConfig = {
 	},
 	dev: {
 		progressBar: true
-		// startUrl: "http://localhost:8080"
 	},
 	server: {
 		strictPort: true

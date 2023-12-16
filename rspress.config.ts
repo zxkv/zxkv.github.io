@@ -19,6 +19,11 @@ export default defineConfig({
 		exclude: [],
 		include: []
 	},
+	mediumZoom: {
+		options: {
+			background: "#00000080"
+		}
+	},
 	markdown: {
 		showLineNumbers: true,
 		defaultWrapCode: false
