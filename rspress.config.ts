@@ -12,7 +12,7 @@ export default defineConfig({
 		dark: "/dark-logo.png",
 		light: "/light-logo.png"
 	},
-	base: "/web",
+	base: "/",
 	outDir: "doc_build",
 	route: {
 		cleanUrls: true,
