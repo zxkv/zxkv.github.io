@@ -5906,7 +5906,7 @@ packages:
     engines: {node: '>=10.13.0'}
     dependencies:
       glob-to-regexp: 0.4.1
-      graceful-fs: 4.2.11
+      graceful-fs: 4.2.10
     dev: false
 
   /wcwidth@1.0.1:
