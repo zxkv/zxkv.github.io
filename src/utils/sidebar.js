@@ -19,7 +19,7 @@ const BLOG_1 = {
 const BLOG_2 = {
 	text: "开发案例",
 	collapsed: true,
-	items: toItems("/blog/code", 30)
+	items: toItems("/blog/code", 31)
 };
 
 const BLOG_3 = {
