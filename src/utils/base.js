@@ -1,4 +1,4 @@
-import { umami } from "./icon";
+import { umami, code } from "./icon";
 
 const nav = [
 	{
@@ -25,6 +25,13 @@ const socialLinks = [
 		},
 		mode: "link",
 		content: "https://umami.is/"
+	},
+	{
+		icon: {
+			svg: code
+		},
+		mode: "link",
+		content: "https://zxkv.github.io/v2case"
 	},
 	{
 		icon: "github",
