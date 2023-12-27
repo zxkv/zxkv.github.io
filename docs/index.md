@@ -31,7 +31,7 @@ features:
     - title: 人生旅途
       details: 保持自己的初心，探索未知的旅途。
       icon: 🚲
-    - title: 文档归类
-      details: 规整收藏多年的文档资源，便于后续查阅学习。
-      icon: 🔥
+    - title: 案例模板
+      details: 查阅文档，翻阅笔记，编写符合需求的案例。
+      icon: ☀️
 ---

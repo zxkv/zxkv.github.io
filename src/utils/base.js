@@ -1,4 +1,4 @@
-import { umami, code } from "./icon";
+import { umami, vue } from "./icon";
 
 const nav = [
 	{
@@ -15,6 +15,10 @@ const nav = [
 		text: "开发文档",
 		link: "/page/",
 		activeMatch: "/page/"
+	},
+	{
+		text: "案例模板",
+		link: "https://zxkv.github.io/v2case"
 	}
 ];
 
@@ -25,13 +29,6 @@ const socialLinks = [
 		},
 		mode: "link",
 		content: "https://umami.is/"
-	},
-	{
-		icon: {
-			svg: code
-		},
-		mode: "link",
-		content: "https://zxkv.github.io/v2case"
 	},
 	{
 		icon: "github",
