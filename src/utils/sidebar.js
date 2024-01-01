@@ -1,4 +1,4 @@
-import { blog, node, page } from "../../docs/count";
+import { blog, node, page } from "../../count";
 
 const toItems = (path = "", count = 0) => {
 	let items = [];

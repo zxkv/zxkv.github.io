@@ -1,4 +1,4 @@
-import { umami, vue } from "./icon";
+import { umami } from "./icon";
 
 const nav = [
 	{
@@ -41,15 +41,15 @@ const socialLinks = [
 		content: "https://juejin.cn/user/184373682901309/posts"
 	}
 	// {
+	// 	icon: "qq",
+	// 	mode: "img",
+	// 	content: "/qq.jpg"
+	// }
+	// {
 	// 	icon: "wechat",
 	// 	mode: "text",
 	// 	content: "微信号xxx"
 	// },
-	// {
-	// 	icon: "qq",
-	// 	mode: "img",
-	// 	content: "/qrcode.png"
-	// }
 ];
 
 const builderConfig = {
