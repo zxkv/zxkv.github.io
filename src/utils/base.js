@@ -2,7 +2,7 @@ import { umami, vue } from "./icon";
 
 const nav = [
 	{
-		text: "博客日志",
+		text: "前端播客",
 		link: "/blog/",
 		activeMatch: "/blog/"
 	},
@@ -12,7 +12,7 @@ const nav = [
 		activeMatch: "/node/"
 	},
 	{
-		text: "开发文档",
+		text: "前端文档",
 		link: "/page/",
 		activeMatch: "/page/"
 	},
