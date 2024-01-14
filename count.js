@@ -15,5 +15,5 @@ export const node = {
 };
 // 文档
 export const page = {
-	index: 4
+	index: 5
 };
