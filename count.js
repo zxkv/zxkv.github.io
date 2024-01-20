@@ -1,4 +1,4 @@
-// 播客
+// 博客
 export const blog = {
 	code: 33,
 	plugin: 3,

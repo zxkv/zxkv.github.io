@@ -6,7 +6,7 @@
 
 ## 博客相关
 
-播客地址：[zxkv.github.io](https://zxkv.github.io/)
+博客地址：[zxkv.github.io](https://zxkv.github.io/)
 
 <img src="./asset/web.webp" width="100%" />
 

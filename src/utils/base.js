@@ -2,7 +2,7 @@ import { umami } from "./icon";
 
 const nav = [
 	{
-		text: "前端播客",
+		text: "前端博客",
 		link: "/blog/",
 		activeMatch: "/blog/"
 	},
