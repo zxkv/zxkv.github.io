@@ -59,6 +59,13 @@ const builderConfig = {
 				tag: "script",
 				attrs: {
 					async: true,
+					src: "https://hm.baidu.com/hm.js?5a3704f91406d157b37ff3c4fe31cbdc"
+				}
+			},
+			{
+				tag: "script",
+				attrs: {
+					async: true,
 					src: "https://us.umami.is/script.js",
 					"data-website-id": "209b81a6-1ae9-45ef-a598-32d09d0944bf"
 				}
