@@ -3,7 +3,7 @@ export const blog = {
 	code: 33,
 	plugin: 3,
 	tools: 6,
-	view: 1
+	view: 2
 };
 // 笔记
 export const node = {

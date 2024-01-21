@@ -8,10 +8,14 @@
 
 博客地址：[zxkv.github.io](https://zxkv.github.io/)
 
+## 前端案例
+
+前端案例：[Vue2Case](https://zxkv.github.io/v2case/)
+
 <img src="./asset/web.webp" width="100%" />
 
 ## 联系方式
 
-<zxkang@88.com>
+<zxkvv@qq.com>
 
 <img src="./asset/qq.webp" width='256'/>
