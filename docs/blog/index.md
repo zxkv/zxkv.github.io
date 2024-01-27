@@ -1,5 +1,11 @@
 # 我的博客
 
+### 博客地址
+
+-   Gitee：[zxkv.gitee.io](https://zxkv.gitee.io/)「🚀 国内镜像，速度优先」
+-   Github：[zxkv.github.io](https://zxkv.github.io/)「🔥 主推更新」
+-   Rander：[zxkv.onrender.com](https://zxkv.onrender.com/)「🌍 CDN 加持」
+
 ### 博客简介
 
 &emsp;&emsp;博客记录的是做 **Web 前端开发工程师** 这几年在项目开发过程中所遇到的问题以及对应的解决方案。在完成工作之余，对这一阶段的技术难点和问题做分析和总结，以博客或笔记的形式做笔记记录。

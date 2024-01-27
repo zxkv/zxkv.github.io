@@ -2,12 +2,12 @@ import { umami } from "./icon";
 
 const nav = [
 	{
-		text: "前端博客",
+		text: "博客笔记",
 		link: "/blog/",
 		activeMatch: "/blog/"
 	},
 	{
-		text: "前端笔记",
+		text: "开发笔记",
 		link: "/node/",
 		activeMatch: "/node/"
 	},
@@ -17,16 +17,21 @@ const nav = [
 		activeMatch: "/page/"
 	},
 	{
-		text: "Gitee 博客",
-		link: "https://zxkv.gitee.io"
-	},
-	{
-		text: "GitHub 博客",
-		link: "https://zxkv.github.io"
-	},
-	{
-		text: "Rander 博客",
-		link: "https://zxkv.onrender.com"
+		text: "博客镜像",
+		items: [
+			{
+				text: "Gitee博客",
+				link: "https://zxkv.gitee.io"
+			},
+			{
+				text: "GitHub博客",
+				link: "https://zxkv.github.io"
+			},
+			{
+				text: "Render博客",
+				link: "https://zxkv.onrender.com"
+			}
+		]
 	}
 ];
 
@@ -48,16 +53,6 @@ const socialLinks = [
 		mode: "link",
 		content: "https://juejin.cn/user/184373682901309/posts"
 	}
-	// {
-	// 	icon: "qq",
-	// 	mode: "img",
-	// 	content: "/qq.jpg"
-	// }
-	// {
-	// 	icon: "wechat",
-	// 	mode: "text",
-	// 	content: "微信号xxx"
-	// },
 ];
 
 const builderConfig = {
