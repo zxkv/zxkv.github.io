@@ -17,8 +17,16 @@ const nav = [
 		activeMatch: "/page/"
 	},
 	{
-		text: "案例模板",
-		link: "https://zxkv.github.io/v2case"
+		text: "Gitee 博客",
+		link: "https://zxkv.gitee.io"
+	},
+	{
+		text: "GitHub 博客",
+		link: "https://zxkv.github.io"
+	},
+	{
+		text: "Rander 博客",
+		link: "https://zxkv.onrender.com"
 	}
 ];
 

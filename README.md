@@ -4,13 +4,13 @@
 
 个人前端开发博客，记录前端开发过程中遇到的问题及解决方案。
 
-## 博客相关
+## 博客地址
 
-博客地址：[zxkv.github.io](https://zxkv.github.io/)
+-   Gitee Blog：[zxkv.gitee.io](https://zxkv.gitee.io/)
+-   GitHub Blog：[zxkv.github.io](https://zxkv.github.io/)
+-   Rander Blog：[zxkv.onrender.com](https://zxkv.onrender.com/)
 
-## 前端案例
-
-前端案例：[Vue2Case](https://zxkv.github.io/v2case/)
+## 博客示例
 
 <img src="./asset/web.webp" width="100%" />
 
