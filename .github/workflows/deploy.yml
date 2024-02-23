@@ -15,7 +15,7 @@ concurrency:
     group: pages
     cancel-in-progress: false
 
-env: 
+env:
     TZ: Asia/Shanghai # 设置当前环境时区
 
 jobs:
@@ -34,14 +34,14 @@ jobs:
               uses: actions/setup-node@v3
               with:
                   node-version: 18
-                  cache: pnpm
+                  cache: yarn
             - name: Setup Pages
               uses: actions/configure-pages@v3
             - name: Install dependencies
-              run: pnpm install
+              run: yarn install
             - name: Build with Rspress
               run: |
-                  pnpm run build
+                  yarn run build
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v2
               with:
