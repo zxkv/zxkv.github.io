@@ -34,12 +34,12 @@ export default defineConfig({
 		socialLinks,
 		sidebar,
 		footer: {
-			message: "历尽千帆皆不是，守得云开见月明。"
+			message: `©2023-${new Date().getFullYear()} Create By ❤️ 下落香樟树`
 		},
 		enableContentAnimation: true,
 		lastUpdatedText: "上次更新时间",
 		lastUpdated: true /* 上次更新时间 */,
-		outlineTitle: "目录",
+		outlineTitle: "目 录",
 		prevPageText: "上一篇",
 		nextPageText: "下一篇"
 	}

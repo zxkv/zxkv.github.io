@@ -7,7 +7,7 @@ const nav = [
 		activeMatch: "/blog/"
 	},
 	{
-		text: "开发笔记",
+		text: "前端笔记",
 		link: "/node/",
 		activeMatch: "/node/"
 	},
@@ -20,15 +20,15 @@ const nav = [
 		text: "博客镜像",
 		items: [
 			{
-				text: "Gitee博客",
+				text: "Gitee",
 				link: "https://zxkv.gitee.io"
 			},
 			{
-				text: "GitHub博客",
+				text: "GitHub",
 				link: "https://zxkv.github.io"
 			},
 			{
-				text: "Render博客",
+				text: "Render",
 				link: "https://zxkv.onrender.com"
 			}
 		]
