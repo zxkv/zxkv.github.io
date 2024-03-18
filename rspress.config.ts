@@ -8,10 +8,11 @@ export default defineConfig({
 	title: "下落香樟树",
 	description: "下落香樟树、web前端、前端开发、vue、react、js、JavaScript",
 	icon: "/favicon.ico",
-	logo: {
-		dark: "/dark-logo.png",
-		light: "/light-logo.png"
-	},
+	logo: "/rspress-icon.png",
+	// logo: {
+	// 	dark: "/dark-logo.png",
+	// 	light: "/light-logo.png"
+	// },
 	base: "/",
 	outDir: "doc_build",
 	route: {
