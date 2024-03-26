@@ -41,7 +41,7 @@ const socialLinks = [
 			svg: umami
 		},
 		mode: "link",
-		content: "https://umami.is/"
+		content: "https://umami.is"
 	},
 	{
 		icon: "github",
@@ -58,13 +58,6 @@ const socialLinks = [
 const builderConfig = {
 	html: {
 		tags: [
-			{
-				tag: "script",
-				attrs: {
-					async: true,
-					src: "https://hm.baidu.com/hm.js?5a3704f91406d157b37ff3c4fe31cbdc"
-				}
-			},
 			{
 				tag: "script",
 				attrs: {
