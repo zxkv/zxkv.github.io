@@ -1,6 +1,5 @@
 import * as path from "path";
 import { defineConfig } from "rspress/config";
-import { pluginVue } from "@rsbuild/plugin-vue";
 import { pluginOpenGraph } from "rsbuild-plugin-open-graph";
 import sidebar from "./src/utils/sidebar";
 import { builderConfig, nav, socialLinks } from "./src/utils/base";
@@ -47,7 +46,6 @@ export default defineConfig({
 		nextPageText: "下一篇"
 	},
 	builderPlugins: [
-		pluginVue(),
 		pluginOpenGraph({
 			title: "下落香樟树 - 前端博客",
 			type: "website",
