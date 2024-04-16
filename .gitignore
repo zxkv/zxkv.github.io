@@ -26,6 +26,4 @@ dist-ssr
 # Lock file
 # *yarn.lock
 *package-lock.json
-*bun.lockb
-.yarn*
-.pnp*
+#*bun.lockb

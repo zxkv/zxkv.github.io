@@ -42,13 +42,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: yarn # 或 npm / pnpm / yarn
+          cache: bun # 或 npm / pnpm / yarn
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: yarn install # 或 npm ci / pnpm install / yarn install / bun install
+        run: bun install # 或 npm ci / pnpm install / yarn install / bun install
       - name: Build with VitePress
-        run: yarn build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+        run: bun build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
