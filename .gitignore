@@ -27,3 +27,5 @@ dist-ssr
 # *yarn.lock
 *package-lock.json
 *bun.lockb
+.yarn*
+.pnp*

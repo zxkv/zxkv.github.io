@@ -9,10 +9,10 @@
 		"preview": "rspress preview"
 	},
 	"dependencies": {
-		"rspress": "^1.17.1"
+		"rspress": "^1.18.1"
 	},
 	"devDependencies": {
-		"@types/node": "^20.12.5",
+		"@types/node": "^20.12.7",
 		"rsbuild-plugin-open-graph": "^1.0.0"
 	}
 }
