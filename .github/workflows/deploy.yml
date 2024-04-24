@@ -1,4 +1,4 @@
-# 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
+# 构建 Rspress 站点并将其部署到 GitHub Pages 的示例工作流程
 #
 name: Deploy Rspress site to Pages
 
@@ -42,13 +42,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: bun # 或 npm / pnpm / yarn
+          cache: pnpm # 或 npm / pnpm / yarn
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: bun install # 或 npm ci / pnpm install / yarn install / bun install
-      - name: Build with VitePress
-        run: bun build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+        run: pnpm install # 或 npm ci / pnpm install / yarn install / bun install
+      - name: Build with Rspress
+        run: pnpm build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
