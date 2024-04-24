@@ -7,7 +7,7 @@ export const blog = {
 };
 // 笔记
 export const node = {
-	code: 12,
+	code: 13,
 	css: 9,
 	js: 14,
 	dev: 3,
