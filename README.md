@@ -14,12 +14,6 @@
 -   GitHub Blog：[zxkv.github.io](https://zxkv.github.io/)
 -   Rander Blog：[zxkv.onrender.com](https://zxkv.onrender.com/)
 
-## 博客示例
-
-<img src="./asset/web.webp" width="100%" />
-
 ## 联系方式
 
 <zxkvv@qq.com>
-
-<img src="./asset/qq.webp" width='256'/>
