@@ -7,19 +7,13 @@ import { builderConfig, nav, socialLinks } from "./src/utils/base";
 export default defineConfig({
 	root: path.join(__dirname, "docs"),
 	title: "下落香樟树",
-	description: "下落香樟树、web前端、前端开发、vue、react、js、JavaScript",
+	description: "zxkv、前端开发、vue、react、js、JavaScript",
 	icon: "/favicon.ico",
 	logo: "/rspress-icon.png",
-	// logo: {
-	// 	dark: "/dark-logo.png",
-	// 	light: "/light-logo.png"
-	// },
 	base: "/",
 	outDir: "doc_build",
 	route: {
-		cleanUrls: true,
-		exclude: [],
-		include: []
+		cleanUrls: true
 	},
 	mediumZoom: {
 		options: {
