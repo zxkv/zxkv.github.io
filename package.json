@@ -12,6 +12,7 @@
 		"rspress": "^1.19.0"
 	},
 	"devDependencies": {
+		"@rspress/mdx-rs-darwin-x64": "^0.5.4",
 		"@types/node": "^20.12.7",
 		"rsbuild-plugin-open-graph": "^1.0.0"
 	}
