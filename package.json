@@ -11,11 +11,13 @@
 	"dependencies": {
 		"rspress": "^1.19.0",
 		"rspress-plugin-file-tree": "^0.4.0",
+		"rspress-plugin-live2d": "^0.3.0",
 		"rspress-plugin-reading-time": "^0.3.0"
 	},
 	"devDependencies": {
 		"@rspress/mdx-rs": "^0.5.4",
 		"@types/node": "^20.12.7",
-		"rsbuild-plugin-open-graph": "^1.0.0"
+		"rsbuild-plugin-open-graph": "^1.0.0",
+		"rspress-plugin-font-open-sans": "^1.0.0"
 	}
 }
