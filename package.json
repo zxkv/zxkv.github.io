@@ -9,7 +9,9 @@
 		"preview": "rspress preview"
 	},
 	"dependencies": {
-		"rspress": "^1.19.0"
+		"rspress": "^1.19.0",
+		"rspress-plugin-file-tree": "^0.4.0",
+		"rspress-plugin-reading-time": "^0.3.0"
 	},
 	"devDependencies": {
 		"@rspress/mdx-rs": "^0.5.4",

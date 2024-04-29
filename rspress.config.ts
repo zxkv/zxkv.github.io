@@ -1,11 +1,14 @@
 import * as path from "path";
 import { defineConfig } from "rspress/config";
+import fileTree from "rspress-plugin-file-tree";
+import readingTime from "rspress-plugin-reading-time";
 import { pluginOpenGraph } from "rsbuild-plugin-open-graph";
 import sidebar from "./src/utils/sidebar";
 import { builderConfig, nav, socialLinks } from "./src/utils/base";
 
 export default defineConfig({
 	root: path.join(__dirname, "docs"),
+	plugins: [fileTree(), readingTime()],
 	title: "下落香樟树",
 	description: "zxkv、前端开发、vue、react、js、JavaScript",
 	icon: "/favicon.ico",
