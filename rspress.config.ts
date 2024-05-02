@@ -1,7 +1,6 @@
 import * as path from "path";
 import { defineConfig } from "rspress/config";
 // plugins
-import live2d from "rspress-plugin-live2d";
 import fileTree from "rspress-plugin-file-tree";
 import readingTime from "rspress-plugin-reading-time";
 import { pluginOpenGraph } from "rsbuild-plugin-open-graph";
@@ -13,21 +12,6 @@ import { builderConfig, nav, socialLinks } from "./src/utils/base";
 export default defineConfig({
 	root: path.join(__dirname, "docs"),
 	plugins: [
-		live2d({
-			menus: {
-				disable: true
-			},
-			models: [
-				{
-					path: "https://model.oml2d.com/cat-black/model.json",
-					scale: 0.15,
-					position: [0, 20],
-					stageStyle: {
-						height: 350
-					}
-				}
-			]
-		}),
 		fileTree(),
 		readingTime({
 			defaultLocale: "zh-CN"
