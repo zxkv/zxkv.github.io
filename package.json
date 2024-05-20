@@ -9,13 +9,13 @@
 		"preview": "rspress preview"
 	},
 	"dependencies": {
-		"rspress": "^1.20.0",
+		"rspress": "^1.21.0",
 		"rspress-plugin-file-tree": "^0.4.0",
 		"rspress-plugin-reading-time": "^0.3.0"
 	},
 	"devDependencies": {
-		"@rspress/mdx-rs": "^0.5.5",
-		"@types/node": "^20.12.11",
+		"@rspress/mdx-rs": "^0.5.7",
+		"@types/node": "^20.12.12",
 		"rsbuild-plugin-open-graph": "^1.0.0",
 		"rspress-plugin-font-open-sans": "^1.0.0"
 	}
