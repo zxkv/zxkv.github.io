@@ -3,6 +3,7 @@
 ### 博客地址
 
 -   Rander：[zxkv.onrender.com](https://zxkv.onrender.com/)「🌍 CDN 加持」
+-   zeabur：[zxk.zeabur.app](https://zxk.zeabur.app/)「🆕 新增部署」
 -   Gitee：[zxkv.gitee.io](https://zxkv.gitee.io/)「🚀 国内镜像，速度优先」(近期无法访问)
 -   Github：[zxkv.github.io](https://zxkv.github.io/)「🔥 持续更新」
 
