@@ -10,7 +10,7 @@ export const node = {
 	code: 14,
 	css: 9,
 	js: 14,
-	dev: 3,
+	dev: 4,
 	tools: 1
 };
 // 文档
