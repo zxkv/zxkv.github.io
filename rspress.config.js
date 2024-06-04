@@ -3,8 +3,9 @@ import { defineConfig } from "rspress/config";
 // plugins
 import fileTree from "rspress-plugin-file-tree";
 import readingTime from "rspress-plugin-reading-time";
-import { pluginOpenGraph } from "rsbuild-plugin-open-graph";
 import { pluginFontOpenSans } from "rspress-plugin-font-open-sans";
+import { pluginOpenGraph } from "rsbuild-plugin-open-graph";
+import { pluginImageCompress } from "@rsbuild/plugin-image-compress";
 
 import sidebar from "./src/utils/sidebar";
 import { builderConfig, nav, socialLinks } from "./src/utils/base";
@@ -16,12 +17,13 @@ export default defineConfig({
 		readingTime({
 			defaultLocale: "zh-CN"
 		}),
-		pluginFontOpenSans()
+		pluginFontOpenSans(),
+		pluginImageCompress()
 	],
 	title: "下落香樟树",
 	description: "zxkv、前端开发、vue、react、js、JavaScript",
-	icon: "/favicon.ico",
-	logo: "/rspress-icon.png",
+	icon: "/icon.png",
+	logo: "/logo.png",
 	base: "/",
 	outDir: "doc_build",
 	route: {

@@ -20,16 +20,16 @@ const nav = [
 		text: "博客镜像",
 		items: [
 			{
-				text: "Gitee",
-				link: "https://zxkv.gitee.io"
+				text: "Render",
+				link: "https://zxkv.onrender.com"
 			},
 			{
 				text: "GitHub",
 				link: "https://zxkv.github.io"
 			},
 			{
-				text: "Render",
-				link: "https://zxkv.onrender.com"
+				text: "Gitee",
+				link: "https://zxkv.gitee.io"
 			}
 		]
 	}
@@ -56,6 +56,9 @@ const socialLinks = [
 ];
 
 const builderConfig = {
+	output: {
+		legalComments: "none"
+	},
 	html: {
 		tags: [
 			{
