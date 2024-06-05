@@ -36,7 +36,8 @@ export default defineConfig({
 	},
 	markdown: {
 		showLineNumbers: true,
-		defaultWrapCode: false
+		defaultWrapCode: false,
+		globalComponents: [path.join(__dirname, "src/components/Alert.jsx"), path.join(__dirname, "src/components/Tabs.jsx")]
 	},
 	builderConfig,
 	themeConfig: {
