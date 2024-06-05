@@ -24,6 +24,10 @@ const nav = [
 				link: "https://zxkv.onrender.com"
 			},
 			{
+				text: "zeabur",
+				link: "https://zxk.zeabur.app"
+			},
+			{
 				text: "GitHub",
 				link: "https://zxkv.github.io"
 			},
