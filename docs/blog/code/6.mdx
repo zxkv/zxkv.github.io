@@ -9,9 +9,11 @@ description: iOS 端橡皮回弹效果
 
 ### 方案一：使用 inobounce.js
 
--   **inobounce.js**  [github 地址](https://github.com/lazd/iNoBounce)
+-   源代码如下：
 
-&ensp;&ensp;在 html 主页面的 **header** 标签中引入 **inbounce.js**，即 **<script src="./\*\***inbounce.js\***\*"></script>** 。当引入此文件之后，iOS 端整个页面都无法滑动或滚动，若想滚动的元素能够实现滚动效果，则需要对滚动区域设置固定的高度，即 **height**、**max-height**，同时也要设置 **overflow: auto，** 实现页面滑动。为防止 iOS 端页面滚动发生卡顿现象，需要对滚动区域设置  **-webkit-overflow-scrolling: touch** 属性。
+    <Source value="https://github.com/lazd/iNoBounce" />
+
+&emsp;&emsp;在 html 主页面的 **header** 标签中引入 **inbounce.js**，即 **<script src="./\*\***inbounce.js\***\*"></script>** 。当引入此文件之后，iOS 端整个页面都无法滑动或滚动，若想滚动的元素能够实现滚动效果，则需要对滚动区域设置固定的高度，即 **height**、**max-height**，同时也要设置 **overflow: auto，** 实现页面滑动。为防止 iOS 端页面滚动发生卡顿现象，需要对滚动区域设置  **-webkit-overflow-scrolling: touch** 属性。
 
 ```html title="HTML Demo"
 <!DOCTYPE html>

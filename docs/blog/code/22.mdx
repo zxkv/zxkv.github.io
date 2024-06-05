@@ -10,22 +10,21 @@ description: VantUI 移动端适配
 ### 转换工具
 
 -   [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem) 是一款 postcss 插件，用于将单位转化为 rem
+
+    <Source value="https://github.com/cuth/postcss-pxtorem" />
+
 -   [lib-flexible](https://github.com/amfe/lib-flexible) 用于设置 rem 基准值
+
+    <Source value="https://github.com/amfe/lib-flexible" />
 
 ### 插件安装
 
-使用  **npm** 或者  **yarn** 进行安装
+-   [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)
 
-```bash title="插件安装"
-yarn add postcss-pxtorem --save-dev
-// or
-npm install postcss-pxtorem --save-dev
+    <Install value="install postcss-pxtorem -D" />
 
-yarn add lib-flexible --save
-// or
-npm install lib-flexible --save
-
-```
+-   [lib-flexible](https://github.com/amfe/lib-flexible)
+    <Install value="install lib-flexible -S" />
 
 ### PostCSS 配置
 
@@ -62,7 +61,7 @@ module.exports = {
 
 ### Rem 基准值设置
 
--   在入口文件 **main.js** 顶部添加   `import "amfe-flexible`
+-   在入口文件 **main.js** 顶部添加   `import "amfe-flexible";`
 
 ### CSS 样式编写
 

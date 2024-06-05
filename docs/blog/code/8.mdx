@@ -14,22 +14,16 @@ description: 文件压缩下载
 ### 🍉：安装插件
 
 -   [**jszip**](https://stuk.github.io/jszip/)
+-   <Source value="https://stuk.github.io/jszip" />
 
-```bash title="插件安装"
-yarn add jszip
-// or
-npm install jszip --save
-```
+<Install value="install jszip" />
 
 【 注 】：生成压缩文件，详细用法请点击上述超链接。
 
 -   [**file-saver**](https://github.com/eligrey/FileSaver.js#readme)
+-   <Source value="https://github.com/eligrey/FileSaver.js#readme" />
 
-```bash title="插件安装"
-yarn add file-saver
-// or
-npm install file-saver --save
-```
+<Install value="install file-saver" />
 
 【 注 】：保存文件用的，可以保存流文件、canvas、文本等。
 
@@ -116,7 +110,3 @@ FileSaver saveAs(Blob/File/Url, optional DOMString filename, optional Object { a
 ### 🐒：总结
 
 &emsp;&emsp;文件处理，在后台管理系统中还是比较常见的，使用的频率相对来说也是比较高的。此次笔记只为记录开发过程中遇到的问题以及处理问题的方法和思路。此次之所以会想到此中办法，主要是无意间翻看到了 **Angular** 的一个中文网站 [ng-alain](https://ng-alain.com/zh)，无意间在该网站的组件模块中看到了 zip 文件下载的组件。因此想着在 vue 项目中尝试着使用 jszip 等依赖来实现文件链接的批量打包下载以及文件的重命名保存等功能。
-
-&emsp;&emsp;此次笔记到此就要告一段落了，若有疑问请邮件联系！🍎
-
-&emsp;&emsp;📮：<zxkvv@qq.com>

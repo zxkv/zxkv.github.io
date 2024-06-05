@@ -17,34 +17,33 @@ description: husky、prettier、eslint 代码格式化
 
 #### 依赖安装一
 
-```bash title="安装插件"
-yarn add eslint -D
-
-yarn add prettier -D
-
-yarn add husky -D
-
-yarn add lint-staged -D
-```
-
 -   **"eslint": "^7.32.0"**
+
+    <Install value="install eslint -D" />
+
 -   **"prettier": "^2.4.1"**
+
+    <Install value="install prettier -D" />
+
 -   **"husky": "^8.0.0"**
+
+    <Install value="install husky -D" />
+
 -   **"lint-staged": "^11.1.2"**
+    <Install value="install lint-staged -D" />
 
 #### 依赖安装二
 
-```bash title="安装插件"
-yarn add eslint-config-prettier -D
-
-yarn add eslint-plugin-prettier -D
-
-yarn add eslint-plugin-vue -D
-```
-
 -   **"eslint-config-prettier": "^8.3.0"**
+
+    <Install value="install eslint-config-prettier -D" />
+
 -   **"eslint-plugin-prettier": "^4.0.0"**
+
+    <Install value="install eslint-plugin-prettier -D" />
+
 -   **"eslint-plugin-vue": "^9.19.2"**
+    <Install value="install eslint-plugin-vue -D" />
 
 ### 校验规则
 
@@ -102,7 +101,7 @@ module.exports = {
 
 #### 忽略校验文件：.eslintignore
 
-```jsx title="忽略校验文件"
+```bash title="忽略校验文件"
 .hbuilderx
 .husky
 .vscode
@@ -121,7 +120,7 @@ wxcomponents
 
 #### 格式化规则文件：prettier.config.js
 
-```jsx title="格式化规则"
+```js title="格式化规则"
 module.exports = {
 	printWidth: 140,
 	tabWidth: 4,
@@ -145,7 +144,7 @@ module.exports = {
 
 #### 格式化忽略文件：.prettierignore
 
-```jsx title="格式化忽略文件"
+```bash title="格式化忽略文件"
 **/.hbuilderx
 **/.husky
 **/.vscode
@@ -199,14 +198,14 @@ manifest.json
 }
 ```
 
-1. 安装 **husky** 依赖
-2. 初始化 **husky**
-    1. **npx husky-init && yarn**
-3. 执行 **prepare install**
-4. 并添加命令到 **package.json**
-    1. npm set-script prepare "husky install"
-5. 创建钩子
-    1. **npx husky add .husky/pre-commit "npm run lint"**
+1.  安装 **husky** 依赖
+2.  初始化 **husky**
+    -   `npx husky-init && yarn`
+3.  执行 `prepare install`
+4.  并添加命令到 **package.json**
+    -   `npm set-script prepare "husky install"`
+5.  创建钩子
+    -   `npx husky add .husky/pre-commit "npm run lint"`
 
 #### husky 文件下 pre-commit 文件配置
 
