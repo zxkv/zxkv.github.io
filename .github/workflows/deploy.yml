@@ -37,18 +37,18 @@ jobs:
               with:
                   fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
             #- uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消注释
-            - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
+            # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
             - name: Setup Node
               uses: actions/setup-node@v4
               with:
                   node-version: 20
-                  cache: bun # 或 npm / pnpm / yarn
+                  cache: yarn # 或 npm / pnpm / yarn
             - name: Setup Pages
               uses: actions/configure-pages@v5
             - name: Install dependencies
-              run: bun install # 或 npm ci / pnpm install / yarn install / bun install
+              run: yarn install # 或 npm ci / pnpm install / yarn install / bun install
             - name: Build with Rspress
-              run: bun run build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+              run: yarn run build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:

@@ -30,11 +30,11 @@ const nav = [
 			{
 				text: "GitHub",
 				link: "https://zxkv.github.io"
-			},
-			{
-				text: "Gitee",
-				link: "https://zxkv.gitee.io"
 			}
+			// {
+			// 	text: "Gitee",
+			// 	link: "https://zxkv.gitee.io"
+			// }
 		]
 	}
 ];
