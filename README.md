@@ -9,7 +9,6 @@
 -   Rander Blog：[zxkv.onrender.com](https://zxkv.onrender.com/)「🌍 CDN 加持」
 -   zeabur Blog：[zxkv.onrender.com](https://zxk.zeabur.app/)「🆕 新增部署」
 -   GitHub Blog：[zxkv.github.io](https://zxkv.github.io/)「🚀 国内镜像，速度优先」(近期无法访问)
--   Gitee Blog：[zxkv.gitee.io](https://zxkv.gitee.io/)「🔥 持续更新」
 
 ## 联系方式
 
