@@ -9,15 +9,15 @@
 		"preview": "rspress preview"
 	},
 	"dependencies": {
-		"rspress": "^1.23.1",
+		"rspress": "^1.25.2",
 		"rspress-plugin-file-tree": "^0.4.0",
 		"rspress-plugin-reading-time": "^0.3.0",
 		"yarn": "1.22.22"
 	},
 	"devDependencies": {
-		"@rsbuild/plugin-image-compress": "^0.7.6",
+		"@rsbuild/plugin-image-compress": "^0.7.10",
 		"@rspress/mdx-rs": "^0.5.7",
-		"@types/node": "^20.14.2",
+		"@types/node": "^20.14.10",
 		"rsbuild-plugin-open-graph": "^1.0.0",
 		"rspress-plugin-font-open-sans": "^1.0.0"
 	}
