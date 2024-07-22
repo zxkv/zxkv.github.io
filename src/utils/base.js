@@ -1,3 +1,5 @@
+// gzip 插件
+import CompressionWebpackPlugin from "compression-webpack-plugin";
 import { umami } from "./icon";
 
 const nav = [
@@ -88,6 +90,12 @@ const builderConfig = {
 	},
 	server: {
 		strictPort: true
+	},
+	tools: {
+		rspack: async (config, { prependPlugins }) => {
+			prependPlugins(new CompressionWebpackPlugin());
+			return config;
+		}
 	}
 };
 

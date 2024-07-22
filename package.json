@@ -18,6 +18,7 @@
 		"@rsbuild/plugin-image-compress": "^1.0.1",
 		"@rspress/mdx-rs": "^0.5.7",
 		"@types/node": "^20.14.11",
+		"compression-webpack-plugin": "^11.1.0",
 		"rsbuild-plugin-open-graph": "^1.0.1",
 		"rspress-plugin-font-open-sans": "^1.0.0"
 	}
