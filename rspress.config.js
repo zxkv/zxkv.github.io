@@ -47,12 +47,16 @@ export default defineConfig({
 		footer: {
 			message: `©2023-${new Date().getFullYear()} Create By ❤️ 下落香樟树`
 		},
+		enableScrollToTop: true,
 		enableContentAnimation: true,
 		lastUpdatedText: "上次更新时间",
 		lastUpdated: true,
 		outlineTitle: "目 录",
 		prevPageText: "上一篇",
-		nextPageText: "下一篇"
+		nextPageText: "下一篇",
+		searchPlaceholderText: "🔍搜索",
+		searchNoResultsText: "未找到相关内容",
+		searchSuggestedQueryText: "请输入搜索内容"
 	},
 	builderPlugins: [
 		pluginOpenGraph({
