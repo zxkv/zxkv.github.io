@@ -54,7 +54,9 @@ export default defineConfig({
 		outlineTitle: "目 录",
 		prevPageText: "上一篇",
 		nextPageText: "下一篇",
-		searchPlaceholderText: "搜索"
+		searchPlaceholderText: "关键字",
+		searchNoResultsText: "未找到相关内容",
+		searchSuggestedQueryText: "请输入关键字搜索"
 	},
 	builderPlugins: [
 		pluginOpenGraph({
