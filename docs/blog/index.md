@@ -1,11 +1,15 @@
 # 我的博客
 
+### 访问统计
+
+![visitors](https://visitor-badge.imlete.cn/?id=zxkv.github.io&type=pv&style=for-the-badge)
+
 ### 博客地址
 
 -   zeabur：[zxk.zeabur.app](https://zxk.zeabur.app/)「🆕 新增部署」
 -   Rander：[zxkv.onrender.com](https://zxkv.onrender.com/)「🌍 CDN 加持」
 -   Github：[zxkv.github.io](https://zxkv.github.io/)「🔥 持续更新」
--   Gitee：[zxkv.gitee.io](https://zxkv.gitee.io/)「🚀 国内镜像，速度优先」(近期无法访问)
+<!-- -   Gitee：[zxkv.gitee.io](https://zxkv.gitee.io/)「🚀 国内镜像，速度优先」(近期无法访问) -->
 
 ### 博客简介
 
