@@ -18,4 +18,6 @@
 
 -   Front-end Notes [下落香樟树](https://juejin.cn/user/184373682901309/posts)「📒 掘金社区」
 
-<!-- <zxkvv@qq.com> -->
+## 联系方式
+
+📮 email：<zxkang@88.com>

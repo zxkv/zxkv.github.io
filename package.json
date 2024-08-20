@@ -11,8 +11,7 @@
 	"dependencies": {
 		"rspress": "^1.28.0",
 		"rspress-plugin-file-tree": "^0.4.0",
-		"rspress-plugin-reading-time": "^0.3.0",
-		"yarn": "1.22.22"
+		"rspress-plugin-reading-time": "^0.3.0"
 	},
 	"devDependencies": {
 		"@rsbuild/plugin-image-compress": "^1.0.2",
