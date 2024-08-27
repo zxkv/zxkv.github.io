@@ -11,8 +11,7 @@
 ## 博客地址
 
 -   Rander Blog：[zxkv.onrender.com](https://zxkv.onrender.com/)「🌍 CDN 加持」
--   zeabur Blog：[zxk.zeabur.app](https://zxk.zeabur.app/)「🆕 新增部署」
--   GitHub Blog：[zxkv.github.io](https://zxkv.github.io/)「🚀 国内镜像，速度优先」(近期无法访问)
+-   GitHub Blog：[zxkv.github.io](https://zxkv.github.io/)「🚀 持续更新」
 
 ## 博客笔记
 

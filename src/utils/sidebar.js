@@ -19,21 +19,21 @@ const BLOG_1 = {
 };
 
 const BLOG_2 = {
-	text: "开发案例",
-	collapsed: true,
-	items: toItems("/blog/code", blog.code)
-};
-
-const BLOG_3 = {
 	text: "前端工具",
 	collapsed: true,
 	items: toItems("/blog/tools", blog.tools)
 };
 
-const BLOG_4 = {
+const BLOG_3 = {
 	text: "框架工具",
 	collapsed: true,
 	items: toItems("/blog/view", blog.view)
+};
+
+const BLOG_4 = {
+	text: "开发案例",
+	collapsed: true,
+	items: toItems("/blog/code", blog.code)
 };
 
 // 笔记
