@@ -1,7 +1,6 @@
 import * as path from "path";
 import { defineConfig } from "rspress/config";
 // plugins
-import { pluginVue } from "@rsbuild/plugin-vue";
 import fileTree from "rspress-plugin-file-tree";
 import readingTime from "rspress-plugin-reading-time";
 import { pluginOpenGraph } from "rsbuild-plugin-open-graph";
@@ -14,7 +13,6 @@ import { builderConfig, nav, socialLinks } from "./src/utils/base";
 export default defineConfig({
 	root: path.join(__dirname, "docs"),
 	plugins: [
-		pluginVue(),
 		fileTree(),
 		readingTime({
 			defaultLocale: "zh-CN"
