@@ -63,14 +63,6 @@ const builderConfig = {
 				tag: "script",
 				attrs: {
 					defer: true,
-					src: "https://zxk-um.zeabur.app/script.js",
-					"data-website-id": "2d7a2b5e-e088-4d63-bfdf-85cfc5d1f056"
-				}
-			},
-			{
-				tag: "script",
-				attrs: {
-					defer: true,
 					src: "https://us.umami.is/script.js",
 					"data-website-id": "209b81a6-1ae9-45ef-a598-32d09d0944bf"
 				}

@@ -3,8 +3,8 @@ import { defineConfig } from "rspress/config";
 // plugins
 import fileTree from "rspress-plugin-file-tree";
 import readingTime from "rspress-plugin-reading-time";
-import { pluginFontOpenSans } from "rspress-plugin-font-open-sans";
 import { pluginOpenGraph } from "rsbuild-plugin-open-graph";
+import { pluginFontOpenSans } from "rspress-plugin-font-open-sans";
 import { pluginImageCompress } from "@rsbuild/plugin-image-compress";
 
 import sidebar from "./src/utils/sidebar";
@@ -23,8 +23,7 @@ export default defineConfig({
 	title: "下落香樟树",
 	description: "zxkv、前端开发、vue、react、js、JavaScript",
 	icon: "/icon.png",
-	logo: "https://visitor-badge.imlete.cn/?id=zxkv.github.io&type=pv&style=for-the-badge",
-	// logo: "/logo.png",
+	logo: "/logo.png",
 	base: "/",
 	outDir: "doc_build",
 	route: {
@@ -46,7 +45,7 @@ export default defineConfig({
 		socialLinks,
 		sidebar,
 		footer: {
-			message: `©2023-${new Date().getFullYear()} Create By ❤️ 下落香樟树`
+			message: `<center>©2023-${new Date().getFullYear()} Create By ❤️ <a style="color:blue" href="https://zxkv.github.io">下落香樟树</a> · <img style="display: inline" src="https://visitor-badge.imlete.cn/?id=zxkv.github.io&type=pv&style=flat-square" alt="访问量" /></center>`
 		},
 		enableScrollToTop: true,
 		enableContentAnimation: true,
