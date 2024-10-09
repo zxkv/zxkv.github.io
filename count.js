@@ -6,7 +6,7 @@ export const blog = {
 	view: 2
 };
 // 笔记 /note
-export const node = {
+export const note = {
 	code: 14,
 	css: 9,
 	js: 14,

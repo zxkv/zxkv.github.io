@@ -1,4 +1,4 @@
-import { blog, node, page } from "../../count";
+import { blog, note, page } from "../../count";
 
 const toItems = (path = "", count = 0) => {
 	let items = [];
@@ -39,37 +39,37 @@ const BLOG_4 = {
 // 笔记
 const NODE_0 = {
 	text: "笔记简介",
-	link: "/node/"
+	link: "/note/"
 };
 
 const NODE_1 = {
 	text: "CSS 相关",
 	collapsed: false,
-	items: toItems("/node/css", node.css)
+	items: toItems("/note/css", node.css)
 };
 
 const NODE_2 = {
 	text: "JS 相关",
 	collapsed: true,
-	items: toItems("/node/js", node.js)
+	items: toItems("/note/js", node.js)
 };
 
 const NODE_3 = {
 	text: "代码示例",
 	collapsed: true,
-	items: toItems("/node/code", node.code)
+	items: toItems("/note/code", node.code)
 };
 
 const NODE_4 = {
 	text: "项目配置",
 	collapsed: true,
-	items: toItems("/node/dev", node.dev)
+	items: toItems("/note/dev", node.dev)
 };
 
 const NODE_5 = {
 	text: "工具配置",
 	collapsed: true,
-	items: toItems("/node/tools", node.tools)
+	items: toItems("/note/tools", node.tools)
 };
 
 // 文档
@@ -82,6 +82,6 @@ const PAGE_0 = {
 
 export default {
 	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3, BLOG_4],
-	"/node/": [NODE_0, NODE_1, NODE_2, NODE_3, NODE_4, NODE_5],
+	"/note/": [NODE_0, NODE_1, NODE_2, NODE_3, NODE_4, NODE_5],
 	"/page/": [PAGE_0]
 };

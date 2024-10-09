@@ -10,8 +10,8 @@ const nav = [
 	},
 	{
 		text: "前端笔记",
-		link: "/node/",
-		activeMatch: "/node/"
+		link: "/note/",
+		activeMatch: "/note/"
 	},
 	{
 		text: "前端文档",
