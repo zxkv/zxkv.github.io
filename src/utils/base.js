@@ -9,6 +9,11 @@ const nav = [
 		activeMatch: "/blog/"
 	},
 	{
+		text: "开发笔记",
+		link: "/dev/",
+		activeMatch: "/dev/"
+	},
+	{
 		text: "前端笔记",
 		link: "/note/",
 		activeMatch: "/note/"

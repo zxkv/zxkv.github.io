@@ -5,6 +5,7 @@ export const blog = {
 	tools: 7,
 	view: 2
 };
+
 // 笔记 /note
 export const note = {
 	code: 14,
@@ -13,7 +14,14 @@ export const note = {
 	dev: 4,
 	tools: 1
 };
+
 // 文档 /page
 export const page = {
 	index: 5
+};
+
+// 开发 /dev
+export const dev = {
+	soft: 1,
+	npm: 1
 };

@@ -1,4 +1,4 @@
-import { blog, note, page } from "../../count";
+import { blog, dev, note, page } from "../../count";
 
 const toItems = (path = "", count = 0) => {
 	let items = [];
@@ -34,6 +34,24 @@ const BLOG_4 = {
 	text: "开发案例",
 	collapsed: true,
 	items: toItems("/blog/code", blog.code)
+};
+
+// 开发
+const DEV_0 = {
+	text: "开发简介",
+	link: "/dev/"
+};
+
+const DEV_1 = {
+	text: "开发软件",
+	collapsed: true,
+	items: toItems("/dev/soft", dev.soft)
+};
+
+const DEV_2 = {
+	text: "NPM包",
+	collapsed: true,
+	items: toItems("/dev/npm", dev.npm)
 };
 
 // 笔记
@@ -82,6 +100,7 @@ const PAGE_0 = {
 
 export default {
 	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3, BLOG_4],
+	"/dev/": [DEV_0, DEV_1, DEV_2],
 	"/note/": [NODE_0, NODE_1, NODE_2, NODE_3, NODE_4, NODE_5],
 	"/page/": [PAGE_0]
 };
