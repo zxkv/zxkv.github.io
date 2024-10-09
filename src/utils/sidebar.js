@@ -45,31 +45,31 @@ const NODE_0 = {
 const NODE_1 = {
 	text: "CSS 相关",
 	collapsed: false,
-	items: toItems("/note/css", node.css)
+	items: toItems("/note/css", note.css)
 };
 
 const NODE_2 = {
 	text: "JS 相关",
 	collapsed: true,
-	items: toItems("/note/js", node.js)
+	items: toItems("/note/js", note.js)
 };
 
 const NODE_3 = {
 	text: "代码示例",
 	collapsed: true,
-	items: toItems("/note/code", node.code)
+	items: toItems("/note/code", note.code)
 };
 
 const NODE_4 = {
 	text: "项目配置",
 	collapsed: true,
-	items: toItems("/note/dev", node.dev)
+	items: toItems("/note/dev", note.dev)
 };
 
 const NODE_5 = {
 	text: "工具配置",
 	collapsed: true,
-	items: toItems("/note/tools", node.tools)
+	items: toItems("/note/tools", note.tools)
 };
 
 // 文档
