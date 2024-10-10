@@ -4,12 +4,12 @@ import { umami } from "./icon";
 
 const nav = [
 	{
-		text: "博客笔记",
+		text: "我的博客",
 		link: "/blog/",
 		activeMatch: "/blog/"
 	},
 	{
-		text: "开发笔记",
+		text: "开发记录",
 		link: "/dev/",
 		activeMatch: "/dev/"
 	},
@@ -24,7 +24,7 @@ const nav = [
 		activeMatch: "/page/"
 	},
 	{
-		text: "博客镜像",
+		text: "链接地址",
 		items: [
 			{
 				text: "Render",

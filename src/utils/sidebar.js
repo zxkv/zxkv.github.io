@@ -38,7 +38,7 @@ const BLOG_4 = {
 
 // 开发
 const DEV_0 = {
-	text: "开发简介",
+	text: "开发记录",
 	link: "/dev/"
 };
 
