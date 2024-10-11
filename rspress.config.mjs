@@ -49,6 +49,7 @@ export default defineConfig({
 		},
 		enableScrollToTop: true,
 		enableContentAnimation: true,
+		enableAppearanceAnimation: true,
 		lastUpdatedText: "上次更新时间",
 		lastUpdated: true,
 		outlineTitle: "目 录",
