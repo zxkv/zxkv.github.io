@@ -45,7 +45,7 @@ export default defineConfig({
 		socialLinks,
 		sidebar,
 		footer: {
-			message: `<center>©2023-${new Date().getFullYear()} Create By ❤️ <a style="color:blue" href="https://zxkv.github.io">下落香樟树</a> · <img style="display: inline" src="https://visitor-badge.imlete.cn/?id=zxkv.github.io&type=pv&style=flat-square" alt="访问量" /></center>`
+			message: `Copyright©2022-${new Date().getFullYear()} Create By ❤️ 下落香樟树`
 		},
 		enableScrollToTop: true,
 		enableContentAnimation: true,

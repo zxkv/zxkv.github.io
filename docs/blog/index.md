@@ -1,9 +1,5 @@
 # 我的博客
 
-### 访问统计
-
-![visitors](https://visitor-badge.imlete.cn/?id=zxkv.github.io&type=pv&style=for-the-badge)
-
 ### 博客地址
 
 -   Rander：[zxkv.onrender.com](https://zxkv.onrender.com/)「🌍 CDN 加持」
