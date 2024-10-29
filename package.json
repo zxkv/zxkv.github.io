@@ -9,14 +9,14 @@
 		"preview": "rspress preview"
 	},
 	"dependencies": {
-		"rspress": "^1.35.1",
+		"rspress": "^1.35.2",
 		"rspress-plugin-file-tree": "^0.4.0",
 		"rspress-plugin-reading-time": "^0.3.0"
 	},
 	"devDependencies": {
 		"@rsbuild/plugin-image-compress": "^1.0.2",
 		"@rspress/mdx-rs": "^0.6.1",
-		"@types/node": "^22.8.1",
+		"@types/node": "^22.8.2",
 		"compression-webpack-plugin": "^11.1.0",
 		"rsbuild-plugin-open-graph": "^1.0.2",
 		"rspress-plugin-font-open-sans": "^1.0.0"
