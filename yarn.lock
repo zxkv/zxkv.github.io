@@ -84,10 +84,10 @@
     "@types/mdx" "^2.0.0"
     "@types/react" ">=16"
 
-"@modern-js/utils@2.60.5":
-  version "2.60.5"
-  resolved "https://registry.npmmirror.com/@modern-js/utils/-/utils-2.60.5.tgz#af50af4a4c258f4bdd6967f68f207dc00683cd20"
-  integrity sha512-ZnQNCs8Vdxji5K6OwSq9QUQ0MYU9QdOpWm7lWwi+YPq2RIQcHfAtnEkFu1B2RvifPyGfjVo2kafu+rldUlZMyw==
+"@modern-js/utils@2.60.6":
+  version "2.60.6"
+  resolved "https://registry.npmmirror.com/@modern-js/utils/-/utils-2.60.6.tgz#2b9a486720a4fb57f712a25a187cc266eccd5218"
+  integrity sha512-rAeqAHiUUnStwBTkP1tdQSz29o/Qtoc2OUfz6TEAtEPoAxcFSc44+hwux7mQkSxXSzBjkbev5RMkwVwuM2FWtw==
   dependencies:
     "@swc/helpers" "0.5.13"
     caniuse-lite "^1.0.30001520"
@@ -449,28 +449,28 @@
     error-stack-parser "^2.0.6"
     html-entities "^2.1.0"
 
-"@rspress/core@1.35.2":
-  version "1.35.2"
-  resolved "https://registry.npmmirror.com/@rspress/core/-/core-1.35.2.tgz#34d2dfbb172b1a5bd50df2c660a440a8b6bbeaba"
-  integrity sha512-JGKtUUstg24la8/emDdUff/halYMAXyM3mw3SUboNg58MpdBcyNLvQ3KCe4nDhzr2LSk6qP5s+sPU8qEpwHsSQ==
+"@rspress/core@1.35.3":
+  version "1.35.3"
+  resolved "https://registry.npmmirror.com/@rspress/core/-/core-1.35.3.tgz#ec7a2c6d6f363fae40c4d58290fd4f4c037f9d03"
+  integrity sha512-sT+0t2UJ/qxahPDlFVDKl/n8ACZvmxL5r57AZF923VvKpdkgE729bZ8xlZQku5sl9KCcwo4+87V7AOUIEC4JHw==
   dependencies:
     "@loadable/component" "5.16.4"
     "@mdx-js/loader" "2.3.0"
     "@mdx-js/mdx" "2.3.0"
     "@mdx-js/react" "2.3.0"
-    "@modern-js/utils" "2.60.5"
+    "@modern-js/utils" "2.60.6"
     "@rsbuild/core" "~1.0.18"
     "@rsbuild/plugin-less" "~1.0.3"
     "@rsbuild/plugin-react" "~1.0.5"
     "@rsbuild/plugin-sass" "~1.0.4"
     "@rspress/mdx-rs" "0.6.1"
-    "@rspress/plugin-auto-nav-sidebar" "1.35.2"
-    "@rspress/plugin-container-syntax" "1.35.2"
-    "@rspress/plugin-last-updated" "1.35.2"
-    "@rspress/plugin-medium-zoom" "1.35.2"
-    "@rspress/runtime" "1.35.2"
-    "@rspress/shared" "1.35.2"
-    "@rspress/theme-default" "1.35.2"
+    "@rspress/plugin-auto-nav-sidebar" "1.35.3"
+    "@rspress/plugin-container-syntax" "1.35.3"
+    "@rspress/plugin-last-updated" "1.35.3"
+    "@rspress/plugin-medium-zoom" "1.35.3"
+    "@rspress/runtime" "1.35.3"
+    "@rspress/shared" "1.35.3"
+    "@rspress/theme-default" "1.35.3"
     body-scroll-lock "4.0.0-beta.0"
     copy-to-clipboard "^3.3.3"
     enhanced-resolve "5.17.1"
@@ -558,49 +558,49 @@
     "@rspress/mdx-rs-win32-arm64-msvc" "0.6.1"
     "@rspress/mdx-rs-win32-x64-msvc" "0.6.1"
 
-"@rspress/plugin-auto-nav-sidebar@1.35.2":
-  version "1.35.2"
-  resolved "https://registry.npmmirror.com/@rspress/plugin-auto-nav-sidebar/-/plugin-auto-nav-sidebar-1.35.2.tgz#43da1fd413f7ca1c5a62b228741423ce67f9d56a"
-  integrity sha512-Cjg5e39LxhqG+bbIQkEjheFMMKyU5tlM0BATX01983Ui7c57l1UrxD/+WPUCJmsfQXt+QH4WqbtjPeJm19BwEQ==
+"@rspress/plugin-auto-nav-sidebar@1.35.3":
+  version "1.35.3"
+  resolved "https://registry.npmmirror.com/@rspress/plugin-auto-nav-sidebar/-/plugin-auto-nav-sidebar-1.35.3.tgz#28f50defb57221e0d405d7e577b7bade3ee1a4e9"
+  integrity sha512-ooLJzhkRSx8BKTcG9WLxuV7eXtqs/RG5IAew3wWK0D5ogy36/JYG2DZssmmrvPWN4wTySjlJCYpEyJWAwaGOBg==
   dependencies:
-    "@rspress/shared" "1.35.2"
+    "@rspress/shared" "1.35.3"
 
-"@rspress/plugin-container-syntax@1.35.2":
-  version "1.35.2"
-  resolved "https://registry.npmmirror.com/@rspress/plugin-container-syntax/-/plugin-container-syntax-1.35.2.tgz#dae6adba280be2b2af9ac2e4cde18e6a071cd26d"
-  integrity sha512-UJ19xRn+jt8ZUxah2Xp2YS3vy3RhcTKLInU//xZ9Ij2BEVaPfySI6hd9k1I08sPpqtNi05NquocjgomNUUKoXQ==
+"@rspress/plugin-container-syntax@1.35.3":
+  version "1.35.3"
+  resolved "https://registry.npmmirror.com/@rspress/plugin-container-syntax/-/plugin-container-syntax-1.35.3.tgz#e239757ac85e02125161491dbadb085eb28d9c68"
+  integrity sha512-YPtnBfvlAfbwlOKtR2vj4SwV7Kk04Kt2cWkjnKQRZph1Sj6fHWgaT620ES6gbkYLz7pLmQtpFc/VSLZurDkDvw==
   dependencies:
-    "@rspress/shared" "1.35.2"
+    "@rspress/shared" "1.35.3"
 
-"@rspress/plugin-last-updated@1.35.2":
-  version "1.35.2"
-  resolved "https://registry.npmmirror.com/@rspress/plugin-last-updated/-/plugin-last-updated-1.35.2.tgz#0e8be3eeccee54910331f8e1ba2e536571fdbae4"
-  integrity sha512-aSm3e7HC+ehPqCIrlrDEr/WmfbkY6RKmxM6oFBDGWoKzZReC7rYJ0pQzyby/69OJryQK6/Eef8RxV0ip8yDGZQ==
+"@rspress/plugin-last-updated@1.35.3":
+  version "1.35.3"
+  resolved "https://registry.npmmirror.com/@rspress/plugin-last-updated/-/plugin-last-updated-1.35.3.tgz#e39617f289d8af3f5815ade7fc407c24ca25a43c"
+  integrity sha512-yPUTGLC9e+4Vz0GsX2gobKcR7qYyoe/dcood4dSi8ByO29qLSxnbiO8kb3e0jc7aBHeoUQyjswRaPzftcgcZUA==
   dependencies:
-    "@rspress/shared" "1.35.2"
+    "@rspress/shared" "1.35.3"
 
-"@rspress/plugin-medium-zoom@1.35.2":
-  version "1.35.2"
-  resolved "https://registry.npmmirror.com/@rspress/plugin-medium-zoom/-/plugin-medium-zoom-1.35.2.tgz#8b2de66fc6ce6f12fee7b35e60b04671beb65203"
-  integrity sha512-Lvz1SlCOigwQotIxR5SfnIILKpgZQupm1z/F33yNGAZQPTYIzEVVThWhdTiIoUJpD0hxxBljAnBNgBL0k0FBVA==
+"@rspress/plugin-medium-zoom@1.35.3":
+  version "1.35.3"
+  resolved "https://registry.npmmirror.com/@rspress/plugin-medium-zoom/-/plugin-medium-zoom-1.35.3.tgz#c153cd838a82136c205b73a4b9085c5b7a5ee88d"
+  integrity sha512-IBM0CH5/SjPEjd0sBgqxhjmCJwurSvwVfwvmZG/3OFkMx65MoejII+PWJColSarKDKwU+VN9CMrULkNDw+a8gg==
   dependencies:
     medium-zoom "1.1.0"
 
-"@rspress/runtime@1.35.2":
-  version "1.35.2"
-  resolved "https://registry.npmmirror.com/@rspress/runtime/-/runtime-1.35.2.tgz#eec847ce6b8119ce7df128c086dce72edca8254b"
-  integrity sha512-IbFSpCiSZdg176E2/+cAlVX1Q+9aNneokJEm7MQ73f8ymGlJU58b23LaVAZhD0+o9bDfQKj/bqHxrKL1qZfsyw==
+"@rspress/runtime@1.35.3":
+  version "1.35.3"
+  resolved "https://registry.npmmirror.com/@rspress/runtime/-/runtime-1.35.3.tgz#9f0432e5e1b8d7e1d68243b1645625ef8fc43d2f"
+  integrity sha512-JyjQuiV4E2l2BpGbh8Gkoc3tb/OO5Y6xYd7yff/14tFvsWwxpPp7VbAMH7CcV4zz/D6VSpr5nlZloyTfC9arhA==
   dependencies:
-    "@rspress/shared" "1.35.2"
+    "@rspress/shared" "1.35.3"
     react "^18.3.1"
     react-dom "^18.3.1"
     react-helmet-async "^1.3.0"
     react-router-dom "^6.27.0"
 
-"@rspress/shared@1.35.2":
-  version "1.35.2"
-  resolved "https://registry.npmmirror.com/@rspress/shared/-/shared-1.35.2.tgz#1ba2460d932d86e0ba23b30209bf5f18172ff81e"
-  integrity sha512-xz8Xb0ohIV8ctCUc9t2pu7z5ALBd+YZpyErGU1OB48/ua/2Q459Sje6Lrz5AWziz2WKLRaRMFdEWA+GT16WPRg==
+"@rspress/shared@1.35.3":
+  version "1.35.3"
+  resolved "https://registry.npmmirror.com/@rspress/shared/-/shared-1.35.3.tgz#ca936139f3e7f0598845d323808309fb2e6ee502"
+  integrity sha512-vrcM/CP/Ji2qf4Of+JQMLr9pwygtjcICdtVRL+ch97CaFCoX9JfqY3hHMuCHFsZ7FNenWxOolJeLW06sYBcPdQ==
   dependencies:
     "@rsbuild/core" "~1.0.18"
     chalk "5.3.0"
@@ -621,14 +621,14 @@
     gray-matter "4.0.3"
     unified "^10.1.2"
 
-"@rspress/theme-default@1.35.2":
-  version "1.35.2"
-  resolved "https://registry.npmmirror.com/@rspress/theme-default/-/theme-default-1.35.2.tgz#95b2199916f8724f3dfa08b0a972ea892dfebc5a"
-  integrity sha512-aZYpu0a07y7jwqEzwPcLblpQMNfZCt+uGnVCmknsUH1JhACeBoZkEMR7HGsHvs1ntYLQlxWQUNBD6XMGBMGTdg==
+"@rspress/theme-default@1.35.3":
+  version "1.35.3"
+  resolved "https://registry.npmmirror.com/@rspress/theme-default/-/theme-default-1.35.3.tgz#57562e0a87d132dd92e3e6a819e373095d61860a"
+  integrity sha512-VfHmr6IzJ0JR17w/Fv6f6vPXS6VCMjx1oq7SJ8qkpQyhhCXeMOLRZ9QevvDqrOISREKZBR0XWe0nVT5d8FbgPA==
   dependencies:
     "@mdx-js/react" "2.3.0"
-    "@rspress/runtime" "1.35.2"
-    "@rspress/shared" "1.35.2"
+    "@rspress/runtime" "1.35.3"
+    "@rspress/shared" "1.35.3"
     body-scroll-lock "4.0.0-beta.0"
     copy-to-clipboard "^3.3.3"
     flexsearch "0.7.43"
@@ -759,10 +759,10 @@
   dependencies:
     undici-types "~6.19.2"
 
-"@types/node@^22.8.2":
-  version "22.8.2"
-  resolved "https://registry.npmmirror.com/@types/node/-/node-22.8.2.tgz#8e82bb8201c0caf751dcdc61b0a262d2002d438b"
-  integrity sha512-NzaRNFV+FZkvK/KLCsNdTvID0SThyrs5SHB6tsD/lajr22FGC73N2QeDPM2wHtVde8mgcXuSsHQkH5cX1pbPLw==
+"@types/node@^22.8.5":
+  version "22.8.5"
+  resolved "https://registry.npmmirror.com/@types/node/-/node-22.8.5.tgz#a978fb6755dbb32889b0bc3e37554dbc04f261a6"
+  integrity sha512-5iYk6AMPtsMbkZqCO1UGF9W5L38twq11S2pYWkybGHH2ogPUvXWNlQqJBzuEZWKj/WRH+QTeiv6ySWqJtvIEgA==
   dependencies:
     undici-types "~6.19.8"
 
@@ -3337,14 +3337,14 @@ rspress-plugin-reading-time@^0.3.0:
     reading-time "^1.5.0"
     rspress-plugin-devkit "^0.3.0"
 
-rspress@^1.35.2:
-  version "1.35.2"
-  resolved "https://registry.npmmirror.com/rspress/-/rspress-1.35.2.tgz#47a6e3073556e9cfb780d941816224cd209b86bb"
-  integrity sha512-mKIiLip0CLz1V6mKdlLSt+TS2Mw1oAOKW+8PlRlzivm2TKa7Cm1fCLmLZ2JxC3IS+/D1guaA/vETdcaAcKiVhA==
+rspress@^1.35.3:
+  version "1.35.3"
+  resolved "https://registry.npmmirror.com/rspress/-/rspress-1.35.3.tgz#1b85c9ea995a04a55cfca16b8f3e88d88afe028e"
+  integrity sha512-yaPWVsSB5ULxi3AGZANE9CowCnVe53d8Ga6Ia3IDyIgfeqCQ4tyOVZkrKevXY/TGzuKurBizRzLgw3vilwqvyg==
   dependencies:
     "@rsbuild/core" "~1.0.18"
-    "@rspress/core" "1.35.2"
-    "@rspress/shared" "1.35.2"
+    "@rspress/core" "1.35.3"
+    "@rspress/shared" "1.35.3"
     cac "^6.7.14"
     chalk "5.3.0"
     chokidar "^3.6.0"
