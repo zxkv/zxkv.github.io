@@ -509,42 +509,82 @@
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-darwin-arm64/-/mdx-rs-darwin-arm64-0.6.1.tgz#37bc114d2242c19d386832a979856b0684595d61"
   integrity sha512-XV/meKCyAbuhv4u1iC2Y0l6bwspiqAwmSA55wG5r1L88DG5kD1sntiIB5seKkr7oUXcDJ/QbRy76GZuHuYdBzA==
 
+"@rspress/mdx-rs-darwin-arm64@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-darwin-arm64/-/mdx-rs-darwin-arm64-0.6.3.tgz#b181abce4030e18b3ac8f01152660bdd2a756b76"
+  integrity sha512-kVEEezCAIOh22ag5xtXk36uHyjmo20eDSWz7xiM4CqwTvnZhZRW14fI2z9DN8EiZlbBi6U3A3aoI+LUOHToXUw==
+
 "@rspress/mdx-rs-darwin-x64@0.6.1":
   version "0.6.1"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-darwin-x64/-/mdx-rs-darwin-x64-0.6.1.tgz#329fc687087c509a22969d7e31e246ae6ce8c778"
   integrity sha512-29G3RfWSyfQOuNLnI4XC6uOwCf6tFtigcBDYFFY+JmYltUetRNRBCnn9xOyLd3RUKFaoc97oKRzwWBzpKougYw==
+
+"@rspress/mdx-rs-darwin-x64@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-darwin-x64/-/mdx-rs-darwin-x64-0.6.3.tgz#39ed9c99e628c9207c0152524d0de75a6c2da235"
+  integrity sha512-E/e/BSOHc3lvQVbrclqJZQg7SYgVjfQB6TTiOx3BzyaO+nz9znn/Gz+qn4bUT+ncxV6X+wiR/DiIEkg5xPmxlw==
 
 "@rspress/mdx-rs-linux-arm64-gnu@0.6.1":
   version "0.6.1"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-arm64-gnu/-/mdx-rs-linux-arm64-gnu-0.6.1.tgz#2502d4c484ecf1b60240e98b3ceaf520cfc4cf61"
   integrity sha512-SHPlnghHBBx+yU+HyP1pZEeC6aKtx654kfKXx9YMauGvmA2XbTU7FRIio8rYK+e310F67vAZH7SRcTeczhSlyA==
 
+"@rspress/mdx-rs-linux-arm64-gnu@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-arm64-gnu/-/mdx-rs-linux-arm64-gnu-0.6.3.tgz#7b6fa3e8f3b2d9359b7f7ef9271576f6242fc2af"
+  integrity sha512-jocoifBbrFn/lZZsYnQs9nO+fCdgO2XH2HJiHh9FmA02yl3dbjlqh+xiWvZmUukcWgR5SkD+f2AEAkC1zje3Rw==
+
 "@rspress/mdx-rs-linux-arm64-musl@0.6.1":
   version "0.6.1"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-arm64-musl/-/mdx-rs-linux-arm64-musl-0.6.1.tgz#f40c94ba817712f963d0d6f6d9df30150ecdd4de"
   integrity sha512-8o+V3LZ/OvT/0kky56GVM9uqCWbfi5m/RlCE2pS7DqZYvQZcMVeZc14eEWLtLcZd2dsZlqmT/fekbEkoP+pu5Q==
+
+"@rspress/mdx-rs-linux-arm64-musl@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-arm64-musl/-/mdx-rs-linux-arm64-musl-0.6.3.tgz#f349dcf31cfd519149008cd83ba876706e2c1b4f"
+  integrity sha512-1a4o2Iieinc36LEUAzOuRe78O4Z2rqY6BOBhJCzeE37GFVThvJIRz6vz5+UKhQS77E8RwjXs0RlI1Hhub3XeZg==
 
 "@rspress/mdx-rs-linux-x64-gnu@0.6.1":
   version "0.6.1"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-x64-gnu/-/mdx-rs-linux-x64-gnu-0.6.1.tgz#0d46bbd4323ec34f9d7b46de2b923dd55b98144f"
   integrity sha512-v4ZIscNR7AyeQE/8Hcy5Sceh2sbc481GfAUV7LMTcaAiAdHvVQXdWxeoUA/x23uAXmfP+dveZcmhfoGMe/y4rQ==
 
+"@rspress/mdx-rs-linux-x64-gnu@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-x64-gnu/-/mdx-rs-linux-x64-gnu-0.6.3.tgz#162dbf5270ba3ee69b2d9d5b6712e8d2ecc54d10"
+  integrity sha512-46oR4DgDXPPg3yfz+ty5gTwhdMsECbgiR1uPiwiHYOdNvmLABl4EEXyfr5FP38DsaERBjenr4mFz0rgAsm6bgg==
+
 "@rspress/mdx-rs-linux-x64-musl@0.6.1":
   version "0.6.1"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-x64-musl/-/mdx-rs-linux-x64-musl-0.6.1.tgz#3c29638e3580a21b3dea1f837861bdc9d0d5de84"
   integrity sha512-cbBIf6q73n/aB/0ctIW0FHkpBxSUXFazwXJ3nv4YISZP5/1ytE1RXsOPo47Zko3Ta41bNxLYvi5PLOz8cdIejw==
+
+"@rspress/mdx-rs-linux-x64-musl@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-x64-musl/-/mdx-rs-linux-x64-musl-0.6.3.tgz#86ebb90475f3d4074bb9e6c7dccb000ca2c4d610"
+  integrity sha512-+/2ATbYahVj2c16nAnarFRDB6IuN/CdR5uJ8ZhhEAyYuQn+s0hNlxhNTtZ81r/VAUHqdxgojerUPVpljobCAkg==
 
 "@rspress/mdx-rs-win32-arm64-msvc@0.6.1":
   version "0.6.1"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-win32-arm64-msvc/-/mdx-rs-win32-arm64-msvc-0.6.1.tgz#b90374bd3f5a40369b09daa45572bdd5f51543da"
   integrity sha512-x3kujsuzl3kzsL9kBQy/5QdEO6Ga9+nyG3+lbLbGHKfberT0+ZbgOMTwpQ8hetv0qs/bFZWcMhNbZ6+KwKSUYg==
 
+"@rspress/mdx-rs-win32-arm64-msvc@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-win32-arm64-msvc/-/mdx-rs-win32-arm64-msvc-0.6.3.tgz#f61c1de09cd7c42f36f2a4a519fc4b2d4198edbb"
+  integrity sha512-iOnTKM3zGNlJl60a7ENm+EvfhOlLE8pJlOoNfo/aQi+NjD5AWvwq8vzwI85J4lvurTC3BX5v4c3watUwzWFdNA==
+
 "@rspress/mdx-rs-win32-x64-msvc@0.6.1":
   version "0.6.1"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-win32-x64-msvc/-/mdx-rs-win32-x64-msvc-0.6.1.tgz#88cb6dff48d09406a3dc48e32ef2866bb7aef3be"
   integrity sha512-14YQOlV8YBHYNEzNZ4tXuSCWvnWpwuGI2WgXJMEBvhAFLOEpDAzof3KrcfExvBF0gxlUsC/loIorBT4RzoFn4g==
 
-"@rspress/mdx-rs@0.6.1", "@rspress/mdx-rs@^0.6.1":
+"@rspress/mdx-rs-win32-x64-msvc@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-win32-x64-msvc/-/mdx-rs-win32-x64-msvc-0.6.3.tgz#535f443b0003d689710db388d994f6a72c94a67d"
+  integrity sha512-Rr7DemsbLzi+pe4HuKayty2iLuXPlHpW3lZ4Yh8Yc8k/iAX8j1BKJKFP8C/tX8n9jXCRRrr5haYsHVrvq32ySA==
+
+"@rspress/mdx-rs@0.6.1":
   version "0.6.1"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs/-/mdx-rs-0.6.1.tgz#6dc800ed89402a0b1f35afa5fb8b88e3d8cc799a"
   integrity sha512-hAZH2dZPueRACh2dL6EuKzNSxPShq0zd0BCat1IaOpJ8mX73IRvTAQib/26gTM1IRikjMY7R7Bs6/RDZrjM+dQ==
@@ -557,6 +597,20 @@
     "@rspress/mdx-rs-linux-x64-musl" "0.6.1"
     "@rspress/mdx-rs-win32-arm64-msvc" "0.6.1"
     "@rspress/mdx-rs-win32-x64-msvc" "0.6.1"
+
+"@rspress/mdx-rs@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmmirror.com/@rspress/mdx-rs/-/mdx-rs-0.6.3.tgz#16d55c20e4f2a4431726866906bca17554d71440"
+  integrity sha512-mljyb42a7jk/TU46VwtTopuabWV8hRHjDWEeajn/Zo1s9WcBK4TDneUogEH8TXHgrTQLheQG25vO8LoVQxuqCQ==
+  optionalDependencies:
+    "@rspress/mdx-rs-darwin-arm64" "0.6.3"
+    "@rspress/mdx-rs-darwin-x64" "0.6.3"
+    "@rspress/mdx-rs-linux-arm64-gnu" "0.6.3"
+    "@rspress/mdx-rs-linux-arm64-musl" "0.6.3"
+    "@rspress/mdx-rs-linux-x64-gnu" "0.6.3"
+    "@rspress/mdx-rs-linux-x64-musl" "0.6.3"
+    "@rspress/mdx-rs-win32-arm64-msvc" "0.6.3"
+    "@rspress/mdx-rs-win32-x64-msvc" "0.6.3"
 
 "@rspress/plugin-auto-nav-sidebar@1.35.4":
   version "1.35.4"
