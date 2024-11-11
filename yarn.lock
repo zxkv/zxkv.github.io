@@ -84,10 +84,10 @@
     "@types/mdx" "^2.0.0"
     "@types/react" ">=16"
 
-"@modern-js/utils@2.60.6":
-  version "2.60.6"
-  resolved "https://registry.npmmirror.com/@modern-js/utils/-/utils-2.60.6.tgz#2b9a486720a4fb57f712a25a187cc266eccd5218"
-  integrity sha512-rAeqAHiUUnStwBTkP1tdQSz29o/Qtoc2OUfz6TEAtEPoAxcFSc44+hwux7mQkSxXSzBjkbev5RMkwVwuM2FWtw==
+"@modern-js/utils@2.61.0":
+  version "2.61.0"
+  resolved "https://registry.npmmirror.com/@modern-js/utils/-/utils-2.61.0.tgz#b6b76165e7b4ce2e14ee926739c45019a0b98f4e"
+  integrity sha512-p0AvefKHLX96Oea1I8mKCDhuDHkGT61dcWbVomZ0LKyJnDY/0YFiOX1kVeWJBfuka+2qdgH6wXE905K2uB7wEQ==
   dependencies:
     "@swc/helpers" "0.5.13"
     caniuse-lite "^1.0.30001520"
@@ -449,28 +449,28 @@
     error-stack-parser "^2.0.6"
     html-entities "^2.1.0"
 
-"@rspress/core@1.35.4":
-  version "1.35.4"
-  resolved "https://registry.npmmirror.com/@rspress/core/-/core-1.35.4.tgz#c1f8105a499ba1e0e4cb134e02fa6c9c893f819e"
-  integrity sha512-tGMUYxBN3qZKkwjRKcNG4lQY4KFIoA7HCEy9mQbwV6EVK8pNZAUdGkqCaviKrVTDXF4tmLy5Qoaplz8diYQmmw==
+"@rspress/core@1.36.0":
+  version "1.36.0"
+  resolved "https://registry.npmmirror.com/@rspress/core/-/core-1.36.0.tgz#893cb7d906e61ea872ead7e9bc394767a3803040"
+  integrity sha512-V0Fgwx1FepkIbyZUlICNSYIJR/H20fwEkDEAFIFC1m21ku8ZPy69+NM3aBaLbBIWwVHjX8Bl2ifMlAqNG3sE7Q==
   dependencies:
     "@loadable/component" "5.16.4"
     "@mdx-js/loader" "2.3.0"
     "@mdx-js/mdx" "2.3.0"
     "@mdx-js/react" "2.3.0"
-    "@modern-js/utils" "2.60.6"
+    "@modern-js/utils" "2.61.0"
     "@rsbuild/core" "~1.0.19"
     "@rsbuild/plugin-less" "~1.0.3"
     "@rsbuild/plugin-react" "~1.0.6"
     "@rsbuild/plugin-sass" "~1.0.4"
-    "@rspress/mdx-rs" "0.6.1"
-    "@rspress/plugin-auto-nav-sidebar" "1.35.4"
-    "@rspress/plugin-container-syntax" "1.35.4"
-    "@rspress/plugin-last-updated" "1.35.4"
-    "@rspress/plugin-medium-zoom" "1.35.4"
-    "@rspress/runtime" "1.35.4"
-    "@rspress/shared" "1.35.4"
-    "@rspress/theme-default" "1.35.4"
+    "@rspress/mdx-rs" "0.6.3"
+    "@rspress/plugin-auto-nav-sidebar" "1.36.0"
+    "@rspress/plugin-container-syntax" "1.36.0"
+    "@rspress/plugin-last-updated" "1.36.0"
+    "@rspress/plugin-medium-zoom" "1.36.0"
+    "@rspress/runtime" "1.36.0"
+    "@rspress/shared" "1.36.0"
+    "@rspress/theme-default" "1.36.0"
     body-scroll-lock "4.0.0-beta.0"
     copy-to-clipboard "^3.3.3"
     enhanced-resolve "5.17.1"
@@ -504,101 +504,47 @@
     unist-util-visit-children "^3.0.0"
     yaml-front-matter "^4.1.1"
 
-"@rspress/mdx-rs-darwin-arm64@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-darwin-arm64/-/mdx-rs-darwin-arm64-0.6.1.tgz#37bc114d2242c19d386832a979856b0684595d61"
-  integrity sha512-XV/meKCyAbuhv4u1iC2Y0l6bwspiqAwmSA55wG5r1L88DG5kD1sntiIB5seKkr7oUXcDJ/QbRy76GZuHuYdBzA==
-
 "@rspress/mdx-rs-darwin-arm64@0.6.3":
   version "0.6.3"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-darwin-arm64/-/mdx-rs-darwin-arm64-0.6.3.tgz#b181abce4030e18b3ac8f01152660bdd2a756b76"
   integrity sha512-kVEEezCAIOh22ag5xtXk36uHyjmo20eDSWz7xiM4CqwTvnZhZRW14fI2z9DN8EiZlbBi6U3A3aoI+LUOHToXUw==
-
-"@rspress/mdx-rs-darwin-x64@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-darwin-x64/-/mdx-rs-darwin-x64-0.6.1.tgz#329fc687087c509a22969d7e31e246ae6ce8c778"
-  integrity sha512-29G3RfWSyfQOuNLnI4XC6uOwCf6tFtigcBDYFFY+JmYltUetRNRBCnn9xOyLd3RUKFaoc97oKRzwWBzpKougYw==
 
 "@rspress/mdx-rs-darwin-x64@0.6.3":
   version "0.6.3"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-darwin-x64/-/mdx-rs-darwin-x64-0.6.3.tgz#39ed9c99e628c9207c0152524d0de75a6c2da235"
   integrity sha512-E/e/BSOHc3lvQVbrclqJZQg7SYgVjfQB6TTiOx3BzyaO+nz9znn/Gz+qn4bUT+ncxV6X+wiR/DiIEkg5xPmxlw==
 
-"@rspress/mdx-rs-linux-arm64-gnu@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-arm64-gnu/-/mdx-rs-linux-arm64-gnu-0.6.1.tgz#2502d4c484ecf1b60240e98b3ceaf520cfc4cf61"
-  integrity sha512-SHPlnghHBBx+yU+HyP1pZEeC6aKtx654kfKXx9YMauGvmA2XbTU7FRIio8rYK+e310F67vAZH7SRcTeczhSlyA==
-
 "@rspress/mdx-rs-linux-arm64-gnu@0.6.3":
   version "0.6.3"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-arm64-gnu/-/mdx-rs-linux-arm64-gnu-0.6.3.tgz#7b6fa3e8f3b2d9359b7f7ef9271576f6242fc2af"
   integrity sha512-jocoifBbrFn/lZZsYnQs9nO+fCdgO2XH2HJiHh9FmA02yl3dbjlqh+xiWvZmUukcWgR5SkD+f2AEAkC1zje3Rw==
-
-"@rspress/mdx-rs-linux-arm64-musl@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-arm64-musl/-/mdx-rs-linux-arm64-musl-0.6.1.tgz#f40c94ba817712f963d0d6f6d9df30150ecdd4de"
-  integrity sha512-8o+V3LZ/OvT/0kky56GVM9uqCWbfi5m/RlCE2pS7DqZYvQZcMVeZc14eEWLtLcZd2dsZlqmT/fekbEkoP+pu5Q==
 
 "@rspress/mdx-rs-linux-arm64-musl@0.6.3":
   version "0.6.3"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-arm64-musl/-/mdx-rs-linux-arm64-musl-0.6.3.tgz#f349dcf31cfd519149008cd83ba876706e2c1b4f"
   integrity sha512-1a4o2Iieinc36LEUAzOuRe78O4Z2rqY6BOBhJCzeE37GFVThvJIRz6vz5+UKhQS77E8RwjXs0RlI1Hhub3XeZg==
 
-"@rspress/mdx-rs-linux-x64-gnu@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-x64-gnu/-/mdx-rs-linux-x64-gnu-0.6.1.tgz#0d46bbd4323ec34f9d7b46de2b923dd55b98144f"
-  integrity sha512-v4ZIscNR7AyeQE/8Hcy5Sceh2sbc481GfAUV7LMTcaAiAdHvVQXdWxeoUA/x23uAXmfP+dveZcmhfoGMe/y4rQ==
-
 "@rspress/mdx-rs-linux-x64-gnu@0.6.3":
   version "0.6.3"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-x64-gnu/-/mdx-rs-linux-x64-gnu-0.6.3.tgz#162dbf5270ba3ee69b2d9d5b6712e8d2ecc54d10"
   integrity sha512-46oR4DgDXPPg3yfz+ty5gTwhdMsECbgiR1uPiwiHYOdNvmLABl4EEXyfr5FP38DsaERBjenr4mFz0rgAsm6bgg==
-
-"@rspress/mdx-rs-linux-x64-musl@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-x64-musl/-/mdx-rs-linux-x64-musl-0.6.1.tgz#3c29638e3580a21b3dea1f837861bdc9d0d5de84"
-  integrity sha512-cbBIf6q73n/aB/0ctIW0FHkpBxSUXFazwXJ3nv4YISZP5/1ytE1RXsOPo47Zko3Ta41bNxLYvi5PLOz8cdIejw==
 
 "@rspress/mdx-rs-linux-x64-musl@0.6.3":
   version "0.6.3"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-linux-x64-musl/-/mdx-rs-linux-x64-musl-0.6.3.tgz#86ebb90475f3d4074bb9e6c7dccb000ca2c4d610"
   integrity sha512-+/2ATbYahVj2c16nAnarFRDB6IuN/CdR5uJ8ZhhEAyYuQn+s0hNlxhNTtZ81r/VAUHqdxgojerUPVpljobCAkg==
 
-"@rspress/mdx-rs-win32-arm64-msvc@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-win32-arm64-msvc/-/mdx-rs-win32-arm64-msvc-0.6.1.tgz#b90374bd3f5a40369b09daa45572bdd5f51543da"
-  integrity sha512-x3kujsuzl3kzsL9kBQy/5QdEO6Ga9+nyG3+lbLbGHKfberT0+ZbgOMTwpQ8hetv0qs/bFZWcMhNbZ6+KwKSUYg==
-
 "@rspress/mdx-rs-win32-arm64-msvc@0.6.3":
   version "0.6.3"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-win32-arm64-msvc/-/mdx-rs-win32-arm64-msvc-0.6.3.tgz#f61c1de09cd7c42f36f2a4a519fc4b2d4198edbb"
   integrity sha512-iOnTKM3zGNlJl60a7ENm+EvfhOlLE8pJlOoNfo/aQi+NjD5AWvwq8vzwI85J4lvurTC3BX5v4c3watUwzWFdNA==
-
-"@rspress/mdx-rs-win32-x64-msvc@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmmirror.com/@rspress/mdx-rs-win32-x64-msvc/-/mdx-rs-win32-x64-msvc-0.6.1.tgz#88cb6dff48d09406a3dc48e32ef2866bb7aef3be"
-  integrity sha512-14YQOlV8YBHYNEzNZ4tXuSCWvnWpwuGI2WgXJMEBvhAFLOEpDAzof3KrcfExvBF0gxlUsC/loIorBT4RzoFn4g==
 
 "@rspress/mdx-rs-win32-x64-msvc@0.6.3":
   version "0.6.3"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs-win32-x64-msvc/-/mdx-rs-win32-x64-msvc-0.6.3.tgz#535f443b0003d689710db388d994f6a72c94a67d"
   integrity sha512-Rr7DemsbLzi+pe4HuKayty2iLuXPlHpW3lZ4Yh8Yc8k/iAX8j1BKJKFP8C/tX8n9jXCRRrr5haYsHVrvq32ySA==
 
-"@rspress/mdx-rs@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmmirror.com/@rspress/mdx-rs/-/mdx-rs-0.6.1.tgz#6dc800ed89402a0b1f35afa5fb8b88e3d8cc799a"
-  integrity sha512-hAZH2dZPueRACh2dL6EuKzNSxPShq0zd0BCat1IaOpJ8mX73IRvTAQib/26gTM1IRikjMY7R7Bs6/RDZrjM+dQ==
-  optionalDependencies:
-    "@rspress/mdx-rs-darwin-arm64" "0.6.1"
-    "@rspress/mdx-rs-darwin-x64" "0.6.1"
-    "@rspress/mdx-rs-linux-arm64-gnu" "0.6.1"
-    "@rspress/mdx-rs-linux-arm64-musl" "0.6.1"
-    "@rspress/mdx-rs-linux-x64-gnu" "0.6.1"
-    "@rspress/mdx-rs-linux-x64-musl" "0.6.1"
-    "@rspress/mdx-rs-win32-arm64-msvc" "0.6.1"
-    "@rspress/mdx-rs-win32-x64-msvc" "0.6.1"
-
-"@rspress/mdx-rs@^0.6.3":
+"@rspress/mdx-rs@0.6.3", "@rspress/mdx-rs@^0.6.3":
   version "0.6.3"
   resolved "https://registry.npmmirror.com/@rspress/mdx-rs/-/mdx-rs-0.6.3.tgz#16d55c20e4f2a4431726866906bca17554d71440"
   integrity sha512-mljyb42a7jk/TU46VwtTopuabWV8hRHjDWEeajn/Zo1s9WcBK4TDneUogEH8TXHgrTQLheQG25vO8LoVQxuqCQ==
@@ -612,49 +558,49 @@
     "@rspress/mdx-rs-win32-arm64-msvc" "0.6.3"
     "@rspress/mdx-rs-win32-x64-msvc" "0.6.3"
 
-"@rspress/plugin-auto-nav-sidebar@1.35.4":
-  version "1.35.4"
-  resolved "https://registry.npmmirror.com/@rspress/plugin-auto-nav-sidebar/-/plugin-auto-nav-sidebar-1.35.4.tgz#ee2036c92b8d01e9f9ac0ccfeb55fc840d5c169f"
-  integrity sha512-qh4r44/GOtWTc+oOOQROF2zu5mw/NPW5PWYO93EbMIYczbjkMXsqmKCSPcWbAMsJvn7DJPXUdZCe0DS0Xmn5+w==
+"@rspress/plugin-auto-nav-sidebar@1.36.0":
+  version "1.36.0"
+  resolved "https://registry.npmmirror.com/@rspress/plugin-auto-nav-sidebar/-/plugin-auto-nav-sidebar-1.36.0.tgz#2631fd6195e5a7fa913e55a9ab8d0084702fa48f"
+  integrity sha512-oG3uN7N9EqCdo+XwVvtCFt06BdDNT8i2OT5g3YiZsg61pXc8MHd/ADjYKsXXmGy10vronjdjSuzHsBRrt4vbTg==
   dependencies:
-    "@rspress/shared" "1.35.4"
+    "@rspress/shared" "1.36.0"
 
-"@rspress/plugin-container-syntax@1.35.4":
-  version "1.35.4"
-  resolved "https://registry.npmmirror.com/@rspress/plugin-container-syntax/-/plugin-container-syntax-1.35.4.tgz#4ea407e9e2a52586d8d5aef7cc07935638738bb4"
-  integrity sha512-cIwxtSkQyFMFGL2CdnnXi5SVjDhM9FWiavsaYanjPqeneY6ztWwpJ+ppKcrzgArCiCrt9DTU+G7diEVPqXjYJA==
+"@rspress/plugin-container-syntax@1.36.0":
+  version "1.36.0"
+  resolved "https://registry.npmmirror.com/@rspress/plugin-container-syntax/-/plugin-container-syntax-1.36.0.tgz#3080addcc1377f54651ea2bd4028551ca2d1dd9f"
+  integrity sha512-3H/GPBkZ/6G2i/LbiGYTAx2FKPwAi29vcB5YYFdNAvTcAmdvSHFLoc3gKpemPYon1ne78AnfR9NRvfW1tqHc6A==
   dependencies:
-    "@rspress/shared" "1.35.4"
+    "@rspress/shared" "1.36.0"
 
-"@rspress/plugin-last-updated@1.35.4":
-  version "1.35.4"
-  resolved "https://registry.npmmirror.com/@rspress/plugin-last-updated/-/plugin-last-updated-1.35.4.tgz#b68e5e5911d1f7dbe9e732bf8f6e8a0e0ca339be"
-  integrity sha512-rIGtS4Pjk5r57EAcQ9XCJJQmwLL+UpRCmGE6MAom1UAudabT2zQwt7iLEQhQH8EK6lOcBrAiQLREMdi0/lNjfQ==
+"@rspress/plugin-last-updated@1.36.0":
+  version "1.36.0"
+  resolved "https://registry.npmmirror.com/@rspress/plugin-last-updated/-/plugin-last-updated-1.36.0.tgz#337e3e9f090b3d20af8fcb4b5c4f7d73a11dacfc"
+  integrity sha512-Isx5l/VZDGDhduXXg24W5froYCSOCAbWbIU+ief7XNfJvafkQb7hWaBpQuG8gHRO2hTdhnKrQ/6DNZJtEa3LeQ==
   dependencies:
-    "@rspress/shared" "1.35.4"
+    "@rspress/shared" "1.36.0"
 
-"@rspress/plugin-medium-zoom@1.35.4":
-  version "1.35.4"
-  resolved "https://registry.npmmirror.com/@rspress/plugin-medium-zoom/-/plugin-medium-zoom-1.35.4.tgz#e2a31f0ce597a65dad355fbd053dde2255c1417c"
-  integrity sha512-0q4ShCSQI3nL1v13pUnKjV+u6KX3QO8KB/MXyWH97sIMj3TBtsPhrDnMe+JD1FsH0/rhVo61vi2cYDCa24c3oA==
+"@rspress/plugin-medium-zoom@1.36.0":
+  version "1.36.0"
+  resolved "https://registry.npmmirror.com/@rspress/plugin-medium-zoom/-/plugin-medium-zoom-1.36.0.tgz#af462c7a46a1c6eda3902440f3b0bb47f986c811"
+  integrity sha512-KlU0FnI+uHMmJ+TKhw2ij+jal2MvBE5aoRcoP+TIwKx1OgUvkndMxaTwfbPChO9K+fYgFNifzW88iHJ3TBqehA==
   dependencies:
     medium-zoom "1.1.0"
 
-"@rspress/runtime@1.35.4":
-  version "1.35.4"
-  resolved "https://registry.npmmirror.com/@rspress/runtime/-/runtime-1.35.4.tgz#38f7bf6a719ed2bd85964cc85dd17884aa8a4f95"
-  integrity sha512-nGKU/43wYNJZE31nniw0KQq7KqHkm/RaNxRi2i1/eHLYBI5VStqZ5bwwXGr8WXfA9I+d/L51gczjXHgy8Dje+A==
+"@rspress/runtime@1.36.0":
+  version "1.36.0"
+  resolved "https://registry.npmmirror.com/@rspress/runtime/-/runtime-1.36.0.tgz#ab9aabcf13dd5a198027951170c1c2a7306bf610"
+  integrity sha512-ShsIsGBY84xUhOq8zptaBh7Qezr63F0H5+vS+lhfS6efdao1wspxogJHdF0ljZmAY76HE9vktDq8TZsvdJq4VA==
   dependencies:
-    "@rspress/shared" "1.35.4"
+    "@rspress/shared" "1.36.0"
     react "^18.3.1"
     react-dom "^18.3.1"
     react-helmet-async "^1.3.0"
     react-router-dom "^6.27.0"
 
-"@rspress/shared@1.35.4":
-  version "1.35.4"
-  resolved "https://registry.npmmirror.com/@rspress/shared/-/shared-1.35.4.tgz#32da596fc00ddce8b0d018a1dcd10119484f4e8b"
-  integrity sha512-hZdSQuTN+OCwv6hM9WL1zqGoyg5zDNXSbgoMDQCWhppVcmKMLe+5g+wr6gqegrzBWhhAnbf0WvgHksVArpW1HA==
+"@rspress/shared@1.36.0":
+  version "1.36.0"
+  resolved "https://registry.npmmirror.com/@rspress/shared/-/shared-1.36.0.tgz#61c033ad31a7704945314746d8d0d35b4d12b1d7"
+  integrity sha512-aL7jwOZwPnrdzTrixmvPOaz4HzM4mH1ySU15CxIozew8RuW/heT/2Hem6zK7MobSWVnNWAT4/XzodBcYjQAsiA==
   dependencies:
     "@rsbuild/core" "~1.0.19"
     chalk "5.3.0"
@@ -675,14 +621,14 @@
     gray-matter "4.0.3"
     unified "^10.1.2"
 
-"@rspress/theme-default@1.35.4":
-  version "1.35.4"
-  resolved "https://registry.npmmirror.com/@rspress/theme-default/-/theme-default-1.35.4.tgz#5d343e135c75b3191eaf2e1db1779eae814cf145"
-  integrity sha512-654JQddPAdjr7oGua2Yj7bjtOum2nNEQvFQTRV5osb7oV1j/YNeQuLDvJfbog9GVGzjlXatoMNhhmwZxQ5FN+w==
+"@rspress/theme-default@1.36.0":
+  version "1.36.0"
+  resolved "https://registry.npmmirror.com/@rspress/theme-default/-/theme-default-1.36.0.tgz#0d1bb493e40fa0b239789349a2bfe5dc4a4e662d"
+  integrity sha512-6wP/AgselPLCHblBGYx5p5bUz8tD30O1+q1Rw3To0swO4AVeocNUM6n4PONzABsb76EyE6VytAN0BVvNi5laOw==
   dependencies:
     "@mdx-js/react" "2.3.0"
-    "@rspress/runtime" "1.35.4"
-    "@rspress/shared" "1.35.4"
+    "@rspress/runtime" "1.36.0"
+    "@rspress/shared" "1.36.0"
     body-scroll-lock "4.0.0-beta.0"
     copy-to-clipboard "^3.3.3"
     flexsearch "0.7.43"
@@ -3401,14 +3347,14 @@ rspress-plugin-reading-time@^0.3.0:
     reading-time "^1.5.0"
     rspress-plugin-devkit "^0.3.0"
 
-rspress@^1.35.4:
-  version "1.35.4"
-  resolved "https://registry.npmmirror.com/rspress/-/rspress-1.35.4.tgz#28df0e6aec34214d69c7ef002acf7ee67a03c006"
-  integrity sha512-vaUx16imcqJJMyQj0NbTkIthh73A/9sNWfQnRd5JJZBf/T3FHO9PMzvqivMOYE6kpUy/LMzvUBTmRWfQkM+Wgg==
+rspress@^1.36.0:
+  version "1.36.0"
+  resolved "https://registry.npmmirror.com/rspress/-/rspress-1.36.0.tgz#876b593b58e1a4e3860989adf8baec7946167d25"
+  integrity sha512-2CHqRoR+edgmPL6mwCFpxLHHqgr5zUGcHYgM6BkwA0QHFi8C3C3AhxW2UMuR1SB3L4DE7G50yU7DogFNGXrT7g==
   dependencies:
     "@rsbuild/core" "~1.0.19"
-    "@rspress/core" "1.35.4"
-    "@rspress/shared" "1.35.4"
+    "@rspress/core" "1.36.0"
+    "@rspress/shared" "1.36.0"
     cac "^6.7.14"
     chalk "5.3.0"
     chokidar "^3.6.0"

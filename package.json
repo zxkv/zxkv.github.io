@@ -9,7 +9,7 @@
 		"preview": "rspress preview"
 	},
 	"dependencies": {
-		"rspress": "^1.35.4",
+		"rspress": "^1.36.0",
 		"rspress-plugin-file-tree": "^0.4.0",
 		"rspress-plugin-reading-time": "^0.3.0"
 	},
