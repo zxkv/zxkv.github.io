@@ -13,7 +13,7 @@ description: Code Inspector 页面开发提效的神器
 
 <Install value="install code-inspector-plugin -D" />
 
-#### ⚙️ 依赖配置
+#### ⚙️ 项目配置
 
 -   `webpack` 项目配置如下：
 
@@ -164,9 +164,23 @@ export default defineConfig({
 });
 ```
 
+#### 👌 依赖配置
+
+|    参数名称     |             默认值             | 是否必须配置 | 说明                                        |
+| :-------------: | :----------------------------: | :----------: | ------------------------------------------- |
+|     bundler     |      vite/webpack/rspack       |      ✅      | 指定的打包工具类型                          |
+|     hotKeys     | ['altKey', 'shiftKey'] or 其他 |      ✅      | 触发功能的组合键                            |
+|   showSwitch    |           true/false           |      ✅      | 是否在页面展示一个控制源码定位功能的开关    |
+|   autoToggle    |           true/false           |      ✅      | 自动切换                                    |
+|   **editor**    | IDE code 「参考后边 IDE 编码」 |      ✅      | 指定编辑器                                  |
+|   hideConsole   |           true/false           |      ✅      | 是否关闭控制台打印                          |
+| hideDomPathAttr |           true/false           |      ❓      | 是否隐藏 DOM 元素上的 `data-insp-path` 属性 |
+
+-   此处列举部分常用配置项，详细配置项参考 [Code Inspector 文档 - API 配置](https://inspector.fe-dev.cn/guide/api.html)
+
 #### 📚 相关文档
 
--   [Code Inspector 配置文档](https://inspector.fe-dev.cn/)
+-   [Code Inspector 文档](https://inspector.fe-dev.cn/)
 -   [Code Inspector GitHub](https://github.com/zh-lx/code-inspector)
 
 ::: danger 注意事项
@@ -177,7 +191,7 @@ export default defineConfig({
 
 :::
 
-#### 👉 指定开发工具
+#### 👉 指定 IDE
 
 -   `code-inspector-plugin`默认会会扫描系统当前打开当前已打开项目代码运行项目的编辑器；
 -   如需指定打开固定的 IDE 编辑器，需要进行如下配置：
@@ -189,23 +203,23 @@ CODE_INSPECTOR_EDITOR= code
 
 -   IDE Code 列表
 
-| 编辑器                        | 编码名称      | MacOS | Windows | Linux |
-| :---------------------------- | :------------ | :---: | :-----: | :---: |
-| Visual Studio Code            | code          |  ✅   |   ✅    |  ✅   |
-| Cursor                        | cursor        |  ✅   |   ✅    |  ✅   |
+|            编辑器             |   编码名称    | MacOS | Windows | Linux |
+| :---------------------------: | :-----------: | :---: | :-----: | :---: |
+|      Visual Studio Code       |     code      |  ✅   |   ✅    |  ✅   |
+|            Cursor             |    cursor     |  ✅   |   ✅    |  ✅   |
 | Visual Studio Code - Insiders | code-insiders |  ✅   |   ✅    |  ✅   |
-| VSCodium                      | codium        |  ✅   |   ✅    |  ✅   |
-| WebStorm                      | webstorm      |  ✅   |   ✅    |  ✅   |
-| Atom                          | atom          |  ✅   |   ✅    |  ✅   |
-| HBuilderX                     | hbuilder      |  ✅   |   ✅    |  ❌   |
-| PhpStorm                      | phpstorm      |  ✅   |   ✅    |  ✅   |
-| PyCharm                       | pycharm       |  ✅   |   ✅    |  ✅   |
-| IntelliJ IDEA                 | idea          |  ✅   |   ✅    |  ✅   |
-| Brackets                      | brackets      |  ✅   |   ✅    |  ❌   |
-| Appcode                       | appcode       |  ✅   |   ❌    |  ❌   |
-| Atom Beta                     | atom-beta     |  ✅   |   ❌    |  ❌   |
-| Clion                         | clion         |  ✅   |   ✅    |  ❌   |
-| Rider                         | rider         |  ✅   |   ✅    |  ✅   |
-| Rubymine                      | rubymine      |  ✅   |   ✅    |  ✅   |
+|           VSCodium            |    codium     |  ✅   |   ✅    |  ✅   |
+|           WebStorm            |   webstorm    |  ✅   |   ✅    |  ✅   |
+|             Atom              |     atom      |  ✅   |   ✅    |  ✅   |
+|           HBuilderX           |   hbuilder    |  ✅   |   ✅    |  ❌   |
+|           PhpStorm            |   phpstorm    |  ✅   |   ✅    |  ✅   |
+|            PyCharm            |    pycharm    |  ✅   |   ✅    |  ✅   |
+|         IntelliJ IDEA         |     idea      |  ✅   |   ✅    |  ✅   |
+|           Brackets            |   brackets    |  ✅   |   ✅    |  ❌   |
+|            Appcode            |    appcode    |  ✅   |   ❌    |  ❌   |
+|           Atom Beta           |   atom-beta   |  ✅   |   ❌    |  ❌   |
+|             Clion             |     clion     |  ✅   |   ✅    |  ❌   |
+|             Rider             |     rider     |  ✅   |   ✅    |  ✅   |
+|           Rubymine            |   rubymine    |  ✅   |   ✅    |  ✅   |
 
--   插件支持的 IDE 配置文件，可在 [Code Inspector 配置文档](https://inspector.fe-dev.cn/) 中查看
+-   插件支持的 IDE 配置文件，可在 [Code Inspector 文档 - IDE 配置](https://inspector.fe-dev.cn/guide/ide.html) 中查看
