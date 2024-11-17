@@ -1,4 +1,4 @@
-import { blog, dev, note, page } from "../../count";
+import { blog, dev, note, page, record } from "../../count";
 
 const toItems = (path = "", count = 0) => {
 	let items = [];
@@ -98,9 +98,30 @@ const PAGE_0 = {
 	items: toItems("/page", page.index)
 };
 
+// 学习记录
+const RECORD_0 = {
+	text: "学习记录",
+	link: "/record/"
+};
+
+// 编辑器
+const RECORD_1 = {
+	text: "编辑器",
+	collapsed: false,
+	items: toItems("/record/editor", record.editor)
+};
+
+// 依赖包
+const RECORD_2 = {
+	text: "依赖包",
+	collapsed: true,
+	items: toItems("/record/tools", record.tools)
+};
+
 export default {
 	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3, BLOG_4],
 	"/dev/": [DEV_0, DEV_1, DEV_2],
 	"/note/": [NODE_0, NODE_1, NODE_2, NODE_3, NODE_4, NODE_5],
-	"/page/": [PAGE_0]
+	"/page/": [PAGE_0],
+	"/record/": [RECORD_0, RECORD_1, RECORD_2]
 };

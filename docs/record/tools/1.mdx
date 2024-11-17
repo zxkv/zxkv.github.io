@@ -1,0 +1,211 @@
+---
+author: 下落香樟树
+description: Code Inspector 页面开发提效的神器
+---
+
+# 页面开发提效的神器 Code Inspector
+
+#### 插件简介
+
+&emsp;&emsp;**Code Inspector** 是款开源免费的页面开发提效的神器，通过点击页面上的元素标签，快读取该元素的属性，并自动打开 **IDE** 定位至页面点击 **DOM** 元素的源码位置。对于多人维护的复杂项目来说，在面对不同人员维护的功能模块时，可以快速高效的定位至对应页面模块代码，减少定位和查阅代码所在目录所需的时间，从而很大程度的提高了工作效率。
+
+#### ⏬ 依赖安装
+
+<Install value="install code-inspector-plugin -D" />
+
+#### ⚙️ 依赖配置
+
+-   `webpack` 项目配置如下：
+
+```javascript title="webpack.config.js"
+const { codeInspectorPlugin } = require("code-inspector-plugin");
+
+module.exports = () => ({
+	plugins: [
+		codeInspectorPlugin({
+			bundler: "webpack"
+		})
+	]
+});
+```
+
+-   `vue-cli` 项目配置如下：
+
+```javascript title="vue.config.js"
+const { codeInspectorPlugin } = require("code-inspector-plugin");
+
+module.exports = {
+	chainWebpack: config => {
+		config.plugin("code-inspector-plugin").use(
+			codeInspectorPlugin({
+				bundler: "webpack"
+			})
+		);
+	}
+};
+```
+
+-   `vite` 项目配置如下：
+
+```javascript title="vite.config.js"
+import { defineConfig } from "vite";
+import { codeInspectorPlugin } from "code-inspector-plugin";
+
+export default defineConfig({
+	plugins: [
+		codeInspectorPlugin({
+			bundler: "vite"
+		})
+	]
+});
+```
+
+-   `Rspack` 项目配置如下：
+
+```javascript title="rspack.config.js"
+const { codeInspectorPlugin } = require("code-inspector-plugin");
+
+module.exports = {
+	plugins: [
+		codeInspectorPlugin({
+			bundler: "rspack"
+		})
+	]
+};
+```
+
+-   `Rsbuild` 项目配置如下：
+
+```javascript title="rsbuild.config.js"
+import { defineConfig } from "@rsbuild/core";
+const { codeInspectorPlugin } = require("code-inspector-plugin");
+
+export default defineConfig({
+	tools: {
+		rspack: {
+			plugins: [
+				codeInspectorPlugin({
+					bundler: "rspack"
+				})
+			]
+		}
+	}
+});
+```
+
+-   `Farm` 项目配置如下：
+
+```javascript title="farm.config.js"
+import { defineConfig } from "@farmfe/core";
+import { codeInspectorPlugin } from "code-inspector-plugin";
+
+export default defineConfig({
+	vitePlugins: [
+		codeInspectorPlugin({
+			bundler: "vite"
+		})
+	]
+});
+```
+
+-   `umi.js` 项目配置如下：
+
+```javascript title="umi.config.js"
+import { defineConfig } from "@umijs/max";
+import { codeInspectorPlugin } from "code-inspector-plugin";
+
+export default defineConfig({
+	chainWebpack(memo) {
+		memo.plugin("code-inspector-plugin").use(
+			codeInspectorPlugin({
+				bundler: "webpack"
+			})
+		);
+	}
+});
+```
+
+-   `esbuild` 项目配置如下：
+
+```javascript title="esbuild.config.js"
+const esbuild = require("esbuild");
+const { codeInspectorPlugin } = require("code-inspector-plugin");
+
+esbuild.build({
+	plugins: [
+		codeInspectorPlugin({
+			bundler: "esbuild",
+			dev: () => true
+		})
+	]
+});
+```
+
+::: warning 配置注意事项
+
+-   **esbuild** 中使用时，**dev** 函数的返回值需自己根据环境判断，本地开发的环境返回 **true**，线上打包返回 **false**
+
+:::
+
+-   `astro` 项目配置如下：
+
+```javascript title="astro.config.mjs"
+import { defineConfig } from "astro/config";
+import { codeInspectorPlugin } from "code-inspector-plugin";
+
+export default defineConfig({
+	vite: {
+		plugins: [
+			codeInspectorPlugin({
+				bundler: "vite"
+			})
+		]
+	}
+});
+```
+
+#### 📚 相关文档
+
+-   [Code Inspector 配置文档](https://inspector.fe-dev.cn/)
+-   [Code Inspector GitHub](https://github.com/zh-lx/code-inspector)
+
+::: danger 注意事项
+
+-   在 **Mac OS 苹果电脑**💻 上使用 **VSCode** 作为 **IDE** 开发工具时，需要进行如下配置，插件方可生效；
+-   在 **VSCode** 中执行 `command + shift + p` 命令, 搜索并点击 `Shell Command: Install 'code' command in PATH`命令；
+-   当出现弹窗提示`Shell Command: Install 'code' successfully installed in PATH`时，表示已经安装成功，重启编辑器即可生效;
+
+:::
+
+#### 👉 指定开发工具
+
+-   `code-inspector-plugin`默认会会扫描系统当前打开当前已打开项目代码运行项目的编辑器；
+-   如需指定打开固定的 IDE 编辑器，需要进行如下配置：
+-   在项目根目录下添加文件`.env.local`，添加文本内容为：`CODE_INSPECTOR_EDITOR=code`
+
+```shell title=".env.local"
+CODE_INSPECTOR_EDITOR= code
+```
+
+-   IDE Code 列表
+
+| 编辑器                        | 编码名称      | MacOS | Windows | Linux |
+| :---------------------------- | :------------ | :---: | :-----: | :---: |
+| Visual Studio Code            | code          |  ✅   |   ✅    |  ✅   |
+| Cursor                        | cursor        |  ✅   |   ✅    |  ✅   |
+| Visual Studio Code - Insiders | code-insiders |  ✅   |   ✅    |  ✅   |
+| VSCodium                      | codium        |  ✅   |   ✅    |  ✅   |
+| WebStorm                      | webstorm      |  ✅   |   ✅    |  ✅   |
+| Atom                          | atom          |  ✅   |   ✅    |  ✅   |
+| HBuilderX                     | hbuilder      |  ✅   |   ✅    |  ❌   |
+| PhpStorm                      | phpstorm      |  ✅   |   ✅    |  ✅   |
+| PyCharm                       | pycharm       |  ✅   |   ✅    |  ✅   |
+| IntelliJ IDEA                 | idea          |  ✅   |   ✅    |  ✅   |
+| Brackets                      | brackets      |  ✅   |   ✅    |  ❌   |
+| Appcode                       | appcode       |  ✅   |   ❌    |  ❌   |
+| Atom Beta                     | atom-beta     |  ✅   |   ❌    |  ❌   |
+| Clion                         | clion         |  ✅   |   ✅    |  ❌   |
+| Rider                         | rider         |  ✅   |   ✅    |  ✅   |
+| Rubymine                      | rubymine      |  ✅   |   ✅    |  ✅   |
+
+-   插件支持的 IDE 配置文件，可在 [Code Inspector 配置文档](https://inspector.fe-dev.cn/) 中查看
