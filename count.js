@@ -25,3 +25,8 @@ export const dev = {
 	soft: 1,
 	npm: 1
 };
+
+// 学习 /
+export const learn = {
+	index: 1
+};

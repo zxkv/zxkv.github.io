@@ -1,6 +1,6 @@
 // gzip 插件
 import CompressionWebpackPlugin from "compression-webpack-plugin";
-import { umami } from "./icon";
+// import { umami } from "./icon";
 
 const nav = [
 	{
@@ -24,7 +24,7 @@ const nav = [
 		activeMatch: "/page/"
 	},
 	{
-		text: "链接地址",
+		text: "博客地址",
 		items: [
 			{
 				text: "Render",
@@ -39,22 +39,22 @@ const nav = [
 ];
 
 const socialLinks = [
+	// {
+	// 	icon: {
+	// 		svg: umami
+	// 	},
+	// 	mode: "link",
+	// 	content: "https://umami.is"
+	// },
 	{
-		icon: {
-			svg: umami
-		},
+		icon: "juejin",
 		mode: "link",
-		content: "https://umami.is"
+		content: "https://juejin.cn/user/184373682901309/posts"
 	},
 	{
 		icon: "github",
 		mode: "link",
 		content: "https://github.com/zxkv"
-	},
-	{
-		icon: "juejin",
-		mode: "link",
-		content: "https://juejin.cn/user/184373682901309/posts"
 	}
 ];
 
