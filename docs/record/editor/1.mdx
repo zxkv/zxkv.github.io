@@ -1,10 +1,226 @@
 ---
 author: 下落香樟树
-description: WEB 前端开发编辑器
+description: WEB 前端开发编辑器配置 - Windsurf Editor
 ---
 
-# Windsurf Editor
+# 编辑器配置 - Windsurf Editor
 
-### 简介
+### IDE 简介
 
-&emsp;&emsp;`Windsurf Editor` 是由 **Codeium** 推出的一款「代理式」 **AI 编程工具**。
+&emsp;&emsp;`Windsurf Editor` 是由 **Codeium** 推出的一款「代理式」 **AI 编程工具**，内置了 **Codeium** 的所有功能，包括语言、插件、模板、代码片段等。支持`GPT 4o`、`Claude 3.5 Sonnet`和`Cascode Base`AI 工具。无需代理，即可直接切换 AI 工具使用，便于开发过程中代码智能提示和问题查找。
+
+&emsp;&emsp;`Windsurf Editor` 可以直接采用 **vscode** 的配置，按照 **vscode** 的需求配置安装插件即可，无需额外安装，前提需要注册账号才可以使用编辑器。默认安装插件的源受网络限制，下载和搜索插件比较慢，如果要求高，需要下载插件到本地进行安装，或者自行配置代理来加速插件的下载和安装。
+
+### IDE 下载
+
+-   [Windsurf Editor 官网](https://codeium.com/windsurf)「👈 点击查看下载」
+-   支持系统
+
+    -   [Windows 10(64-bit)](https://windsurf-stable.codeiumdata.com/win32-x64-user/stable/56025767068f846a4d68adf1914f19f9c34e1375/WindsurfUserSetup-x64-1.0.2.exe)
+    -   MacOS
+        -   Apple Silicon
+        -   Intel
+    -   Linux
+
+### IDE 插件
+
+-   Andromeda
+-   Auto Rename Tag
+-   CodeSnap
+-   CSS Navigation
+-   DotENV
+-   Element UI Vue Snippets
+-   element-ui-helper
+-   Error Gutters
+-   Error Lens
+-   ES7+ React/Redux/React-Native snippets
+-   Git Graph
+-   Git History
+-   gitignore
+-   GitLens — Git supercharged
+-   Goto definition alias
+-   Highlight Matching Tag
+-   Image preview
+-   IntelliSense for CSS class names in HTML
+-   JavaScript (ES6) code snippets
+-   JavaScript Code Snippet
+-   JavaScript Snippets
+-   Laravel goto view
+-   Live Server
+-   Markdown All in One
+-   Material Icon Theme
+-   MDX
+-   open in browser
+-   Path Autocomplete
+-   Path Intellisense
+-   Prettier - Code formatter
+-   Project Manager
+-   shell-format
+-   Svg Preview
+-   Turbo Console Log for more language
+-   Vetur
+-   VueHelper
+-   Vue Peek
+-   Vue VSCode Snippets
+-   Vue - Official
+-   Vue 3 Snippets
+-   vue-helper
+-   vue-component
+-   Easy LESS
+-   Element Plus Snippets
+-   element-plus-vue
+-   arco design vue snippets
+
+::: tip VSCode 插件
+
+-   开发过程中使用的插件，可根据自己的需求选择使用
+
+:::
+
+### 代码提示
+
+-   腾讯云 AI 代码助手
+-   MarsCode AI: Coding Assistant
+-   TONGYI Lingma
+-   CodeGeeX
+-   Raccoon
+-   iFlyCode
+-   GitHub Copilot
+-   Codeium
+
+::: tip 代码助手
+
+-   常用国内/国外 AI 代码提示插件，可根据自己的需求选择使用
+
+:::
+
+### IDE 配置
+
+```json title="配置文件"
+{
+	"workbench.colorTheme": "Andromeda Colorizer",
+	"windsurf.autocompleteSpeed": "fast",
+	"npm.packageManager": "bun",
+	"php.validate.enable": false,
+	"php.suggest.basic": false,
+	"javascript.format.insertSpaceAfterConstructor": true,
+	"microsoft-sovereign-cloud.environment": "custom",
+	"microsoft.useMsal": true,
+	"npm.enableRunFromFolder": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.wordWrapColumn": 128,
+	"editor.fontFamily": "'JetBrains Mono','Cascadia Code',微软雅黑,'Noto Sans CJK SC',Menlo, Monaco, 'Courier New', monospace",
+	"editor.formatOnSave": true,
+	"windsurf.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
+	"windsurf.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
+	"windsurf.enableConfig": {
+		"*": true
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"search.followSymlinks": false,
+	"windsurf.cascadeOpenOnReload": false,
+	"windsurf.showSelectionActions": false,
+	"git.alwaysShowStagedChangesResourceGroup": true,
+	"explorer.confirmDelete": false,
+	"git.confirmSync": false,
+	"editor.cursorBlinking": "smooth",
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.cursorStyleInactive": "underline",
+	"terminal.integrated.cursorBlinking": true,
+	"[mdx]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.wordWrap": "on",
+	"editor.linkedEditing": true,
+	"editor.minimap.maxColumn": 128,
+	"notebook.output.wordWrap": true,
+	"prettier.printWidth": 128,
+	"editor.scrollbar.horizontal": "hidden",
+	"workbench.editor.tabSizingFixedMaxWidth": 140,
+	"typescript.format.insertSpaceBeforeAndAfterBinaryOperators": false,
+	"editor.smoothScrolling": true,
+	"terminal.integrated.fontFamily": "'JetBrains Mono',monospace",
+	"vetur.format.options.useTabs": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.detectIndentation": false,
+	"typescript.locale": "zh-CN",
+	"git.timeline.showUncommitted": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"editor.guides.bracketPairs": true,
+	"codesnap.realLineNumbers": true,
+	"terminal.integrated.stickyScroll.enabled": true,
+	"editor.stickyScroll.enabled": false,
+	"editor.quickSuggestions": {
+		"comments": "on",
+		"strings": "on"
+	},
+	"editor.fontSize": 13,
+	"gitlens.hovers.currentLine.over": "line",
+	"gitlens.currentLine.scrollable": false,
+	"gitlens.statusBar.enabled": false,
+	"gitlens.defaultDateLocale": "zh-cn",
+	"gitlens.statusBar.pullRequests.enabled": false,
+	"gitlens.changes.locations": ["overview", "gutter", "line"],
+	"gitlens.heatmap.locations": ["overview", "gutter"],
+	"workbench.activityBar.location": "top",
+	"vetur.format.options.tabSize": 4,
+	"terminal.integrated.tabStopWidth": 4,
+	"prettier.tabWidth": 4,
+	"terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+	"editor.minimap.size": "fill",
+	"[javascript]": {
+		"editor.maxTokenizationLineLength": 2500,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"typescript.check.npmIsInstalled": false,
+	"workbench.enableExperiments": false,
+	"telemetry.telemetryLevel": "off",
+	"update.showReleaseNotes": false,
+	"workbench.experimental.cloudChanges.partialMatches.enabled": true,
+	"extensions.autoUpdate": "onlyEnabledExtensions",
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"json.schemaDownload.enable": false,
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"explorer.confirmDragAndDrop": false,
+	"liveServer.settings.AdvanceCustomBrowserCmdLine": ""
+}
+```
+
+::: warning VSCode 编辑器配置
+
+-   VSCode 编辑器配置，可按需安装所需插件，按需配置。
+
+:::
+
+### 插件源配置
+
+-   配置入口：首选项 -> 设置 -> 用户 -> [**搜索配置项名称**] -> [**填写配置项值**]
+
+-   配置项 1：Windsurf: Marketplace Extension Gallery Service URL
+-   配置值：`https://marketplace.visualstudio.com/items`
+
+-   配置项 2：Windsurf: Marketplace Gallery Item URL
+-   配置值：`https://marketplace.visualstudio.com/items`
+
+::: danger ⚠️ 注意事项:
+
+-   **windsurf** 插件源于 **vscode** 插件源对比相对来说会少一些，如果所需插件搜索不到，即可按照上述方式替换现有编辑器的插件源
+
+:::
