@@ -1,6 +1,157 @@
 ---
-title: "Vue CLI 打包配置"
+title: "Vue CLI 配置"
 author: "下落香樟树"
 ---
 
-# Vue CLI 打包配置
+# Vue CLI 配置
+
+### 依赖安装
+
+-   安装插件
+
+```bash title="安装全局插件"
+npm install -g @vue/cli
+# or
+yarn global add @vue/cli
+```
+
+-   创建项目
+
+```bash title="创建项目"
+vue create my-project
+# or
+vue ui
+```
+
+-   命令配置
+
+```bash title=" package.json 启动命令配置"
+{
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build"
+    }
+}
+```
+
+-   配置文件`vue.config.js`
+
+```bash title="serve 启动配置"
+用法：vue-cli-service serve [options] [entry]
+
+选项：
+    --open    在服务器启动时打开浏览器
+    --copy    在服务器启动时将 URL 复制到剪切版
+    --mode    指定环境模式 (默认值：development)
+    --host    指定 host (默认值：0.0.0.0)
+    --port    指定 port (默认值：8080)
+    --https   使用 https (默认值：false)
+```
+
+```bash title="build 打包配置"
+用法：vue-cli-service build [options] [entry|pattern]
+
+选项：
+    --mode          指定环境模式 (默认值：production)
+    --dest          指定输出目录 (默认值：dist)
+    --modern        面向现代浏览器带自动回退地构建应用
+    --target        app | lib | wc | wc-async (默认值：app)
+    --name          库或 Web Components 模式下的名字 (默认值：package.json 中的 "name" 字段或入口文件名)
+    --no-clean      在构建项目之前不清除目标目录的内容
+    --report        生成 report.html 以帮助分析包内容
+    --report-json   生成 report.json 以帮助分析包内容
+    --watch         监听文件变化
+```
+
+### 打包配置
+
+
+-   配置文件`babel.config.js`
+
+ ```javascript title="babel.config.js"
+module.exports = {
+	presets: [
+		"@vue/cli-plugin-babel/preset",
+		[
+			"@babel/preset-env",
+			{
+				modules: false
+			}
+		]
+	],
+	compact: false,
+	plugins: [
+		[
+			"component",
+			// element-ui 按需加载
+			{
+				libraryName: "element-ui",
+				styleLibraryName: "theme-chalk"
+			}
+		]
+	],
+	env: {
+		development: {
+			// 组件动态导入配置 "@babel/plugin-syntax-dynamic-import"
+			plugins: ["dynamic-import-node"]
+		},
+		production: {
+			// 生产环境移除console
+			plugins: ["transform-remove-console"]
+		}
+	}
+};
+```
+
+-   配置文件`vue.config.js`
+
+```javascript title="vue.config.js"
+module.exports = {
+    // 忽略依赖包 babel 转码
+    transpileDependencies: true,
+	publicPath: "/",
+	outputDir: "dist",
+	assetsDir: "static",
+    // 代码检查
+	lintOnSave: isProd ? false : "warning",
+    // 打包代码不生成 source map
+	productionSourceMap: false,
+    devServer: {
+		host: "0.0.0.0",
+		port: 8080,
+        // 浏览器热更新
+		hot: true,
+		compress: true,
+		proxy: {
+            // 代理API置
+			[process.env.VUE_APP_BASE_API]: {
+				target: "http://localhost:8080",
+				changeOrigin: true,
+				pathRewrite: {
+					["^" + process.env.VUE_APP_BASE_API]: ""
+				}
+			}
+		},
+		client: {
+            // 浏览器控制台错误提示
+			overlay: false,
+            // 进度条
+			progress: true
+		}
+	},
+    css: {
+		loaderOptions: {
+			sass: {
+                // 全局变量 scss 文件引入
+				additionalData: `@import "~@/assets/css/variables.scss";`,
+				sassOptions: { outputStyle: "expanded" }
+			}
+		}
+	},
+};
+```
+
+
+### 参考文档
+
+[Vue CLI 官方文档](https://cli.vuejs.org/zh)「👈 点击查阅」
