@@ -1,4 +1,4 @@
-import { blog, dev, note, page, record } from "../../count";
+import { blog, dev, note, page, record } from "./page-count";
 
 const toItems = (path = "", count = 0) => {
 	let items = [];
@@ -118,10 +118,17 @@ const RECORD_2 = {
 	items: toItems("/record/tools", record.tools)
 };
 
+// 打包配置
+const RECORD_3 = {
+	text: "打包配置",
+	collapsed: true,
+	items: toItems("/record/build", record.build)
+};
+
 export default {
 	"/blog/": [BLOG_0, BLOG_1, BLOG_2, BLOG_3, BLOG_4],
 	"/dev/": [DEV_0, DEV_1, DEV_2],
 	"/note/": [NODE_0, NODE_1, NODE_2, NODE_3, NODE_4, NODE_5],
 	"/page/": [PAGE_0],
-	"/record/": [RECORD_0, RECORD_1, RECORD_2]
+	"/record/": [RECORD_0, RECORD_1, RECORD_2, RECORD_3]
 };

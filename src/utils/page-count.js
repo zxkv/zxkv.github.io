@@ -53,5 +53,8 @@ export const dev = {
  **/
 export const record = {
 	editor: 1,
-	tools: 1
+	tools: 1,
+	build: 4
 };
+
+// 在 ./utils/sidebar.js 中使用
