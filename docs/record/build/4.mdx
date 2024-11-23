@@ -65,10 +65,9 @@ vue ui
 
 ### 打包配置
 
-
 -   配置文件`babel.config.js`
 
- ```javascript title="babel.config.js"
+```javascript title="babel.config.js"
 module.exports = {
 	presets: [
 		"@vue/cli-plugin-babel/preset",
@@ -103,54 +102,318 @@ module.exports = {
 };
 ```
 
+:::tip babel 配置文件相关插件
+
+-   `@vue/cli-plugin-babel`
+-   `@babel/preset-env`
+-   `@babel/plugin-syntax-dynamic-import`
+-   `transform-remove-console`
+-   `@babel/plugin-transform-runtime`
+
+:::
+
 -   配置文件`vue.config.js`
 
 ```javascript title="vue.config.js"
 module.exports = {
-    // 忽略依赖包 babel 转码
-    transpileDependencies: true,
+	// 忽略依赖包 babel 转码
+	transpileDependencies: true,
 	publicPath: "/",
 	outputDir: "dist",
 	assetsDir: "static",
-    // 代码检查
+	// 代码检查
 	lintOnSave: isProd ? false : "warning",
-    // 打包代码不生成 source map
+	// 打包代码不生成 source map
 	productionSourceMap: false,
-    devServer: {
+	devServer: {
 		host: "0.0.0.0",
 		port: 8080,
-        // 浏览器热更新
+		// 浏览器热更新
 		hot: true,
 		compress: true,
 		proxy: {
-            // 代理API置
-			[process.env.VUE_APP_BASE_API]: {
+			// 代理API置
+			[process.env.VUE_APP_API]: {
 				target: "http://localhost:8080",
 				changeOrigin: true,
 				pathRewrite: {
-					["^" + process.env.VUE_APP_BASE_API]: ""
+					["^" + process.env.VUE_APP_API]: ""
 				}
 			}
 		},
 		client: {
-            // 浏览器控制台错误提示
+			// 浏览器控制台错误提示
 			overlay: false,
-            // 进度条
+			// 进度条
 			progress: true
 		}
 	},
-    css: {
+	css: {
 		loaderOptions: {
 			sass: {
-                // 全局变量 scss 文件引入
+				// 全局变量 scss 文件引入
+				additionalData: `@import "~@/assets/css/variables.scss";`,
+				sassOptions: { outputStyle: "expanded" }
+			}
+		}
+	}
+};
+```
+
+-   gzip 压缩配置
+
+```javascript title="vue.config.js"
+// 打包压缩插件
+const CompressionWebpackPlugin = require("compression-webpack-plugin");
+
+module.exports = defineConfig({
+	configureWebpack: {
+		// externals: {
+		// 	vue: "Vue",
+		// 	vuex: "Vuex",
+		// 	axios: "axios",
+		// 	"vue-router": "VueRouter",
+		// 	"element-ui": "ELEMENT"
+		// } /* CDN */,
+		cache: {
+			type: "filesystem",
+			allowCollectingMemory: isProd ? false : true
+		},
+		target: isProd ? "browserslist" : "web",
+		name: name,
+		performance: {
+			hints: false
+		},
+		plugins: [
+			new CompressionWebpackPlugin({
+				algorithm: "gzip",
+				filename: "[path][base].gz",
+				test: /\.(js|css|json|html)(\?.*)?$/i,
+				threshold: 10240,
+				minRatio: 0.8
+			})
+		]
+	}
+});
+```
+
+-   chainWebpack 配置
+
+```javascript title="vue.config.js"
+const { defineConfig } = require("@vue/cli-service");
+// 打包优化插件
+const { ESBuildMinifyPlugin } = require("esbuild-loader");
+// 代码跳转编辑器插件
+const { codeInspectorPlugin } = require("code-inspector-plugin");
+// 是否生产环境
+const isProd = process.env.NODE_ENV === "production";
+// 代码跳转编辑器配置
+const devCIP = codeInspectorPlugin({ bundler: "webpack", hideConsole: true, hideDomPathAttr: true });
+
+module.exports = defineConfig({
+	chainWebpack: config => {
+		if (isProd) {
+			// 删除预加载文件
+			config.plugins.delete("preload");
+			config.plugins.delete("prefetch");
+			// 打包优化
+			const rule = config.module.rule("js");
+			rule.uses.clear();
+			rule.use("esbuild-loader").loader("esbuild-loader");
+			config.optimization.minimizers.delete("terser");
+			config.optimization.minimizer("esbuild").use(ESBuildMinifyPlugin, [{ minify: true, css: true }]);
+		}
+		if (process.env.NODE_ENV === "development") config.plugin("code-inspector-plugin").use(devCIP);
+		// 打包分片
+		config.when(process.env.NODE_ENV == "production", config => {
+			config.optimization.splitChunks({
+				chunks: "all",
+				cacheGroups: {
+					vendors: {
+						name: "chunk-vendors",
+						chunks: "initial",
+						test: /[\\/]node_modules[\\/]/,
+						priority: 1
+					},
+					elementUI: {
+						name: "chunk-elementUI",
+						priority: 2,
+						test: /[\\/]node_modules[\\/]_?element-ui(.*)/,
+						reuseExistingChunk: true
+					},
+					common: {
+						name: "chunk-common",
+						chunks: "all",
+						test: /[\\/]src[\\/]/,
+						minSize: 0,
+						minChunks: 2,
+						priority: 1,
+						reuseExistingChunk: true
+					},
+					styles: {
+						name: "styles",
+						test: /\.(s?css|less|sass)$/,
+						chunks: "all",
+						enforce: true
+					}
+				}
+			});
+			config.optimization.runtimeChunk("single");
+		});
+	}
+});
+```
+
+::: info webpack 配置
+
+-   [webpack 配置文档](https://webpack.docschina.org/configuration/)
+-   [webpack 配置参考](https://cli.vuejs.org/zh/guide/webpack.html)
+
+:::
+
+### 完整配置
+
+```javascript title="vue.config.js 完整配置"
+const { defineConfig } = require("@vue/cli-service");
+// 打包优化插件
+const { ESBuildMinifyPlugin } = require("esbuild-loader");
+// 代码跳转编辑器插件
+const { codeInspectorPlugin } = require("code-inspector-plugin");
+// 打包压缩插件
+const CompressionWebpackPlugin = require("compression-webpack-plugin");
+// 网站名称配置
+const name = process.env.VUE_APP_TITLE;
+// 是否生产环境
+const isProd = process.env.NODE_ENV === "production";
+// 代码跳转编辑器配置
+const devCIP = codeInspectorPlugin({ bundler: "webpack", hideConsole: true, hideDomPathAttr: true });
+
+module.exports = defineConfig({
+	transpileDependencies: true,
+	publicPath: "/",
+	outputDir: "dist",
+	assetsDir: "static",
+	lintOnSave: isProd ? false : "warning",
+	productionSourceMap: false,
+	devServer: {
+		host: "0.0.0.0",
+		port: 8080,
+		hot: true,
+		compress: true,
+		proxy: {
+			[process.env.VUE_APP_API]: {
+				target: "http://localhost:8080",
+				changeOrigin: true,
+				pathRewrite: {
+					["^" + process.env.VUE_APP_API]: ""
+				}
+			}
+		},
+		client: {
+			overlay: false,
+			progress: true
+		}
+	},
+	css: {
+		loaderOptions: {
+			sass: {
 				additionalData: `@import "~@/assets/css/variables.scss";`,
 				sassOptions: { outputStyle: "expanded" }
 			}
 		}
 	},
-};
+	chainWebpack: config => {
+		if (isProd) {
+			// 删除预加载文件
+			config.plugins.delete("preload");
+			config.plugins.delete("prefetch");
+			// 打包优化
+			const rule = config.module.rule("js");
+			rule.uses.clear();
+			rule.use("esbuild-loader").loader("esbuild-loader");
+			config.optimization.minimizers.delete("terser");
+			config.optimization.minimizer("esbuild").use(ESBuildMinifyPlugin, [{ minify: true, css: true }]);
+		}
+		if (process.env.NODE_ENV === "development") config.plugin("code-inspector-plugin").use(devCIP);
+		// 打包分片
+		config.when(process.env.NODE_ENV == "production", config => {
+			config.optimization.splitChunks({
+				chunks: "all",
+				cacheGroups: {
+					vendors: {
+						name: "chunk-vendors",
+						chunks: "initial",
+						test: /[\\/]node_modules[\\/]/,
+						priority: 1
+					},
+					elementUI: {
+						name: "chunk-elementUI",
+						priority: 2,
+						test: /[\\/]node_modules[\\/]_?element-ui(.*)/,
+						reuseExistingChunk: true
+					},
+					common: {
+						name: "chunk-common",
+						chunks: "all",
+						test: /[\\/]src[\\/]/,
+						minSize: 0,
+						minChunks: 2,
+						priority: 1,
+						reuseExistingChunk: true
+					},
+					styles: {
+						name: "styles",
+						test: /\.(s?css|less|sass)$/,
+						chunks: "all",
+						enforce: true
+					}
+				}
+			});
+			config.optimization.runtimeChunk("single");
+		});
+	},
+	configureWebpack: {
+		// externals: {
+		// 	vue: "Vue",
+		// 	vuex: "Vuex",
+		// 	axios: "axios",
+		// 	"vue-router": "VueRouter",
+		// 	"element-ui": "ELEMENT"
+		// } /* CDN */,
+		cache: {
+			type: "filesystem",
+			allowCollectingMemory: isProd ? false : true
+		},
+		target: isProd ? "browserslist" : "web",
+		name: name,
+		performance: {
+			hints: false
+		},
+		plugins: [
+			new CompressionWebpackPlugin({
+				algorithm: "gzip",
+				filename: "[path][base].gz",
+				test: /\.(js|css|json|html)(\?.*)?$/i,
+				threshold: 10240,
+				minRatio: 0.8
+			})
+		]
+	}
+});
 ```
 
+:::info 打包配置总结
+
+-   打包输出目录设置
+-   `publicPath`: 设置静态资源路径，如：`/static`
+-   `outputDir`: 设置打包输出目录，如：`dist`、`build`、`output`
+-   `assetsDir`: 设置静态资源目录，如：`static`、`assets`、`public`
+-   `lintOnSave`: 是否开启 eslint 语法检查，默认为 `true`，可以设置为 `false` 或 `warning`
+-   `devServer`: 开发环境配置，如：`host`、`port`、`hot`、`compress`、`proxy`、`client`
+-   `css`: 设置 css 配置，如：`loaderOptions`
+-   `chainWebpack`: 链式配置，可以添加、删除、修改 webpack 配置，如：`externals`、`splitChunks`、`runtimeChunk`、`plugin` 等
+
+:::
 
 ### 参考文档
 
