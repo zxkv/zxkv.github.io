@@ -5,6 +5,96 @@ author: "下落香樟树"
 
 # Rsbuild 配置
 
+### 依赖安装
+
+-   创建 Rsbuild 项目
+
+<Install value="create rsbuild@latest" />
+
+-   安装 @rsbuild/core 依赖
+
+<Install value="add @rsbuild/core -D" />
+
+-   安装 @rsbuild/plugin-vue 依赖
+
+<Install value="add @rsbuild/plugin-vue -D" />
+
+-   安装 @rsbuild/plugin-vue2 依赖
+
+<Install value="add @rsbuild/plugin-vue2 -D" />
+
+### 打包配置
+
+-   创建 rsbuild.config.js 文件
+-   命令行工具配置
+
+```shell title="启动命令配置"
+{
+    "scripts": {
+        // 启动开发服务器
+        "dev": "rsbuild dev",
+        // 构建用于生产的应用
+        "build": "rsbuild build",
+        // 在本地预览生产版本
+        "preview": "rsbuild preview"
+    }
+}
+```
+
+-   dev 启动配置
+
+```bash title="启动配置"
+Usage: rsbuild dev [options]
+
+Options:
+    -c --config <config>  指定配置文件路径，可以为相对路径或绝对路径
+    -r --root <root>      指定项目根目录，可以是绝对路径或者相对于 cwd 的路径
+    -m --mode <mode>      指定构建模式，可以是 `development`，`production` 或 `none`
+    -o, --open [url]      启动时是否在浏览器中打开页面
+    --port <port>         设置 Rsbuild Server 监听的端口号
+    --host <host>         指定 Rsbuild Server 启动时监听的 host
+    --env-mode <mode>     指定 env 模式来加载 `.env.[mode]` 文件
+    --env-dir <dir>       指定目录来加载 `.env` 文件
+    --environment <name>  指定需要构建的 environment 名称
+    -h, --help            显示命令帮助
+```
+
+-   build 构建配置
+
+```bash title="构建配置"
+Usage: rsbuild build [options]
+
+Options:
+    -c --config <config>  指定配置文件路径，可以为相对路径或绝对路径
+    -r --root <root>      指定项目根目录，可以是绝对路径或者相对于 cwd 的路径
+    -m --mode <mode>      指定构建模式，可以是 `development`，`production` 或 `none`
+    -w --watch            开启 watch 模式, 监听文件变更并重新构建
+    --env-mode <mode>     指定 env 模式来加载 `.env.[mode]` 文件
+    --env-dir <dir>       指定目录来加载 `.env` 文件
+    --environment <name>  指定需要构建的 environment 名称
+    -h, --help            显示命令帮助
+```
+
+-   preview 预览配置
+
+```bash title="预览配置"
+Usage: rsbuild preview [options]
+
+Options:
+    -c --config <config>  指定配置文件路径，可以为相对路径或绝对路径
+    -r --root <root>      指定项目根目录，可以是绝对路径或者相对于 cwd 的路径
+    -m --mode <mode>      指定构建模式，可以是 `development`，`production` 或 `none`
+    -o, --open [url]      启动时是否在浏览器中打开页面
+    --port <port>         设置 Rsbuild Server 监听的端口号
+    --host <host>         指定 Rsbuild Server 启动时监听的 host
+    --env-mode <mode>     指定 env 模式来加载 `.env.[mode]` 文件
+    --env-dir <dir>       指定目录来加载 `.env` 文件
+    --environment <name>  指定需要构建的 environment 名称
+    -h, --help            显示命令帮助
+```
+
+### 完整配置
+
 ### 参考文档
 
 [Rsbuild 官方文档](https://rsbuild.dev/zh/)「👈 点击查阅」
