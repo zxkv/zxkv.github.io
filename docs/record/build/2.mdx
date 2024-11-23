@@ -95,6 +95,158 @@ Options:
 
 ### 完整配置
 
+```javascript title="完整配置"
+import { defineConfig, loadEnv } from "@rsbuild/core";
+// vue2 插件
+import { pluginVue2 } from "@rsbuild/plugin-vue2";
+// sass 插件
+import { pluginSass } from "@rsbuild/plugin-sass";
+// 图片压缩插件
+import { pluginImageCompress } from "@rsbuild/plugin-image-compress";
+// 代码跳转编辑器插件
+import { codeInspectorPlugin } from "code-inspector-plugin";
+// gzip 插件
+import compressionPlugin from "compression-webpack-plugin";
+// vue-cli 迁移 rsbuild 配置：环境变量配置
+const { publicVars, parsed } = loadEnv({ prefixes: ["VUE_APP_"] });
+// sass 配置
+const sassOPS = {
+	sassLoaderOptions: {
+		sourceMap: true,
+		// 必须项：兼容全局引入 scss
+		implementation: require("sass"),
+		// 必须项：引入 scss 全局变量
+		additionalData: `@import "@/assets/css/variables.scss";`
+	}
+};
+// 代码跳转编辑器配置
+const codeOPS = {
+	bundler: "rspack",
+	hideConsole: true,
+	hideDomPathAttr: true
+};
+// 打包压缩配置
+const gzipOPS = {
+	algorithm: "gzip",
+	filename: "[path][base].gz",
+	test: /\.(js|css)(\?.*)?$/g,
+	threshold: 1024 * 30,
+	minRatio: 0.8
+};
+// 环境变量配置
+const valueOPS = { ...publicVars, "process.env.VUE_APP_START": JSON.stringify("RSB") };
+
+export default defineConfig(({ envMode, command }) => {
+	const isDev = envMode === "development";
+	const isBuild = command === "build";
+
+	return {
+		// 打包模式
+		mode: isBuild ? "production" : "development",
+		plugins: [pluginVue2(), pluginSass(sassOPS), pluginImageCompress()],
+		tools: {
+			rspack: {
+				// gzip 配置、代码跳转配置
+				plugins: [isBuild ? new compressionPlugin(gzipOPS) : codeInspectorPlugin(codeOPS)],
+				output: {
+					// 禁用异步分片
+					asyncChunks: false
+				},
+				// 终端输出配置
+				stats: {
+					warnings: false,
+					colors: true
+				},
+				// 打包分片
+				optimization: {
+					runtimeChunk: "single"
+				}
+			}
+		},
+		source: {
+			define: valueOPS,
+			// 入口文件
+			entry: {
+				index: "./src/main.js"
+			},
+			// 路径别名
+			alias: {
+				"@": "./src"
+			}
+		},
+		server: {
+			open: true,
+			port: isDev ? 8080 : 3000,
+			compress: isBuild,
+			historyApiFallback: true
+		},
+		dev: {
+			// 开发环境进度条
+			progressBar: true,
+			// 禁用命令行快捷键
+			cliShortcuts: false
+		},
+		html: {
+			// 模板文件入口
+			template: "./public/index.html",
+			// favicon
+			favicon: "./public/favicon.ico",
+			// 标题
+			title: parsed.VUE_APP_TITLE
+		},
+		output: {
+			// 代码兼容配置
+			polyfill: "usage" /* 'entry' | 'usage' */,
+			minify: isBuild,
+			cleanDistPath: true,
+			legalComments: "none",
+			// 启用 sourcemap
+			sourceMap: {
+				css: isBuild ? false : true,
+				js: isBuild ? false : "eval" /* cheap-module-source-map */
+			}
+		},
+		performance: {
+			// 移除 console
+			removeConsole: true,
+			// 分割代码
+			chunkSplit: isBuild
+				? {
+						strategy: "split-by-size",
+						minSize: 1024 * 960,
+						maxSize: 1024 * 1024 * 3
+				  }
+				: { strategy: "split-by-experience" }
+		}
+	};
+});
+```
+
+:::info 配置总结
+
+-   正常配置参考下方官方文档即可;
+-   配置中，`define` 配置可以配置环境变量，但需要配合 `loadEnv` 使用;
+-   `source.entry` 配置可以配置入口文件，默认为 `src/main.js`;
+-   `source.alias` 配置可以配置路径别名，默认为 `@: src`；
+-   `output.cleanDistPath` 配置可以清除构建目录，默认为 `true`；
+-   `output.legalComments` 配置可以清除构建目录，默认为 `none`；
+-   `output.sourceMap` 配置可以配置 sourcemap，默认为 `eval`；
+-   `output.polyfill` 配置可以配置 polyfill，默认为 `usage`；
+-   `dev.cliShortcuts` 配置可以配置命令行快捷键，默认为 `true`；
+-   vue-cli 迁移 rsbuild 配置：`define` 配置可以配置环境变量，但需要配合 `loadEnv` 使用;
+-   vue-cli 迁移 rsbuild 配置：`source.alias` 配置可以配置路径别名，默认为 `@: src`;
+
+:::
+
+::: danger 注意事项
+
+-   `scss` 全局变量配置需在 `sassLoaderOptions.additionalData` 中引入，否则无法生效;
+-   引用`scss`时，`implementation: require("sass")`配置注意事项;
+-   `gzip` 配置需配合 `compression-webpack-plugin` 使用，否则无法生效;
+-   全局变量时，需要注意变量替换
+
+:::
+
 ### 参考文档
 
 [Rsbuild 官方文档](https://rsbuild.dev/zh/)「👈 点击查阅」
