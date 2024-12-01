@@ -33,6 +33,10 @@ const nav = [
 			{
 				text: "GitHub",
 				link: "https://zxkv.github.io"
+			},
+			{
+				text: "Netlify",
+				link: "https://zxk.netlify.app"
 			}
 		]
 	}
