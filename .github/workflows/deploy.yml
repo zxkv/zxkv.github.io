@@ -31,20 +31,29 @@ jobs:
     # 构建工作
     build:
         runs-on: ubuntu-latest
+
         steps:
             - name: Checkout
               uses: actions/checkout@v4
               # with:
               #     fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
             #- uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消注释
-            - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
-              with:
-                  version: 1.1.40
+            # - uses: oven-sh/setup-bun@v2 # 如果使用 Bun，请取消注释
+            #   with:
+            #     bun-version: latest
             - name: Setup Node
               uses: actions/setup-node@v4
               with:
                   node-version: 20
                   # cache: yarn # 或 npm / pnpm / yarn
+
+            - name: Install Bun
+              run: |
+                curl -fsSL https://bun.sh/install | bash
+                export BUN_INSTALL="$HOME/.bun"
+                export PATH="$BUN_INSTALL/bin:$PATH"
+                bun --version
+                
             - name: Setup Pages
               uses: actions/configure-pages@v5
             - name: Install dependencies
