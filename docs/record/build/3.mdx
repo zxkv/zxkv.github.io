@@ -8,3 +8,313 @@ author: "下落香樟树"
 **[Vite](https://cn.vite.dev/guide/)** 是一个超快速的前端构建工具，推动着下一代网络应用的发展。
 
 -   [Vite 官方文档](https://cn.vite.dev/)「👈 点击查阅」
+
+`vite.config.js` 是 Vite 项目的核心配置文件，使用 Vite 提供的 API 进行项目的构建配置。以下是 `vite.config.js` 中常用配置项的详细说明和示例，帮助你根据需求灵活配置 Vite 项目。
+
+---
+
+### 1. 基础配置
+
+**`vite.config.js` 基本模板：**
+
+```javascript
+import { defineConfig } from "vite";
+
+export default defineConfig({
+	root: ".", // 项目根目录，默认为当前目录
+	base: "/", // 公共路径，默认为 '/'
+	mode: "development", // 模式，可选值 'development' 或 'production'
+	server: {
+		port: 3000, // 开发服务器端口
+		open: true, // 自动打开浏览器
+		proxy: {} // 配置代理
+	},
+	build: {
+		outDir: "dist", // 打包输出目录
+		sourcemap: false // 是否生成 Source Map
+	}
+});
+```
+
+---
+
+### 2. 详细配置说明
+
+#### 2.1 `root`
+
+指定项目的根目录。默认值是当前工作目录。
+
+```javascript
+root: './src',  // 将项目根目录设置为 src
+```
+
+#### 2.2 `base`
+
+设置应用的公共路径，通常用于部署时的路径前缀。
+
+```javascript
+base: '/my-app/',  // 部署应用时，静态资源路径会以 '/my-app/' 开头
+```
+
+#### 2.3 `mode`
+
+指定运行模式，可以是 `development` 或 `production`。可以自定义其他模式，并通过 `.env` 文件加载环境变量。
+
+```javascript
+mode: process.env.NODE_ENV || 'development',
+```
+
+---
+
+### 3. 开发服务器配置：`server`
+
+`server` 配置用于设置开发服务器的行为：
+
+```javascript
+server: {
+  port: 4000,               // 启动服务器的端口号
+  open: true,               // 是否在启动时自动打开浏览器
+  https: false,             // 是否启用 HTTPS
+  cors: true,               // 启用跨域
+  proxy: {                  // 配置跨域代理
+    '/api': {
+      target: 'https://api.example.com',
+      changeOrigin: true,
+      rewrite: (path) => path.replace(/^\/api/, ''),
+    },
+  },
+},
+```
+
+-   **`proxy`**: 用于配置 API 代理。上面的示例中，`/api` 的请求会被代理到 `https://api.example.com`。
+
+---
+
+### 4. 构建配置：`build`
+
+`build` 配置用于控制生产环境的构建行为：
+
+```javascript
+build: {
+  outDir: 'dist',           // 打包输出目录
+  assetsDir: 'assets',      // 静态资源的存放目录
+  sourcemap: true,          // 是否生成 Source Map 文件
+  minify: 'esbuild',        // 压缩方式，可选 'esbuild', 'terser' 或 `false`
+  rollupOptions: {          // 自定义 Rollup 打包配置
+    input: {
+      main: './index.html',
+      nested: './nested/index.html',
+    },
+    output: {
+      manualChunks: {
+        vendor: ['react', 'react-dom'], // 手动拆分代码
+      },
+    },
+  },
+  chunkSizeWarningLimit: 500, // 单个 chunk 文件大小警告的限制（单位 KB）
+},
+```
+
+---
+
+### 5. 模块解析配置：`resolve`
+
+`resolve` 配置用于控制模块路径的解析行为：
+
+```javascript
+resolve: {
+  alias: {                  // 路径别名
+    '@': '/src',            // 使用 '@' 代替 '/src'
+    components: '/src/components',
+  },
+  extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'], // 自动扩展文件名
+},
+```
+
+-   **`alias`**: 配置路径别名，方便引用模块时使用简短的路径。
+-   **`extensions`**: 配置自动解析的文件扩展名。
+
+---
+
+### 6. 插件配置：`plugins`
+
+Vite 支持通过插件扩展功能。常用插件包括 React 插件、Vue 插件等。
+
+#### 添加 React 插件
+
+```javascript
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+	plugins: [react()]
+});
+```
+
+#### 添加 Vue 插件
+
+```javascript
+import vue from "@vitejs/plugin-vue";
+
+export default defineConfig({
+	plugins: [vue()]
+});
+```
+
+#### 添加其他插件
+
+Vite 提供了丰富的插件生态，比如 PWA 插件、图像优化插件等。
+
+---
+
+### 7. 环境变量配置
+
+Vite 支持 `.env` 文件管理环境变量。默认会加载以下文件（根据模式加载）：
+
+-   `.env`：所有模式通用
+-   `.env.development`：仅在 `development` 模式加载
+-   `.env.production`：仅在 `production` 模式加载
+
+#### 示例：
+
+创建 `.env` 文件：
+
+```env
+VITE_API_BASE_URL=https://api.example.com
+```
+
+在代码中使用：
+
+```javascript
+console.log(import.meta.env.VITE_API_BASE_URL);
+```
+
+> 注意：环境变量需要以 `VITE_` 开头才能在客户端代码中访问。
+
+---
+
+### 8. 动态导入和代码分割
+
+Vite 默认支持动态导入和代码分割。
+
+#### 动态导入
+
+```javascript
+import("./module").then(module => {
+	module.default();
+});
+```
+
+#### 手动分包
+
+```javascript
+build: {
+  rollupOptions: {
+    output: {
+      manualChunks: {
+        lodash: ['lodash'], // 将 lodash 单独打包为一个 chunk
+      },
+    },
+  },
+},
+```
+
+---
+
+### 9. CSS 处理配置：`css`
+
+`css` 配置用于控制 CSS 的处理行为：
+
+```javascript
+css: {
+  preprocessorOptions: { // 配置 CSS 预处理器
+    scss: {
+      additionalData: `@import "@/styles/variables.scss";`, // 全局引入 SCSS 变量
+    },
+  },
+  modules: {             // 配置 CSS 模块化
+    localsConvention: 'camelCase', // 使用驼峰命名规则
+    scopeBehaviour: 'local',       // 默认是 local，模块化行为
+  },
+  postcss: {
+    plugins: [require('autoprefixer')], // 添加 PostCSS 插件
+  },
+},
+```
+
+---
+
+### 10. 其他高级配置
+
+#### 使用 `define` 注入全局变量
+
+```javascript
+define: {
+  __APP_VERSION__: JSON.stringify('1.0.0'),
+},
+```
+
+在代码中使用：
+
+```javascript
+console.log(__APP_VERSION__); // 输出 '1.0.0'
+```
+
+#### 禁用 HMR（热模块替换）
+
+```javascript
+server: {
+  hmr: false, // 禁用 HMR
+},
+```
+
+---
+
+### 11. 完整示例配置
+
+以下是一个完整的 `vite.config.js` 示例：
+
+```javascript
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+	base: "/my-app/",
+	plugins: [react()],
+	server: {
+		port: 4000,
+		open: true,
+		proxy: {
+			"/api": {
+				target: "https://api.example.com",
+				changeOrigin: true,
+				rewrite: path => path.replace(/^\/api/, "")
+			}
+		}
+	},
+	build: {
+		outDir: "dist",
+		sourcemap: false,
+		rollupOptions: {
+			output: {
+				manualChunks: {
+					vendor: ["react", "react-dom"]
+				}
+			}
+		}
+	},
+	resolve: {
+		alias: {
+			"@": "/src"
+		}
+	},
+	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: `@import "@/styles/variables.scss";`
+			}
+		}
+	}
+});
+```
+
+这份配置涵盖了开发环境、生产环境、代理、CSS 预处理、动态导入等常见场景，适用于大部分前端项目。

@@ -8,3 +8,231 @@ author: "下落香樟树"
 ### 参考文档
 
 [Rspack 官方文档](https://rspack.dev/zh/)「👈 点击查阅」
+
+在前端项目中，`RSPack` 是一个新兴的构建工具，与 Webpack 类似，但它更快且基于 Rust 开发，适合构建现代前端应用。以下是一个典型的 RSPack 项目架构配置的详细指南，帮助你快速搭建和配置一个 RSPack 项目架构。
+
+---
+
+### 1. 初始化项目
+
+在开始配置 RSPack 之前，需要先初始化一个项目。
+
+```bash
+# 创建项目目录
+mkdir rspack-project && cd rspack-project
+
+# 初始化 NPM 项目
+npm init -y
+```
+
+---
+
+### 2. 安装 RSPack
+
+安装 RSPack 和相关依赖：
+
+```bash
+# 安装 RSPack 和 RSPack CLI
+npm install --save-dev @rspack/core @rspack/cli
+```
+
+---
+
+### 3. 创建项目目录结构
+
+通常的项目目录结构如下：
+
+```
+rspack-project/
+├── src/                # 源代码目录
+│   ├── index.js        # 主入口文件
+│   └── App.jsx         # 示例组件
+├── dist/               # 打包后的输出目录
+├── package.json        # 项目配置文件
+├── rspack.config.js    # RSPack 配置文件
+└── .babelrc            # Babel 配置文件（如果需要）
+```
+
+---
+
+### 4. 配置 RSPack
+
+创建 `rspack.config.js` 文件并添加以下内容：
+
+```javascript
+const path = require("path");
+
+module.exports = {
+	entry: "./src/index.js", // 入口文件
+	output: {
+		path: path.resolve(__dirname, "dist"), // 输出目录
+		filename: "bundle.js" // 输出的文件名
+	},
+	module: {
+		rules: [
+			{
+				test: /\.jsx?$/, // 匹配 JS 和 JSX 文件
+				exclude: /node_modules/,
+				use: {
+					loader: "babel-loader" // 使用 Babel 转译
+				}
+			},
+			{
+				test: /\.css$/, // 匹配 CSS 文件
+				use: ["style-loader", "css-loader"] // 加载 CSS
+			},
+			{
+				test: /\.(png|jpe?g|gif|svg)$/, // 匹配图片文件
+				type: "asset" // 处理资源文件
+			}
+		]
+	},
+	resolve: {
+		extensions: [".js", ".jsx", ".json"] // 自动解析这些扩展
+	},
+	devServer: {
+		static: {
+			directory: path.join(__dirname, "dist") // 开发服务器静态文件目录
+		},
+		compress: true, // 启用 gzip 压缩
+		port: 9000, // 开发服务器端口
+		open: true // 自动打开浏览器
+	},
+	mode: "development" // 开发模式
+};
+```
+
+---
+
+### 5. 配置 Babel
+
+如果项目需要使用现代 JavaScript 语法或 React，则需要配置 Babel。
+
+安装相关依赖：
+
+```bash
+npm install --save-dev babel-loader @babel/core @babel/preset-env @babel/preset-react
+```
+
+创建 `.babelrc` 文件并添加以下内容：
+
+```json
+{
+	"presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+```
+
+---
+
+### 6. 添加代码
+
+在 `src/` 目录中创建以下文件：
+
+**`src/index.js`**
+
+```javascript
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./styles.css";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
+```
+
+**`src/App.jsx`**
+
+```javascript
+import React from "react";
+
+function App() {
+	return (
+		<div>
+			<h1>Hello, RSPack!</h1>
+		</div>
+	);
+}
+
+export default App;
+```
+
+**`src/styles.css`**
+
+```css
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: #333;
+	text-align: center;
+	margin-top: 50px;
+}
+```
+
+---
+
+### 7. 添加 HTML 模板
+
+在项目根目录下创建 `index.html`，作为 Webpack 打包的入口 HTML 文件：
+
+**`index.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RSPack Project</title>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script src="bundle.js"></script>
+	</body>
+</html>
+```
+
+---
+
+### 8. 启动开发服务器
+
+在 `package.json` 中添加脚本：
+
+```json
+"scripts": {
+  "start": "rspack dev",
+  "build": "rspack build"
+}
+```
+
+启动开发服务器：
+
+```bash
+npm start
+```
+
+---
+
+### 9. 构建项目
+
+运行以下命令构建项目：
+
+```bash
+npm run build
+```
+
+构建完成后，打包的文件将输出到 `dist/` 目录。
+
+---
+
+### 10. 进一步优化
+
+-   **使用插件**：根据需求可以添加插件，比如 HTML 插件、压缩插件等。
+-   **代码分割**：利用动态导入和 RSPack 的代码分割功能优化输出文件大小。
+-   **生产环境配置**：为生产环境设置 `mode: 'production'`，启用 Tree-Shaking 等优化。
+
+RSPack 的配置和用法与 Webpack 非常相似，但性能更优。如果你已经熟悉 Webpack，迁移到 RSPack 会非常简单！
