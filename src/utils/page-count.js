@@ -52,7 +52,7 @@ export const dev = {
  * @param {number} index: 首页
  **/
 export const record = {
-	editor: 1,
+	editor: 2,
 	tools: 1,
 	build: 4
 };
