@@ -42,7 +42,7 @@ export const page = {
  * @param {number} npm: NPM 包
  **/
 export const dev = {
-	soft: 1,
+	soft: 2,
 	npm: 1
 };
 
