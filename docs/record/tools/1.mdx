@@ -17,7 +17,7 @@ description: Code Inspector 页面开发提效的神器
 
 #### ⚙️ 项目配置
 
--   `webpack` 项目配置如下：
+- `webpack` 项目配置如下：
 
 ```javascript title="webpack.config.js"
 const { codeInspectorPlugin } = require("code-inspector-plugin");
@@ -31,7 +31,7 @@ module.exports = () => ({
 });
 ```
 
--   `vue-cli` 项目配置如下：
+- `vue-cli` 项目配置如下：
 
 ```javascript title="vue.config.js"
 const { codeInspectorPlugin } = require("code-inspector-plugin");
@@ -47,7 +47,7 @@ module.exports = {
 };
 ```
 
--   `vite` 项目配置如下：
+- `vite` 项目配置如下：
 
 ```javascript title="vite.config.js"
 import { defineConfig } from "vite";
@@ -62,7 +62,7 @@ export default defineConfig({
 });
 ```
 
--   `Rspack` 项目配置如下：
+- `Rspack` 项目配置如下：
 
 ```javascript title="rspack.config.js"
 const { codeInspectorPlugin } = require("code-inspector-plugin");
@@ -76,7 +76,7 @@ module.exports = {
 };
 ```
 
--   `Rsbuild` 项目配置如下：
+- `Rsbuild` 项目配置如下：
 
 ```javascript title="rsbuild.config.js"
 import { defineConfig } from "@rsbuild/core";
@@ -95,7 +95,7 @@ export default defineConfig({
 });
 ```
 
--   `Farm` 项目配置如下：
+- `Farm` 项目配置如下：
 
 ```javascript title="farm.config.js"
 import { defineConfig } from "@farmfe/core";
@@ -110,7 +110,7 @@ export default defineConfig({
 });
 ```
 
--   `umi.js` 项目配置如下：
+- `umi.js` 项目配置如下：
 
 ```javascript title="umi.config.js"
 import { defineConfig } from "@umijs/max";
@@ -127,7 +127,7 @@ export default defineConfig({
 });
 ```
 
--   `esbuild` 项目配置如下：
+- `esbuild` 项目配置如下：
 
 ```javascript title="esbuild.config.js"
 const esbuild = require("esbuild");
@@ -145,11 +145,11 @@ esbuild.build({
 
 ::: warning 配置注意事项
 
--   **esbuild** 中使用时，**dev** 函数的返回值需自己根据环境判断，本地开发的环境返回 **true**，线上打包返回 **false**
+- **esbuild** 中使用时，**dev** 函数的返回值需自己根据环境判断，本地开发的环境返回 **true**，线上打包返回 **false**
 
 :::
 
--   `astro` 项目配置如下：
+- `astro` 项目配置如下：
 
 ```javascript title="astro.config.mjs"
 import { defineConfig } from "astro/config";
@@ -178,32 +178,32 @@ export default defineConfig({
 |   hideConsole   |           true/false           |      ✅      | 是否关闭控制台打印                          |
 | hideDomPathAttr |           true/false           |      ❓      | 是否隐藏 DOM 元素上的 `data-insp-path` 属性 |
 
--   此处列举部分常用配置项，详细配置项参考 [Code Inspector 文档 - API 配置](https://inspector.fe-dev.cn/guide/api.html)
+- 此处列举部分常用配置项，详细配置项参考 [Code Inspector 文档 - API 配置](https://inspector.fe-dev.cn/guide/api.html)
 
 #### 📚 相关文档
 
--   [Code Inspector 文档](https://inspector.fe-dev.cn/)
--   [Code Inspector GitHub](https://github.com/zh-lx/code-inspector)
+- [Code Inspector 文档](https://inspector.fe-dev.cn/)
+- [Code Inspector GitHub](https://github.com/zh-lx/code-inspector)
 
 ::: danger 注意事项
 
--   在 **Mac OS 苹果电脑**💻 上使用 **VSCode** 作为 **IDE** 开发工具时，需要进行如下配置，插件方可生效；
--   在 **VSCode** 中执行 `command + shift + p` 命令, 搜索并点击 `Shell Command: Install 'code' command in PATH`命令；
--   当出现弹窗提示`Shell Command: Install 'code' successfully installed in PATH`时，表示已经安装成功，重启编辑器即可生效;
+- 在 **Mac OS 苹果电脑**💻 上使用 **VSCode** 作为 **IDE** 开发工具时，需要进行如下配置，插件方可生效；
+- 在 **VSCode** 中执行 `command + shift + p` 命令, 搜索并点击 `Shell Command: Install 'code' command in PATH`命令；
+- 当出现弹窗提示`Shell Command: Install 'code' successfully installed in PATH`时，表示已经安装成功，重启编辑器即可生效;
 
 :::
 
 #### 👉 指定 IDE
 
--   `code-inspector-plugin`默认会会扫描系统当前打开当前已打开项目代码运行项目的编辑器；
--   如需指定打开固定的 IDE 编辑器，需要进行如下配置：
--   在项目根目录下添加文件`.env.local`，添加文本内容为：`CODE_INSPECTOR_EDITOR=code`
+- `code-inspector-plugin`默认会会扫描系统当前打开当前已打开项目代码运行项目的编辑器；
+- 如需指定打开固定的 IDE 编辑器，需要进行如下配置：
+- 在项目根目录下添加文件`.env.local`，添加文本内容为：`CODE_INSPECTOR_EDITOR=code`
 
 ```shell title=".env.local"
 CODE_INSPECTOR_EDITOR= code
 ```
 
--   IDE Code 列表
+- IDE Code 列表
 
 |            编辑器             |   编码名称    | MacOS | Windows | Linux |
 | :---------------------------: | :-----------: | :---: | :-----: | :---: |
@@ -224,4 +224,4 @@ CODE_INSPECTOR_EDITOR= code
 |             Rider             |     rider     |  ✅   |   ✅    |  ✅   |
 |           Rubymine            |   rubymine    |  ✅   |   ✅    |  ✅   |
 
--   插件支持的 IDE 配置文件，可在 [Code Inspector 文档 - IDE 配置](https://inspector.fe-dev.cn/guide/ide.html) 中查看
+- 插件支持的 IDE 配置文件，可在 [Code Inspector 文档 - IDE 配置](https://inspector.fe-dev.cn/guide/ide.html) 中查看

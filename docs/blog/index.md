@@ -2,8 +2,8 @@
 
 ### 博客地址
 
--   Rander：[zxkv.onrender.com](https://zxkv.onrender.com/)「🌍 CDN 加持」
--   Github：[zxkv.github.io](https://zxkv.github.io/)「🔥 持续更新」
+- Rander：[zxkv.onrender.com](https://zxkv.onrender.com/)「🌍 CDN 加持」
+- Github：[zxkv.github.io](https://zxkv.github.io/)「🔥 持续更新」
 
 ### 博客简介
 

@@ -13,15 +13,15 @@ description: 文件压缩下载
 
 ### 🍉：安装插件
 
--   [**jszip**](https://stuk.github.io/jszip/)
--   <Source value="https://stuk.github.io/jszip" />
+- [**jszip**](https://stuk.github.io/jszip/)
+- <Source value="https://stuk.github.io/jszip" />
 
 <Install value="install jszip" />
 
 【 注 】：生成压缩文件，详细用法请点击上述超链接。
 
--   [**file-saver**](https://github.com/eligrey/FileSaver.js#readme)
--   <Source value="https://github.com/eligrey/FileSaver.js#readme" />
+- [**file-saver**](https://github.com/eligrey/FileSaver.js#readme)
+- <Source value="https://github.com/eligrey/FileSaver.js#readme" />
 
 <Install value="install file-saver" />
 
@@ -29,7 +29,7 @@ description: 文件压缩下载
 
 ### 🍎：使用方法
 
--   引入依赖
+- 引入依赖
 
 ```javascript title="引入依赖"
 import axios from "axios";
@@ -37,7 +37,7 @@ import JSZip from "jszip";
 import { saveAs } from "file-saver";
 ```
 
--   生成二进制文件流
+- 生成二进制文件流
 
 ```javascript title="生成文件流"
 const getFile = url = >{
@@ -56,7 +56,7 @@ const getFile = url = >{
 
 注：此次需要借助 axios 将 URL 流文件转换为二进制流文件；在 vue 项目中，若使用绑定在 vue 上的 axios 实例，在请求生成 arraybuffer 文件时会报请求跨域的错误！！！
 
--   文件处理&文件导出
+- 文件处理&文件导出
 
 ```javascript title="文件导出"
 let list = [{

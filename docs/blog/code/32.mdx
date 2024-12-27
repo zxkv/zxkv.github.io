@@ -17,32 +17,99 @@ description: husky、prettier、eslint 代码格式化
 
 #### 依赖安装一
 
--   **"eslint": "^7.32.0"**
+- **"eslint": "^7.32.0"**
 
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
     <Install value="install eslint -D" />
 
--   **"prettier": "^2.4.1"**
+- **"prettier": "^2.4.1"**
 
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
     <Install value="install prettier -D" />
 
--   **"husky": "^8.0.0"**
+- **"husky": "^8.0.0"**
 
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
     <Install value="install husky -D" />
 
--   **"lint-staged": "^11.1.2"**
+- **"lint-staged": "^11.1.2"**
+  {" "}
+  {" "}
+  {" "}
+  {" "}
+  {" "}
+    {" "}
     <Install value="install lint-staged -D" />
 
 #### 依赖安装二
 
--   **"eslint-config-prettier": "^8.3.0"**
+- **"eslint-config-prettier": "^8.3.0"**
 
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
     <Install value="install eslint-config-prettier -D" />
 
--   **"eslint-plugin-prettier": "^4.0.0"**
+- **"eslint-plugin-prettier": "^4.0.0"**
 
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
+
+    {" "}
     <Install value="install eslint-plugin-prettier -D" />
 
--   **"eslint-plugin-vue": "^9.19.2"**
+- **"eslint-plugin-vue": "^9.19.2"**
+  {" "}
+  {" "}
+  {" "}
+  {" "}
+  {" "}
+    {" "}
     <Install value="install eslint-plugin-vue -D" />
 
 ### 校验规则
@@ -95,9 +162,9 @@ module.exports = {
 };
 ```
 
--   **globals：全局忽略变量**
--   **rules：校验规则**
--   **plugins：插件配置**
+- **globals：全局忽略变量**
+- **rules：校验规则**
+- **plugins：插件配置**
 
 #### 忽略校验文件：.eslintignore
 
@@ -200,12 +267,12 @@ manifest.json
 
 1.  安装 **husky** 依赖
 2.  初始化 **husky**
-    -   `npx husky-init && yarn`
+    - `npx husky-init && yarn`
 3.  执行 `prepare install`
 4.  并添加命令到 **package.json**
-    -   `npm set-script prepare "husky install"`
+    - `npm set-script prepare "husky install"`
 5.  创建钩子
-    -   `npx husky add .husky/pre-commit "npm run lint"`
+    - `npx husky add .husky/pre-commit "npm run lint"`
 
 #### husky 文件下 pre-commit 文件配置
 

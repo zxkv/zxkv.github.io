@@ -7,7 +7,7 @@ author: "下落香樟树"
 
 ### 依赖安装
 
--   安装插件
+- 安装插件
 
 ```bash title="安装全局插件"
 npm install -g @vue/cli
@@ -15,7 +15,7 @@ npm install -g @vue/cli
 yarn global add @vue/cli
 ```
 
--   创建项目
+- 创建项目
 
 ```bash title="创建项目"
 vue create my-project
@@ -23,7 +23,7 @@ vue create my-project
 vue ui
 ```
 
--   命令配置
+- 命令配置
 
 ```bash title=" package.json 启动命令配置"
 {
@@ -34,7 +34,7 @@ vue ui
 }
 ```
 
--   配置文件`vue.config.js`
+- 配置文件`vue.config.js`
 
 ```bash title="serve 启动配置"
 用法：vue-cli-service serve [options] [entry]
@@ -65,7 +65,7 @@ vue ui
 
 ### 打包配置
 
--   配置文件`babel.config.js`
+- 配置文件`babel.config.js`
 
 ```javascript title="babel.config.js"
 module.exports = {
@@ -104,15 +104,15 @@ module.exports = {
 
 :::tip babel 配置文件相关插件
 
--   `@vue/cli-plugin-babel`
--   `@babel/preset-env`
--   `@babel/plugin-syntax-dynamic-import`
--   `transform-remove-console`
--   `@babel/plugin-transform-runtime`
+- `@vue/cli-plugin-babel`
+- `@babel/preset-env`
+- `@babel/plugin-syntax-dynamic-import`
+- `transform-remove-console`
+- `@babel/plugin-transform-runtime`
 
 :::
 
--   配置文件`vue.config.js`
+- 配置文件`vue.config.js`
 
 ```javascript title="vue.config.js"
 module.exports = {
@@ -160,7 +160,7 @@ module.exports = {
 };
 ```
 
--   gzip 压缩配置
+- gzip 压缩配置
 
 ```javascript title="vue.config.js"
 // 打包压缩插件
@@ -197,7 +197,7 @@ module.exports = defineConfig({
 });
 ```
 
--   chainWebpack 配置
+- chainWebpack 配置
 
 ```javascript title="vue.config.js"
 const { defineConfig } = require("@vue/cli-service");
@@ -266,8 +266,8 @@ module.exports = defineConfig({
 
 ::: info webpack 配置
 
--   [webpack 配置文档](https://webpack.docschina.org/configuration/)
--   [webpack 配置参考](https://cli.vuejs.org/zh/guide/webpack.html)
+- [webpack 配置文档](https://webpack.docschina.org/configuration/)
+- [webpack 配置参考](https://cli.vuejs.org/zh/guide/webpack.html)
 
 :::
 
@@ -404,14 +404,14 @@ module.exports = defineConfig({
 
 :::info 打包配置总结
 
--   打包输出目录设置
--   `publicPath`: 设置静态资源路径，如：`/static`
--   `outputDir`: 设置打包输出目录，如：`dist`、`build`、`output`
--   `assetsDir`: 设置静态资源目录，如：`static`、`assets`、`public`
--   `lintOnSave`: 是否开启 eslint 语法检查，默认为 `true`，可以设置为 `false` 或 `warning`
--   `devServer`: 开发环境配置，如：`host`、`port`、`hot`、`compress`、`proxy`、`client`
--   `css`: 设置 css 配置，如：`loaderOptions`
--   `chainWebpack`: 链式配置，可以添加、删除、修改 webpack 配置，如：`externals`、`splitChunks`、`runtimeChunk`、`plugin` 等
+- 打包输出目录设置
+- `publicPath`: 设置静态资源路径，如：`/static`
+- `outputDir`: 设置打包输出目录，如：`dist`、`build`、`output`
+- `assetsDir`: 设置静态资源目录，如：`static`、`assets`、`public`
+- `lintOnSave`: 是否开启 eslint 语法检查，默认为 `true`，可以设置为 `false` 或 `warning`
+- `devServer`: 开发环境配置，如：`host`、`port`、`hot`、`compress`、`proxy`、`client`
+- `css`: 设置 css 配置，如：`loaderOptions`
+- `chainWebpack`: 链式配置，可以添加、删除、修改 webpack 配置，如：`externals`、`splitChunks`、`runtimeChunk`、`plugin` 等
 
 :::
 

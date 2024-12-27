@@ -7,26 +7,26 @@ author: "下落香樟树"
 
 ### 依赖安装
 
--   创建 Rsbuild 项目
+- 创建 Rsbuild 项目
 
 <Install value="create rsbuild@latest" />
 
--   安装 @rsbuild/core 依赖
+- 安装 @rsbuild/core 依赖
 
 <Install value="add @rsbuild/core -D" />
 
--   安装 @rsbuild/plugin-vue 依赖
+- 安装 @rsbuild/plugin-vue 依赖
 
 <Install value="add @rsbuild/plugin-vue -D" />
 
--   安装 @rsbuild/plugin-vue2 依赖
+- 安装 @rsbuild/plugin-vue2 依赖
 
 <Install value="add @rsbuild/plugin-vue2 -D" />
 
 ### 打包配置
 
--   创建 rsbuild.config.js 文件
--   命令行工具配置
+- 创建 rsbuild.config.js 文件
+- 命令行工具配置
 
 ```shell title="启动命令配置"
 {
@@ -41,7 +41,7 @@ author: "下落香樟树"
 }
 ```
 
--   dev 启动配置
+- dev 启动配置
 
 ```bash title="启动配置"
 Usage: rsbuild dev [options]
@@ -59,7 +59,7 @@ Options:
     -h, --help            显示命令帮助
 ```
 
--   build 构建配置
+- build 构建配置
 
 ```bash title="构建配置"
 Usage: rsbuild build [options]
@@ -75,7 +75,7 @@ Options:
     -h, --help            显示命令帮助
 ```
 
--   preview 预览配置
+- preview 预览配置
 
 ```bash title="预览配置"
 Usage: rsbuild preview [options]
@@ -215,7 +215,7 @@ export default defineConfig(({ envMode, command }) => {
 						strategy: "split-by-size",
 						minSize: 1024 * 960,
 						maxSize: 1024 * 1024 * 3
-				  }
+					}
 				: { strategy: "split-by-experience" }
 		}
 	};
@@ -224,26 +224,26 @@ export default defineConfig(({ envMode, command }) => {
 
 :::info 配置总结
 
--   正常配置参考下方官方文档即可;
--   配置中，`define` 配置可以配置环境变量，但需要配合 `loadEnv` 使用;
--   `source.entry` 配置可以配置入口文件，默认为 `src/main.js`;
--   `source.alias` 配置可以配置路径别名，默认为 `@: src`；
--   `output.cleanDistPath` 配置可以清除构建目录，默认为 `true`；
--   `output.legalComments` 配置可以清除构建目录，默认为 `none`；
--   `output.sourceMap` 配置可以配置 sourcemap，默认为 `eval`；
--   `output.polyfill` 配置可以配置 polyfill，默认为 `usage`；
--   `dev.cliShortcuts` 配置可以配置命令行快捷键，默认为 `true`；
--   vue-cli 迁移 rsbuild 配置：`define` 配置可以配置环境变量，但需要配合 `loadEnv` 使用;
--   vue-cli 迁移 rsbuild 配置：`source.alias` 配置可以配置路径别名，默认为 `@: src`;
+- 正常配置参考下方官方文档即可;
+- 配置中，`define` 配置可以配置环境变量，但需要配合 `loadEnv` 使用;
+- `source.entry` 配置可以配置入口文件，默认为 `src/main.js`;
+- `source.alias` 配置可以配置路径别名，默认为 `@: src`；
+- `output.cleanDistPath` 配置可以清除构建目录，默认为 `true`；
+- `output.legalComments` 配置可以清除构建目录，默认为 `none`；
+- `output.sourceMap` 配置可以配置 sourcemap，默认为 `eval`；
+- `output.polyfill` 配置可以配置 polyfill，默认为 `usage`；
+- `dev.cliShortcuts` 配置可以配置命令行快捷键，默认为 `true`；
+- vue-cli 迁移 rsbuild 配置：`define` 配置可以配置环境变量，但需要配合 `loadEnv` 使用;
+- vue-cli 迁移 rsbuild 配置：`source.alias` 配置可以配置路径别名，默认为 `@: src`;
 
 :::
 
 ::: danger 注意事项
 
--   `scss` 全局变量配置需在 `sassLoaderOptions.additionalData` 中引入，否则无法生效;
--   引用`scss`时，`implementation: require("sass")`配置注意事项;
--   `gzip` 配置需配合 `compression-webpack-plugin` 使用，否则无法生效;
--   全局变量时，需要注意变量替换
+- `scss` 全局变量配置需在 `sassLoaderOptions.additionalData` 中引入，否则无法生效;
+- 引用`scss`时，`implementation: require("sass")`配置注意事项;
+- `gzip` 配置需配合 `compression-webpack-plugin` 使用，否则无法生效;
+- 全局变量时，需要注意变量替换
 
 :::
 

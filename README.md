@@ -10,13 +10,13 @@
 
 ## 博客地址
 
--   Rander Blog：[zxkv.onrender.com](https://zxkv.onrender.com)「🌍 CDN 加持」
--   GitHub Blog：[zxkv.github.io](https://zxkv.github.io)「🚀 持续更新」
--   Netlify Blog：[zxkv.github.io](https://zxk.netlify.app)「🚀 同步更新」
+- Rander Blog：[zxkv.onrender.com](https://zxkv.onrender.com)「🌍 CDN 加持」
+- GitHub Blog：[zxkv.github.io](https://zxkv.github.io)「🚀 持续更新」
+- Netlify Blog：[zxkv.github.io](https://zxk.netlify.app)「🚀 同步更新」
 
 ## 博客笔记
 
--   Front-end Notes [下落香樟树](https://juejin.cn/user/184373682901309/posts)「📒 掘金社区」
+- Front-end Notes [下落香樟树](https://juejin.cn/user/184373682901309/posts)「📒 掘金社区」
 
 ## 联系方式
 
