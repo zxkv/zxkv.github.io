@@ -9,11 +9,7 @@
 		"preview": "rspress preview"
 	},
 	"lint-staged": {
-		"*.{js,vue,mdx,md}": [
-			"prettier --write",
-			"git add"
-		],
-		"*.{css,scss,less}": [
+		"*.{js,vue,mdx,md,css,scss,less}": [
 			"prettier --write",
 			"git add"
 		]
