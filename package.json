@@ -15,7 +15,7 @@
 		]
 	},
 	"dependencies": {
-		"rspress": "^1.39.2",
+		"rspress": "^1.39.3",
 		"rspress-plugin-file-tree": "^0.4.0",
 		"rspress-plugin-reading-time": "^0.3.0"
 	},
