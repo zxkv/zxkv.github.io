@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"@rsbuild/plugin-image-compress": "^1.1.0",
 		"@rspress/mdx-rs": "^0.6.4",
-		"@types/node": "^22.10.2",
+		"@types/node": "^22.10.3",
 		"compression-webpack-plugin": "^11.1.0",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.3.0",
