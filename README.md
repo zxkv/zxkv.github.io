@@ -10,9 +10,9 @@
 
 ## 博客地址
 
-- Rander Blog：[zxkv.onrender.com](https://zxkv.onrender.com)「🌍 CDN 加持」
-- GitHub Blog：[zxkv.github.io](https://zxkv.github.io)「🚀 持续更新」
-- Netlify Blog：[zxkv.github.io](https://zxk.netlify.app)「🚀 同步更新」
+- Rander：[zxkv.onrender.com](https://zxkv.onrender.com)「🌍 CDN 加持」
+- GitHub：[zxkv.github.io](https://zxkv.github.io)「🚀 持续更新」
+- Netlify：[zxkv.github.io](https://zxk.netlify.app)「🚀 同步更新」
 
 ## 博客笔记
 
