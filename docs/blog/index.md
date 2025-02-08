@@ -4,7 +4,7 @@
 
 - Rander：[zxkv.onrender.com](https://zxkv.onrender.com)「🌍 CDN 加持」
 - GitHub：[zxkv.github.io](https://zxkv.github.io)「🚀 持续更新」
-- Netlify：[zxkv.github.io](https://zxk.netlify.app)「🚀 同步更新」
+- Netlify：[zxk.netlify.app](https://zxk.netlify.app)「🚀 同步更新」
 
 ### 博客简介
 
