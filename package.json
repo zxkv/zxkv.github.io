@@ -1,23 +1,21 @@
 {
 	"name": "web_blog",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"private": true,
 	"author": "zxkvv@qq.com",
 	"scripts": {
 		"dev": "rspress dev",
 		"build": "rspress build",
 		"preview": "rspress preview",
-		"prepare": "husky install"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
+		"prepare": "husky"
 	},
 	"lint-staged": {
-		"*.{js,vue,mdx,md,css,scss,less}": [
+		"*.{js,mjs,vue,md,mdx}": [
 			"prettier --write",
 			"git add"
+		],
+		"*.{css,scss,less}": [
+			"prettier --write"
 		]
 	},
 	"dependencies": {
