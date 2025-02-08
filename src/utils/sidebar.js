@@ -17,54 +17,6 @@ const blog = {
 	view: 2,
 	code: 33
 };
-
-/**
- * @description: 笔记「/note」
- * @param {number} code: 代码示例
- * @param {number} css: CSS 相关
- * @param {number} js: JS 相关
- * @param {number} dev: 项目配置
- * @param {number} tools: 工具配置
- **/
-const note = {
-	code: 14,
-	css: 9,
-	js: 14,
-	dev: 4,
-	tools: 1
-};
-
-/**
- * @description: 文档「/page」
- * @param {number} index: 首页
- **/
-const page = {
-	index: 5
-};
-
-/**
- * @description: 开发记录「/dev」
- * @param {number} soft: 开发软件
- * @param {number} npm: NPM 包
- * @param {number} mark: 标记
- **/
-const dev = {
-	soft: 2,
-	npm: 1,
-	mark: 1
-};
-
-/**
- * @description: 学习记录「/record」
- * @param {number} index: 首页
- **/
-const record = {
-	editor: 3,
-	tools: 1,
-	build: 4
-};
-
-// 博客
 const M_BLOG = [
 	{
 		text: "博客简介",
@@ -92,7 +44,17 @@ const M_BLOG = [
 	}
 ];
 
-// 开发
+/**
+ * @description: 开发记录「/dev」
+ * @param {number} soft: 开发软件
+ * @param {number} npm: NPM 包
+ * @param {number} mark: 标记
+ **/
+const dev = {
+	soft: 2,
+	npm: 1,
+	mark: 1
+};
 const M_DEV = [
 	{
 		text: "开发记录",
@@ -115,7 +77,21 @@ const M_DEV = [
 	}
 ];
 
-// 笔记
+/**
+ * @description: 笔记「/note」
+ * @param {number} code: 代码示例
+ * @param {number} css: CSS 相关
+ * @param {number} js: JS 相关
+ * @param {number} dev: 项目配置
+ * @param {number} tools: 工具配置
+ **/
+const note = {
+	code: 14,
+	css: 9,
+	js: 14,
+	dev: 4,
+	tools: 1
+};
 const M_NOTE = [
 	{
 		text: "笔记简介",
@@ -148,7 +124,13 @@ const M_NOTE = [
 	}
 ];
 
-// 文档
+/**
+ * @description: 文档「/page」
+ * @param {number} index: 首页
+ **/
+const page = {
+	index: 5
+};
 const M_PAGE = [
 	{
 		text: "前端文档",
@@ -158,7 +140,15 @@ const M_PAGE = [
 	}
 ];
 
-// 学习记录
+/**
+ * @description: 学习记录「/record」
+ * @param {number} index: 首页
+ **/
+const record = {
+	editor: 3,
+	tools: 1,
+	build: 4
+};
 const M_RECORD = [
 	{
 		text: "学习记录",
