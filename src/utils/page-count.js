@@ -40,10 +40,12 @@ export const page = {
  * @description: 开发记录「/dev」
  * @param {number} soft: 开发软件
  * @param {number} npm: NPM 包
+ * @param {number} mark: 标记
  **/
 export const dev = {
 	soft: 2,
-	npm: 1
+	npm: 1,
+	mark: 1
 };
 
 // 记录 /record
