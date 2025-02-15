@@ -27,11 +27,11 @@
 	"devDependencies": {
 		"@rsbuild/plugin-image-compress": "^1.1.0",
 		"@rspress/mdx-rs": "^0.6.6",
-		"@types/node": "^22.13.1",
+		"@types/node": "^22.13.4",
 		"compression-webpack-plugin": "^11.1.0",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.4.3",
-		"prettier": "^3.5.0",
+		"prettier": "^3.5.1",
 		"rsbuild-plugin-open-graph": "^1.0.2",
 		"rspress-plugin-font-open-sans": "^1.0.0"
 	}
