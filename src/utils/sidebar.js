@@ -147,7 +147,8 @@ const M_PAGE = [
 const record = {
 	editor: 3,
 	tools: 1,
-	build: 4
+	build: 4,
+	links: 1
 };
 const M_RECORD = [
 	{
@@ -168,6 +169,11 @@ const M_RECORD = [
 		text: "打包配置",
 		collapsed: true,
 		items: toItems("/record/build", record.build)
+	},
+	{
+		text: "我的收藏",
+		collapsed: true,
+		items: toItems("/record/links", record.links)
 	}
 ];
 
