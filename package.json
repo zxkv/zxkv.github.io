@@ -20,7 +20,7 @@
 		]
 	},
 	"dependencies": {
-		"rspress": "^1.43.2",
+		"rspress": "^1.43.5",
 		"rspress-plugin-file-tree": "^0.4.0",
 		"rspress-plugin-reading-time": "^0.3.0"
 	},
@@ -29,7 +29,7 @@
 		"@rspress/mdx-rs": "^0.6.6",
 		"@types/node": "^22.13.10",
 		"husky": "^9.1.7",
-		"lint-staged": "^15.4.3",
+		"lint-staged": "^15.5.0",
 		"prettier": "^3.5.3",
 		"rsbuild-plugin-open-graph": "^1.0.2",
 		"rspress-plugin-font-open-sans": "^1.0.0"
