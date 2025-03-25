@@ -20,14 +20,14 @@
 		]
 	},
 	"dependencies": {
-		"rspress": "^1.43.5",
+		"rspress": "^1.43.9",
 		"rspress-plugin-file-tree": "^0.4.0",
 		"rspress-plugin-reading-time": "^0.3.0"
 	},
 	"devDependencies": {
 		"@rsbuild/plugin-image-compress": "^1.1.0",
 		"@rspress/mdx-rs": "^0.6.6",
-		"@types/node": "^22.13.10",
+		"@types/node": "^22.13.13",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.5.0",
 		"prettier": "^3.5.3",
