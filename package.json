@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@rsbuild/plugin-image-compress": "^1.1.0",
 		"@rspress/mdx-rs": "^0.6.6",
-		"@types/node": "^22.13.13",
+		"@types/node": "^22.13.14",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.5.0",
 		"prettier": "^3.5.3",
