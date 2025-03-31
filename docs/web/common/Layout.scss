@@ -2,8 +2,6 @@
 	* {
 		box-sizing: border-box;
 		font-family: "Roboto", sans-serif;
-		font-size: 16px;
-		color: #000;
 	}
 
 	.rp-reading-time {
@@ -56,26 +54,41 @@
 		grid-auto-flow: row dense;
 		grid-gap: 15px;
 
-		.lwc-item {
-			height: 100px;
-			padding: 10px;
-			background-color: #fff;
+		.lw-card {
+			min-height: 110px;
+			background: #fff;
 			border-radius: 8px;
 			box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+
 			&:hover {
 				background: linear-gradient(225deg, #dde4ff 0%, #8da2ee 100%);
 				box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 			}
 
-			.lwc-title {
-				font-size: 18px;
-				font-weight: bold;
-				line-height: 1.5;
+			.lwc-img {
+				padding: 5px;
+				border-radius: 8px;
+				display: grid;
+				grid-template-columns: auto 1fr;
+				img {
+					margin-right: 10px;
+					width: auto;
+					height: 40px;
+					object-fit: cover;
+				}
+
+				.lwc-title {
+					font-size: 20px;
+					line-height: 1.5;
+				}
 			}
 
-			.lwc-desc {
-				font-size: 14px;
-				line-height: 2;
+			.lwc-item {
+				padding: 10px;
+				.lwc-desc {
+					font-size: 15px;
+					line-height: 20px;
+				}
 			}
 		}
 	}
