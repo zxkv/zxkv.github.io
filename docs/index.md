@@ -13,7 +13,7 @@ hero:
           text: 技术文档
           link: /page/
     image:
-        src: /web-sy.png
+        src: /icon.svg
         alt: 下落香樟树
 features:
     - title: "工作汇总"
