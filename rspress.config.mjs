@@ -22,8 +22,8 @@ export default defineConfig({
 	],
 	title: "下落香樟树",
 	description: "zxkv、前端开发、vue、react、js、JavaScript",
-	icon: "/icon.png",
-	logo: "/logo.png",
+	icon: "/icon.svg",
+	logo: "/icon.svg",
 	base: "/",
 	outDir: "doc_build",
 	route: {
