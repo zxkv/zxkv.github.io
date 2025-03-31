@@ -2,13 +2,17 @@ import { link_web } from "../data/index.js";
 import "./Layout.css";
 
 const Layout = () => {
-	const links = [...link_web, ...link_web, ...link_web, ...link_web];
+	const links = [...link_web];
 
 	return (
 		<div className="lay-web">
 			<div className="lw-header">
 				<div className="lwh-l">
-					<strong>前端导航</strong>
+					<strong>
+						<a href="https://zxk.netlify.app" target="_blank">
+							前端导航
+						</a>
+					</strong>
 				</div>
 				<div className="lwh-r">
 					<a href="https://zxk.netlify.app" target="_blank">
