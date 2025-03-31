@@ -1,5 +1,6 @@
 // gzip 插件
 // import { umami } from "./icon";
+import { pluginSass } from "@rsbuild/plugin-sass";
 
 const nav = [
 	{
@@ -77,6 +78,7 @@ const builderConfig = {
 			}
 		]
 	},
+	plugins: [pluginSass()],
 	dev: {
 		progressBar: true,
 		cliShortcuts: false

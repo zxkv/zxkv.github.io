@@ -116,7 +116,6 @@ export const link_web = [
 		icon: "",
 		desc: ""
 	},
-	,
 	{
 		name: "TDesign Vue3",
 		link: "https://tdesign.tencent.com/vue-next/overview",
