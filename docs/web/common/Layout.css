@@ -1,0 +1,8 @@
+#root:has(.lay-web) .rp-reading-time {
+	display: none;
+}
+
+.lay-web {
+	width: 100dvw;
+	height: 100dvh;
+}
