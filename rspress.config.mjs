@@ -21,7 +21,7 @@ export default defineConfig({
 		pluginImageCompress()
 	],
 	title: "下落香樟树",
-	description: "zxkv、前端开发、vue、react、js、JavaScript",
+	description: "surge、zxkv、web前端、vue、js、JavaScript",
 	icon: "/icon.svg",
 	logo: "/icon.svg",
 	base: "/",
@@ -50,7 +50,7 @@ export default defineConfig({
 		enableScrollToTop: true,
 		enableContentAnimation: true,
 		enableAppearanceAnimation: true,
-		lastUpdatedText: "上次更新时间",
+		lastUpdatedText: "上次更新",
 		lastUpdated: true,
 		outlineTitle: "目 录",
 		prevPageText: "上一篇",
