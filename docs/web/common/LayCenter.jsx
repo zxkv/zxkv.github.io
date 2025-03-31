@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 
 const LayCenter = props => {
 	const { links } = props;
@@ -7,12 +8,12 @@ const LayCenter = props => {
 	const itemCard = useMemo(
 		() =>
 			linkArray.map((v, i) => (
-				<a key={i} href={v.link} target="_blank" rel="noopener noreferrer">
+				<Link key={i} to={v.link} target="_blank">
 					<div className="lwc-item">
 						<div className="lwc-title">{v.name}</div>
 						<div className="lwc-desc">{v.desc}</div>
 					</div>
-				</a>
+				</Link>
 			)),
 		[linkArray]
 	);

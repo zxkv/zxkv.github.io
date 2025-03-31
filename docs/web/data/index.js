@@ -1,12 +1,3 @@
-export const link_ai = [
-	{
-		name: "",
-		link: "",
-		icon: "",
-		desc: ""
-	}
-];
-
 export const link_web = [
 	{
 		name: "Vue2",
