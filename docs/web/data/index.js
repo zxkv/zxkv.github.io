@@ -126,3 +126,5 @@ export const link_web = [
 		desc: ""
 	}
 ];
+
+export default link_web;
