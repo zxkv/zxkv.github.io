@@ -21,7 +21,7 @@
 	},
 	"dependencies": {
 		"dayjs": "^1.11.13",
-		"rspress": "^1.43.10",
+		"rspress": "^1.43.11",
 		"rspress-plugin-file-tree": "^0.4.0",
 		"rspress-plugin-reading-time": "^0.3.0"
 	},
