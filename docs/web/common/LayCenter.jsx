@@ -9,10 +9,10 @@ const LayCenter = props => {
 	const itemCard = useMemo(
 		() =>
 			linkArray.map((v, i) => (
-				<Link key={i} to={v.link} target="_blank">
+				<Link key={i} to={v.link} target="_blank" rel="noopener noreferrer">
 					<div className="lw-card">
 						<div className="lwc-img">
-							<img src={v?.icon || icon} alt={v.title} />
+							<img src={v?.icon || icon} alt={v.title || v.name} />
 							<strong className="lwc-title">{v.name}</strong>
 						</div>
 						<div className="lwc-item">
@@ -24,7 +24,7 @@ const LayCenter = props => {
 		[linkArray]
 	);
 
-	return <main className="lay-center">{itemCard}</main>;
+	return <main className="lay-center">{itemCard.length > 0 ? itemCard : <div className="empty-state">暂无导航数据</div>}</main>;
 };
 
 export default LayCenter;
