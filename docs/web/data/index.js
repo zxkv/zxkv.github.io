@@ -117,13 +117,13 @@ export const link_web = [
 		name: "GitCode",
 		link: "https://gitcode.com/",
 		icon: "https://cdn-static.gitcode.com/static/images/logo-favicon.png",
-		desc: ""
+		desc: "GitCode - 全球开发者的开源社区,开源代码托管平台"
 	},
 	{
 		name: "Gitee",
 		link: "https://gitee.com/",
 		icon: "https://gitee.com/favicon.ico",
-		desc: ""
+		desc: "国内领先的企业级研发效能和开源代码托管平台"
 	}
 ];
 
