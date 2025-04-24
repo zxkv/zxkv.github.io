@@ -86,43 +86,43 @@ export const link_web = [
 	{
 		name: "Element-Plus",
 		link: "https://cn.element-plus.org/zh-CN/",
-		icon: "",
-		desc: ""
+		icon: "https://cn.element-plus.org/apple-touch-icon.png",
+		desc: "基于 Vue 3，面向设计师和开发者的组件库"
 	},
 	{
 		name: "Element UI",
 		link: "https://element.eleme.cn/#/zh-CN",
-		icon: "",
-		desc: ""
+		icon: "https://element.eleme.cn/favicon.ico",
+		desc: "Element，一套为开发者准备的基于 Vue 2.0 的桌面端组件库"
 	},
 	{
 		name: "Arco Design Vue",
 		link: "https://arco.design/vue/docs/start",
-		icon: "",
-		desc: ""
+		icon: "https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico",
+		desc: "智能设计体系 连接轻盈体验"
 	},
 	{
-		name: "TDesign Vue2",
+		name: "TDesign Vue2 for Web",
 		link: "https://tdesign.tencent.com/vue/overview",
-		icon: "",
-		desc: ""
+		icon: "https://tdesign.tencent.com/favicon.ico",
+		desc: "TDesign 适配桌面端的组件库，适合在 vue 2 技术栈项目中使用。"
 	},
 	{
-		name: "TDesign Vue3",
+		name: "TDesign Vue Next for Web",
 		link: "https://tdesign.tencent.com/vue-next/overview",
-		icon: "",
-		desc: ""
+		icon: "https://tdesign.tencent.com/favicon.ico",
+		desc: "TDesign 适配桌面端的组件库，适合在 vue3.x 技术栈项目中使用。"
 	},
 	{
 		name: "GitCode",
 		link: "https://gitcode.com/",
-		icon: "",
+		icon: "https://cdn-static.gitcode.com/static/images/logo-favicon.png",
 		desc: ""
 	},
 	{
 		name: "Gitee",
 		link: "https://gitee.com/",
-		icon: "",
+		icon: "https://gitee.com/favicon.ico",
 		desc: ""
 	}
 ];
