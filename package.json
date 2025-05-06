@@ -21,7 +21,7 @@
 	},
 	"dependencies": {
 		"dayjs": "^1.11.13",
-		"rspress": "^1.43.11",
+		"rspress": "^1.43.12",
 		"rspress-plugin-file-tree": "^0.4.0",
 		"rspress-plugin-reading-time": "^0.3.0"
 	},
@@ -29,9 +29,9 @@
 		"@rsbuild/plugin-image-compress": "^1.2.0",
 		"@rsbuild/plugin-sass": "^1.3.1",
 		"@rspress/mdx-rs": "^0.6.6",
-		"@types/node": "^22.14.1",
+		"@types/node": "^22.15.12",
 		"husky": "^9.1.7",
-		"lint-staged": "^15.5.1",
+		"lint-staged": "^15.5.2",
 		"prettier": "^3.5.3",
 		"rsbuild-plugin-open-graph": "^1.0.2",
 		"rspress-plugin-font-open-sans": "^1.0.0"
