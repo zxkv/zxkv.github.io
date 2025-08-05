@@ -1,0 +1,20 @@
+{
+  "path": "/Users/zxk/Code/Code_GE/zxkv_blog/doc_build",
+  "desc": "这是一个基于 Rspress 的个人博客项目，包含编程笔记、开发记录、工具分享等内容，支持 MDX 格式文档和代码高亮显示。",
+  "id": "4537a5d219be417cbac30b6f6e9bf8a9",
+  "data": {
+    "spaceKey": "4537a5d219be417cbac30b6f6e9bf8a9",
+    "connections": {
+      "webIDE": "https://4537a5d219be417cbac30b6f6e9bf8a9.ap-singapore.cloudstudio.club",
+      "preview": "",
+      "api": "https://4537a5d219be417cbac30b6f6e9bf8a9--api.ap-singapore.cloudstudio.club",
+      "pty": "https://4537a5d219be417cbac30b6f6e9bf8a9--pty.ap-singapore.cloudstudio.club"
+    }
+  },
+  "config": {
+    "api": "https://4537a5d219be417cbac30b6f6e9bf8a9--api.ap-singapore.cloudstudio.club",
+    "pty": "https://4537a5d219be417cbac30b6f6e9bf8a9--pty.ap-singapore.cloudstudio.club",
+    "region": "ap-shanghai",
+    "spaceKey": "4537a5d219be417cbac30b6f6e9bf8a9"
+  }
+}
